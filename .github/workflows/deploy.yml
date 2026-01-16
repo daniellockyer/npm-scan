@@ -1,0 +1,74 @@
+name: Deploy (Hetzner + PM2)
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: {}
+
+concurrency:
+  group: deploy-main
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      SSH_PORT: ${{ secrets.HETZNER_SSH_PORT || '22' }}
+      HETZNER_HOST: ${{ secrets.HETZNER_HOST }}
+      HETZNER_USER: ${{ secrets.HETZNER_USER }}
+      HETZNER_DEPLOY_PATH: ${{ secrets.HETZNER_DEPLOY_PATH }}
+      PM2_APP_NAME: ${{ secrets.PM2_APP_NAME || 'npm-check' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Start ssh-agent
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.HETZNER_SSH_PRIVATE_KEY }}
+
+      - name: Add server to known_hosts
+        shell: bash
+        run: |
+          mkdir -p ~/.ssh
+          if [ -n "${{ secrets.HETZNER_SSH_KNOWN_HOSTS }}" ]; then
+            echo "${{ secrets.HETZNER_SSH_KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
+          else
+            ssh-keyscan -p "${SSH_PORT}" -H "${HETZNER_HOST}" >> ~/.ssh/known_hosts
+          fi
+
+      - name: Sync files to server
+        shell: bash
+        run: |
+          rsync -az --delete \
+            --exclude ".git/" \
+            --exclude "node_modules/" \
+            --exclude ".github/" \
+            -e "ssh -p ${SSH_PORT}" \
+            ./ "${HETZNER_USER}@${HETZNER_HOST}:${HETZNER_DEPLOY_PATH}/"
+
+      - name: Install dependencies and restart with PM2
+        shell: bash
+        run: |
+          ssh -p "${SSH_PORT}" "${HETZNER_USER}@${HETZNER_HOST}" << EOF
+            set -euo pipefail
+            cd "${HETZNER_DEPLOY_PATH}"
+
+            if command -v npm >/dev/null 2>&1; then
+              npm ci --omit=dev || npm install --omit=dev
+            else
+              echo "npm not found on server; install Node.js first" >&2
+              exit 1
+            fi
+
+            if ! command -v pm2 >/dev/null 2>&1; then
+              echo "pm2 not found on server; install it with: npm i -g pm2" >&2
+              exit 1
+            fi
+
+            PM2_APP_NAME="${PM2_APP_NAME}" pm2 startOrReload ecosystem.config.cjs --env production
+            pm2 save
+          EOF
+
