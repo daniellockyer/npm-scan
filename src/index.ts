@@ -387,8 +387,7 @@ async function run(): Promise<void> {
                     `🚨 <b>Preinstall script added</b>\n\n` +
                     `Package: <code>${name}@${latest}</code>\n` +
                     `Previous version: ${previous || "none"}\n` +
-                    `Preinstall: <code>${cmd.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</code>\n` +
-                    `Registry: <a href="https://www.npmjs.com/package/${encodeURIComponent(name)}">npmjs.com</a>`;
+                    `Preinstall: <code>${cmd.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</code>`;
                   await sendTelegramNotification(
                     telegramBotToken,
                     telegramChatId,
