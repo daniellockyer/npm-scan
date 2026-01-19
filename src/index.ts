@@ -16,7 +16,7 @@ import { promises as fs } from "node:fs";
 import pLimit from "p-limit";
 import semver from "semver";
 
-const DB_PATH = "db.json";
+const DB_PATH = "./docs/db.json";
 
 interface Finding {
   packageName: string;
