@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPM Script Monitor Findings</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: #f6f8fa;
+            color: #24292e;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        header {
+            border-bottom: 1px solid #e1e4e8;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            font-weight: 600;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e1e4e8;
+        }
+        th {
+            background-color: #f6f8fa;
+            font-weight: 600;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        tr:hover {
+            background-color: #f6f8fa;
+        }
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            background-color: rgba(27,31,35,0.05);
+            padding: 0.2em 0.4em;
+            margin: 0;
+            font-size: 85%;
+            border-radius: 3px;
+        }
+        .script-content {
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.3em 0.6em;
+            font-size: 85%;
+            font-weight: 600;
+            line-height: 1;
+            color: #fff;
+            border-radius: 20px;
+        }
+        .badge.preinstall { background-color: #f0b429; }
+        .badge.postinstall { background-color: #d73a49; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NPM Script Monitor Findings</h1>
+            <p>Newly introduced <code>preinstall</code> and <code>postinstall</code> scripts.</p>
+        </header>
+        <main>
+            <table id="findings-table">
+                <thead>
+                    <tr>
+                        <th>Package</th>
+                        <th>Version</th>
+                        <th>Script Type</th>
+                        <th>Script Content</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script>
+        async function loadFindings() {
+            const tbody = document.querySelector('#findings-table tbody');
+            try {
+                // Fetch the database from the root, relative to the served page
+                const response = await fetch('db.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const findings = await response.json();
+
+                if (findings.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="5" style="text-align: center; padding: 20px;">No findings yet.</td></tr>';
+                    return;
+                }
+                
+                // Clear existing rows
+                tbody.innerHTML = '';
+
+                findings.forEach(finding => {
+                    const row = document.createElement('tr');
+                    
+                    const packageNameCell = document.createElement('td');
+                    packageNameCell.innerHTML = `<code>${escapeHtml(finding.packageName)}</code>`;
+                    
+                    const versionCell = document.createElement('td');
+                    versionCell.textContent = finding.version;
+                    
+                    const scriptTypeCell = document.createElement('td');
+                    const scriptTypeBadge = document.createElement('span');
+                    scriptTypeBadge.className = `badge ${escapeHtml(finding.scriptType)}`;
+                    scriptTypeBadge.textContent = escapeHtml(finding.scriptType);
+                    scriptTypeCell.appendChild(scriptTypeBadge);
+                    
+                    const scriptContentCell = document.createElement('td');
+                    scriptContentCell.innerHTML = `<code class="script-content">${escapeHtml(finding.scriptContent)}</code>`;
+                    
+                    const timestampCell = document.createElement('td');
+                    timestampCell.textContent = new Date(finding.timestamp).toLocaleString();
+                    
+                    row.appendChild(packageNameCell);
+                    row.appendChild(versionCell);
+                    row.appendChild(scriptTypeCell);
+                    row.appendChild(scriptContentCell);
+                    row.appendChild(timestampCell);
+                    
+                    tbody.appendChild(row);
+                });
+
+            } catch (error) {
+                console.error('Error loading findings:', error);
+                tbody.innerHTML = '<tr><td colspan="5" style="text-align: center; padding: 20px; color: red;">Could not load findings.</td></tr>';
+            }
+        }
+
+        function escapeHtml(unsafe) {
+            if (unsafe === null || unsafe === undefined) return '';
+            return unsafe
+                .toString()
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        document.addEventListener('DOMContentLoaded', loadFindings);
+    </script>
+</body>
+</html>

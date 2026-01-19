@@ -12,8 +12,20 @@
 
 import "dotenv/config";
 import { setTimeout as delay } from "node:timers/promises";
+import { promises as fs } from "node:fs";
 import pLimit from "p-limit";
 import semver from "semver";
+
+const DB_PATH = "db.json";
+
+interface Finding {
+  packageName: string;
+  version: string;
+  scriptType: "preinstall" | "postinstall";
+  scriptContent: string;
+  previousVersion: string | null;
+  timestamp: string;
+}
 
 const DEFAULT_REPLICATE_DB_URL = "https://replicate.npmjs.com/";
 const DEFAULT_CHANGES_URL = "https://replicate.npmjs.com/_changes";
@@ -316,6 +328,31 @@ This could be a security risk. Please investigate.
   }
 }
 
+async function saveFinding(finding: Finding): Promise<void> {
+  let findings: Finding[] = [];
+  try {
+    const data = await fs.readFile(DB_PATH, "utf8");
+    findings = JSON.parse(data);
+  } catch (error: any) {
+    if (error.code !== "ENOENT") {
+      process.stderr.write(
+        `[${nowIso()}] WARN could not read ${DB_PATH}: ${error.message}\n`,
+      );
+    }
+  }
+
+  // Add new finding to the top
+  findings.unshift(finding);
+
+  try {
+    await fs.writeFile(DB_PATH, JSON.stringify(findings, null, 2), "utf8");
+  } catch (error: any) {
+    process.stderr.write(
+      `[${nowIso()}] WARN could not write to ${DB_PATH}: ${error.message}\n`,
+    );
+  }
+}
+
 async function run(): Promise<void> {
   const replicateDbUrl =
     process.env.NPM_REPLICATE_DB_URL || DEFAULT_REPLICATE_DB_URL;
@@ -334,7 +371,6 @@ async function run(): Promise<void> {
   const telegramChatId = process.env.TELEGRAM_CHAT_ID;
   const discordWebhookUrl = process.env.DISCORD_WEBHOOK_URL;
   const githubToken = process.env.GITHUB_TOKEN;
-
   const flagged = new Set<string>(); // `${name}@${version}` flagged already
   const lastSeenLatest = new Map<string, string>(); // name -> latest version processed
 
@@ -438,6 +474,17 @@ async function run(): Promise<void> {
                 `  postinstall: ${JSON.stringify(cmd)}\n`,
               );
 
+              // Save finding to database
+              const finding: Finding = {
+                packageName: name,
+                version: latest,
+                scriptType: "postinstall",
+                scriptContent: cmd,
+                previousVersion: previous,
+                timestamp: nowIso(),
+              };
+              await saveFinding(finding);
+
               // Send Telegram notification if configured
               if (telegramBotToken && telegramChatId) {
                 try {
@@ -517,6 +564,17 @@ async function run(): Promise<void> {
                 `[${nowIso()}] FLAG preinstall added: ${name}@${latest}${prevTxt}\n` +
                 `  preinstall: ${JSON.stringify(cmd)}\n`,
               );
+
+              // Save finding to database
+              const finding: Finding = {
+                packageName: name,
+                version: latest,
+                scriptType: "preinstall",
+                scriptContent: cmd,
+                previousVersion: previous,
+                timestamp: nowIso(),
+              };
+              await saveFinding(finding);
 
               // Send Telegram notification if configured
               if (telegramBotToken && telegramChatId) {
