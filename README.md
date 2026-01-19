@@ -13,3 +13,5 @@ This project has led to the following results as of January 19th, 2026:
 ## Author
 
 **Daniel Lockyer** <hi@daniellockyer.com>
+
+[GitHub Sponsors](https://github.com/sponsors/daniellockyer)
