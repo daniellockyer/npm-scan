@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.ts",
-    "dev": "node src/index.ts",
+    "dev": "node --watch src/index.ts",
     "typecheck": "tsc --noEmit"
   },
   "engines": {
