@@ -255,6 +255,10 @@ async function processPackage(job: { data: PackageJobData }): Promise<void> {
 
   const { latest, previous } = pickLatestAndPreviousVersions(packument);
 
+  process.stdout.write(
+    `[${nowIso()}] ${packageName}: latest=${latest ?? "null"}, previous=${previous ?? "null"}\n`,
+  );
+
   if (!latest) {
     process.stdout.write(
       `[${nowIso()}] Skipping ${packageName}: no versions found\n`,
