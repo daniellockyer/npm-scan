@@ -1,5 +1,13 @@
 [
   {
+    "packageName": "@adyen/adyen-salesforce-pwa",
+    "version": "4.2.0",
+    "scriptType": "postinstall",
+    "scriptContent": "node ./lib/scripts/update-notifier.js",
+    "previousVersion": "4.1.1",
+    "timestamp": "2026-01-20T14:52:24.543Z"
+  },
+  {
     "packageName": "galeneai-cli",
     "version": "0.0.10",
     "scriptType": "postinstall",
