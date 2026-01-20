@@ -7,12 +7,10 @@
 
 import "dotenv/config";
 import { setTimeout as delay } from "node:timers/promises";
-import semver from "semver";
 import { packageQueue, type PackageJobData } from "./queue.ts";
 
 const DEFAULT_REPLICATE_DB_URL = "https://replicate.npmjs.com/";
 const DEFAULT_CHANGES_URL = "https://replicate.npmjs.com/_changes";
-const DEFAULT_REGISTRY_URL = "https://registry.npmjs.org/";
 
 interface ChangesResult {
   id: string;
@@ -81,45 +79,16 @@ async function getInitialSince(
   return dbInfo.update_seq;
 }
 
-async function fetchPackument(
-  registryBaseUrl: string,
-  name: string,
-): Promise<{ versions?: Record<string, unknown>; "dist-tags"?: { latest?: string } }> {
-  const response = await fetch(
-    `${registryBaseUrl}${encodeURIComponent(name)}`,
-    {
-      headers: {
-        "User-Agent": "npm-scan-preinstall-postinstall-monitor",
-        Accept: "application/json",
-      },
-    },
-  );
-
-  if (!response.ok) {
-    const text = await response.text();
-    throw new Error(`HTTP ${response.status}: ${text.slice(0, 200)}`);
-  }
-
-  return (await response.json()) as {
-    versions?: Record<string, unknown>;
-    "dist-tags"?: { latest?: string };
-  };
-}
-
 async function run(): Promise<void> {
   const replicateDbUrl =
     process.env.NPM_REPLICATE_DB_URL || DEFAULT_REPLICATE_DB_URL;
   const changesUrl = process.env.NPM_CHANGES_URL || DEFAULT_CHANGES_URL;
-  const registryBaseUrl = process.env.NPM_REGISTRY_URL || DEFAULT_REGISTRY_URL;
 
   const changesLimit = Math.max(
     1,
     Math.min(5000, Number(process.env.CHANGES_LIMIT || 200)),
   );
   const pollMs = Math.max(250, Number(process.env.POLL_MS || 1500));
-
-  const lastSeenLatest = new Map<string, string>(); // name -> latest version processed
-  const maxCachePackages = 1000;
 
   let since: string | number | null = null;
   let backoffMs = 1000;
@@ -154,62 +123,17 @@ async function run(): Promise<void> {
         if (name.startsWith("_design/")) continue;
 
         try {
-          // Fetch packument to get latest version
-          const packument = await fetchPackument(registryBaseUrl, name);
-          
-          // Get latest from dist-tags, or find highest semver version
-          let latest: string | null = packument["dist-tags"]?.latest || null;
-          
-          if (!latest && packument.versions) {
-            const versions = Object.keys(packument.versions);
-            // Sort versions using semver if available, otherwise fallback to string sort
-            const sortedVersions = versions
-              .filter((v) => {
-                try {
-                  return semver.valid(v) !== null;
-                } catch {
-                  return false;
-                }
-              })
-              .sort((a, b) => {
-                try {
-                  return semver.compare(b, a) ?? 0;
-                } catch {
-                  return b.localeCompare(a, undefined, { numeric: true });
-                }
-              });
-            latest = sortedVersions[0] || null;
-          }
-
-          if (!latest) continue;
-
-          const last = lastSeenLatest.get(name);
-          if (last === latest) continue;
-          lastSeenLatest.set(name, latest);
-
-          if (lastSeenLatest.size > maxCachePackages) {
-            lastSeenLatest.clear();
-            process.stderr.write(
-              `[${nowIso()}] WARN package cache exceeded ${maxCachePackages}; cleared cache\n`,
-            );
-          }
-
-          // Find previous version
-          const previous = last || null;
-
-          // Add job to queue
+          // Add job to queue - worker will handle version detection
           const jobData: PackageJobData = {
             packageName: name,
-            version: latest,
-            previousVersion: previous,
           };
 
           await packageQueue.add("scan-package", jobData, {
-            jobId: `${name}@${latest}`, // Use package@version as job ID to prevent duplicates
+            jobId: name, // Use package name as job ID
           });
 
           process.stdout.write(
-            `[${nowIso()}] Queued: ${name}@${latest} (prev: ${previous ?? "none"})\n`,
+            `[${nowIso()}] Queued: ${name}\n`,
           );
         } catch (e) {
           process.stderr.write(

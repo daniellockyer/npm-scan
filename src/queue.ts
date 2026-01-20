@@ -2,8 +2,8 @@ import { Queue } from "bullmq";
 
 export interface PackageJobData {
   packageName: string;
-  version: string;
-  previousVersion: string | null;
+  version?: string;
+  previousVersion?: string | null;
 }
 
 const connection = {

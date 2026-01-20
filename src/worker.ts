@@ -61,9 +61,7 @@ function getScript(versionDoc: VersionDoc | undefined, scriptName: string): stri
 
 function pickLatestAndPreviousVersions(
   doc: Packument,
-  currentLatest: string,
-  currentPrevious: string | null,
-): { latest: string; previous: string | null } {
+): { latest: string | null; previous: string | null } {
   const versions =
     doc.versions && typeof doc.versions === "object" ? doc.versions : null;
   const distTags =
@@ -71,13 +69,21 @@ function pickLatestAndPreviousVersions(
       ? doc["dist-tags"]
       : null;
 
-  if (!versions) return { latest: currentLatest, previous: currentPrevious };
+  if (!versions) return { latest: null, previous: null };
 
-  // Use the provided latest version
-  const latest = currentLatest;
+  // Get latest from dist-tags, or find highest semver version
+  let latest: string | null = distTags?.latest || null;
+  
+  if (!latest) {
+    const versionKeys = Object.keys(versions);
+    const sortedVersions = versionKeys
+      .filter((v) => isLikelyVersionKey(v))
+      .sort((a, b) => semver.compare(b, a) ?? 0);
+    latest = sortedVersions[0] || null;
+  }
 
-  if (!versions[latest]) {
-    return { latest: currentLatest, previous: currentPrevious };
+  if (!latest || !versions[latest]) {
+    return { latest: null, previous: null };
   }
 
   // Find the highest previous version using semver comparison
@@ -86,12 +92,12 @@ function pickLatestAndPreviousVersions(
       (v) =>
         isLikelyVersionKey(v) &&
         v !== latest &&
-        semver.compare(v, latest) !== null &&
-        semver.compare(v, latest)! < 0,
+        semver.compare(v, latest!) !== null &&
+        semver.compare(v, latest!)! < 0,
     )
     .sort((a, b) => semver.compare(b, a) ?? 0);
 
-  return { latest, previous: previousVersions[0] ?? currentPrevious };
+  return { latest, previous: previousVersions[0] ?? null };
 }
 
 function encodePackageNameForRegistry(name: string): string {
@@ -224,11 +230,11 @@ This could be a security risk. Please investigate.
 }
 
 async function processPackage(job: { data: PackageJobData }): Promise<void> {
-  const { packageName, version, previousVersion } = job.data;
+  const { packageName } = job.data;
   const registryBaseUrl = process.env.NPM_REGISTRY_URL || DEFAULT_REGISTRY_URL;
 
   process.stdout.write(
-    `[${nowIso()}] Processing: ${packageName}@${version} (prev: ${previousVersion ?? "none"})\n`,
+    `[${nowIso()}] Processing: ${packageName}\n`,
   );
 
   let packument: Packument;
@@ -240,15 +246,11 @@ async function processPackage(job: { data: PackageJobData }): Promise<void> {
     );
   }
 
-  const { latest, previous } = pickLatestAndPreviousVersions(
-    packument,
-    version,
-    previousVersion,
-  );
+  const { latest, previous } = pickLatestAndPreviousVersions(packument);
 
-  if (latest !== version) {
+  if (!latest) {
     process.stdout.write(
-      `[${nowIso()}] Skipping ${packageName}@${version}: latest is now ${latest}\n`,
+      `[${nowIso()}] Skipping ${packageName}: no versions found\n`,
     );
     return;
   }
@@ -369,13 +371,13 @@ const worker = new Worker<PackageJobData>(
 
 worker.on("completed", (job) => {
   process.stdout.write(
-    `[${nowIso()}] Job completed: ${job.data.packageName}@${job.data.version}\n`,
+    `[${nowIso()}] Job completed: ${job.data.packageName}\n`,
   );
 });
 
 worker.on("failed", (job, err) => {
   process.stderr.write(
-    `[${nowIso()}] Job failed: ${job?.data.packageName}@${job?.data.version}: ${getErrorMessage(err)}\n`,
+    `[${nowIso()}] Job failed: ${job?.data.packageName}: ${getErrorMessage(err)}\n`,
   );
 });
 
