@@ -95,7 +95,7 @@ async function fetchPackument(
 ): Promise<Packument> {
   const encodedName = encodePackageNameForRegistry(name);
   const url = `${registryBaseUrl.replace(/\/$/, "")}/${encodedName}`;
-  
+
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 10000);
 
@@ -270,18 +270,18 @@ async function processPackage(job: { data: PackageJobData }): Promise<void> {
   const latestDoc = versions[latest];
   const prevDoc = previous ? versions[previous] : undefined;
 
-  const flagged = new Set<string>(); // Track flagged scripts to avoid duplicates
-
   for (const scriptType of ["postinstall", "preinstall"] as const) {
     const latestHasScript = hasScript(latestDoc, scriptType);
     const prevHasScript = prevDoc ? hasScript(prevDoc, scriptType) : false;
 
+    if (latestHasScript) {
+      const cmd = getScript(latestDoc, scriptType);
+      process.stdout.write(
+        `[${nowIso()}] ${packageName}@${latest} has ${scriptType} script: ${JSON.stringify(cmd)}\n`,
+      );
+    }
+
     if (!latestHasScript || prevHasScript) continue;
-
-    const key = `${scriptType}`;
-    if (flagged.has(key)) continue;
-
-    flagged.add(key);
 
     const cmd = getScript(latestDoc, scriptType);
     const scriptLabel =
@@ -382,18 +382,18 @@ const worker = new Worker<PackageJobData>(
 
 worker.on("completed", (job) => {
   process.stdout.write(
-    `[${nowIso()}] Job completed: ${job.data.packageName}\n`,
+    `[${nowIso()}] JOB COMPLETED: ${job.data.packageName}\n`,
   );
 });
 
 worker.on("failed", (job, err) => {
   process.stderr.write(
-    `[${nowIso()}] Job failed: ${job?.data.packageName}: ${getErrorMessage(err)}\n`,
+    `[${nowIso()}] JOB FAILED: ${job?.data.packageName}: ${getErrorMessage(err)}\n`,
   );
 });
 
 worker.on("error", (err) => {
-  process.stderr.write(`[${nowIso()}] Worker error: ${getErrorMessage(err)}\n`);
+  process.stderr.write(`[${nowIso()}] WORKER ERROR: ${getErrorMessage(err)}\n`);
 });
 
 process.stdout.write(
