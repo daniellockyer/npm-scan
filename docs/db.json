@@ -1,5 +1,13 @@
 [
   {
+    "packageName": "@vroskus/library-validator",
+    "version": "2.0.0",
+    "scriptType": "postinstall",
+    "scriptContent": "node ./scripts/postinstall.js",
+    "previousVersion": "1.0.29",
+    "timestamp": "2026-01-20T11:10:47.832Z"
+  },
+  {
     "packageName": "acp-extension-codex-win32-x64",
     "version": "0.8.6",
     "scriptType": "postinstall",
