@@ -269,7 +269,7 @@ async function createGitHubIssue(
   scriptType: "preinstall" | "postinstall",
   scriptContent: string,
 ): Promise<void> {
-  try{
+ 
   const url = new URL(repoUrl);
   const pathParts = url.pathname.split("/").filter(Boolean);
   if (pathParts.length < 2) {
@@ -308,14 +308,7 @@ await httpPostJson(
     });
 
     
-  } catch (error) {
-    if (error instanceof Error && error.name === "AbortError") {
-      throw new Error("GitHub issue creation timeout");
-    }
-    throw error;
-  } finally {
-
-  }
+  
 }
 
 async function saveFinding(finding: Finding): Promise<void> {
