@@ -1,5 +1,13 @@
 [
   {
+    "packageName": "@tellahq/ppx-spice",
+    "version": "0.2.10",
+    "scriptType": "postinstall",
+    "scriptContent": "node ./postInstall.js",
+    "previousVersion": null,
+    "timestamp": "2026-01-20T08:55:16.764Z"
+  },
+  {
     "packageName": "@olbrain/bys-mcp",
     "version": "1.0.0",
     "scriptType": "postinstall",
