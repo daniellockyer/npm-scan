@@ -156,6 +156,8 @@ async function createGitHubIssue(
   packageVersion: string,
   scriptType: "preinstall" | "postinstall",
   scriptContent: string,
+  previousVersion: string | null = null,
+  previousScriptContent: string | null = null,
 ): Promise<void> {
   const url = new URL(repoUrl);
   const pathParts = url.pathname.split("/").filter(Boolean);
@@ -166,8 +168,31 @@ async function createGitHubIssue(
   const repo = pathParts[1];
   const apiUrl = `https://api.github.com/repos/${owner}/${repo}/issues`;
 
-  const issueTitle = `[Security Alert] New \`${scriptType}\` script added in \`${packageName}@${packageVersion}\``;
-  const issueBody = `
+  const isChanged = previousScriptContent !== null;
+  const issueTitle = isChanged
+    ? `[Security Alert] \`${scriptType}\` script changed in \`${packageName}@${packageVersion}\``
+    : `[Security Alert] New \`${scriptType}\` script added in \`${packageName}@${packageVersion}\``;
+
+  let issueBody: string;
+  if (isChanged) {
+    issueBody = `
+The \`${scriptType}\` script was changed in version \`${packageVersion}\` of the package \`${packageName}\`.
+
+**Previous version:** ${previousVersion ?? "none"}
+**Previous script:**
+\`\`\`
+${previousScriptContent}
+\`\`\`
+
+**New script:**
+\`\`\`
+${scriptContent}
+\`\`\`
+
+This could be a security risk. Please investigate.
+`;
+  } else {
+    issueBody = `
 A new \`${scriptType}\` script was detected in version \`${packageVersion}\` of the package \`${packageName}\`.
 
 **Script content:**
@@ -177,6 +202,7 @@ ${scriptContent}
 
 This could be a security risk. Please investigate.
 `;
+  }
 
   await httpPostJson(
     apiUrl,
@@ -192,6 +218,99 @@ This could be a security risk. Please investigate.
       timeoutMessage: "GitHub issue creation timeout",
     },
   );
+}
+
+async function sendScriptAlertNotifications(
+  packageName: string,
+  latest: string,
+  previous: string | null,
+  scriptType: "preinstall" | "postinstall",
+  latestCmd: string,
+  prevCmd: string | null,
+  packument: Packument,
+  alertType: "added" | "changed",
+): Promise<void> {
+  const telegramBotToken = process.env.TELEGRAM_BOT_TOKEN;
+  const telegramChatId = process.env.TELEGRAM_CHAT_ID;
+  const discordWebhookUrl = process.env.DISCORD_WEBHOOK_URL;
+  const githubToken = process.env.GITHUB_TOKEN;
+
+  const scriptLabel = scriptType.charAt(0).toUpperCase() + scriptType.slice(1);
+  const npmPackageUrl = `https://www.npmjs.com/package/${encodePackageNameForRegistry(packageName)}`;
+
+  // Send Telegram notification if configured
+  if (telegramBotToken && telegramChatId) {
+    try {
+      let message: string;
+      if (alertType === "added") {
+        message =
+          `🚨 <b>${scriptLabel} script added</b>\n\n` +
+          `Package: <code>${packageName}@${latest}</code>\n` +
+          `<a href="${npmPackageUrl}">View on npm</a>\n` +
+          `Previous version: ${previous ?? "none"}\n` +
+          `<code>${latestCmd.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</code>`;
+      } else {
+        message =
+          `🚨 <b>${scriptLabel} script changed</b>\n\n` +
+          `Package: <code>${packageName}@${latest}</code>\n` +
+          `<a href="${npmPackageUrl}">View on npm</a>\n` +
+          `Previous version: ${previous ?? "none"}\n` +
+          `Previous ${scriptLabel}: <code>${(prevCmd ?? "").replace(/</g, "&lt;").replace(/>/g, "&gt;")}</code>\n` +
+          `New ${scriptLabel}: <code>${latestCmd.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</code>`;
+      }
+      await sendTelegramNotification(telegramBotToken, telegramChatId, message);
+    } catch (e) {
+      process.stderr.write(
+        `[${nowIso()}] WARN Telegram notification failed: ${getErrorMessage(e)}\n`,
+      );
+    }
+  }
+
+  // Send Discord notification if configured
+  if (discordWebhookUrl) {
+    try {
+      let message: string;
+      if (alertType === "added") {
+        message =
+          `🚨 **${scriptLabel} script added**\n\n` +
+          `**Package:** \`${packageName}@${latest}\`\n` +
+          `**Previous version:** ${previous ?? "none"}\n` +
+          `**${scriptLabel}:** \`\`\`${latestCmd}\`\`\``;
+      } else {
+        message =
+          `🚨 **${scriptLabel} script changed**\n\n` +
+          `**Package:** \`${packageName}@${latest}\`\n` +
+          `**Previous version:** ${previous ?? "none"}\n` +
+          `**Previous ${scriptLabel}:** \`\`\`${prevCmd ?? ""}\`\`\`\n` +
+          `**New ${scriptLabel}:** \`\`\`${latestCmd}\`\`\``;
+      }
+      await sendDiscordNotification(discordWebhookUrl, message);
+    } catch (e) {
+      process.stderr.write(
+        `[${nowIso()}] WARN Discord notification failed: ${getErrorMessage(e)}\n`,
+      );
+    }
+  }
+
+  // Create GitHub issue if configured
+  if (githubToken && packument.repository?.url) {
+    try {
+      await createGitHubIssue(
+        githubToken,
+        packument.repository.url,
+        packageName,
+        latest,
+        scriptType,
+        latestCmd,
+        previous,
+        alertType === "changed" ? prevCmd : null,
+      );
+    } catch (e) {
+      process.stderr.write(
+        `[${nowIso()}] WARN GitHub issue creation failed: ${getErrorMessage(e)}\n`,
+      );
+    }
+  }
 }
 
 async function processPackage(job: { data: PackageJobData }): Promise<void> {
@@ -230,87 +349,53 @@ async function processPackage(job: { data: PackageJobData }): Promise<void> {
     const latestHasScript = hasScript(latestDoc, scriptType);
     const prevHasScript = prevDoc ? hasScript(prevDoc, scriptType) : false;
 
-    if (latestHasScript) {
-      const cmd = getScript(latestDoc, scriptType);
-      process.stdout.write(
-        `[${nowIso()}] ${packageName}@${latest} has ${scriptType} script: ${JSON.stringify(cmd)}\n`,
-      );
-    }
+    // Skip if latest version doesn't have the script
+    if (!latestHasScript) continue;
 
-    if (!latestHasScript || prevHasScript) continue;
-
-    const cmd = getScript(latestDoc, scriptType);
-    const scriptLabel =
-      scriptType.charAt(0).toUpperCase() + scriptType.slice(1);
+    const latestCmd = getScript(latestDoc, scriptType);
+    const prevCmd = prevDoc ? getScript(prevDoc, scriptType) : null;
     const prevTxt = previous
       ? ` (prev: ${previous})`
       : " (first publish / unknown prev)";
 
-    process.stdout.write(
-      `[${nowIso()}] 🚨 MALICIOUS PACKAGE DETECTED: ${scriptType} added: ${packageName}@${latest}${prevTxt}\n` +
-        `  ${scriptType}: ${JSON.stringify(cmd)}\n`,
-    );
+    // Detect script added (wasn't in previous version)
+    if (!prevHasScript) {
+      process.stdout.write(
+        `[${nowIso()}] 🚨 MALICIOUS PACKAGE DETECTED: ${scriptType} added: ${packageName}@${latest}${prevTxt}\n` +
+          `  ${scriptType}: ${JSON.stringify(latestCmd)}\n`,
+      );
 
-    // Send notifications
-    const telegramBotToken = process.env.TELEGRAM_BOT_TOKEN;
-    const telegramChatId = process.env.TELEGRAM_CHAT_ID;
-    const discordWebhookUrl = process.env.DISCORD_WEBHOOK_URL;
-    const githubToken = process.env.GITHUB_TOKEN;
-
-    // Send Telegram notification if configured
-    if (telegramBotToken && telegramChatId) {
-      try {
-        const npmPackageUrl = `https://www.npmjs.com/package/${encodePackageNameForRegistry(packageName)}`;
-        const message =
-          `🚨 <b>${scriptLabel} script added</b>\n\n` +
-          `Package: <code>${packageName}@${latest}</code>\n` +
-          `<a href="${npmPackageUrl}">View on npm</a>\n` +
-          `Previous version: ${previous ?? "none"}\n` +
-          `<code>${cmd.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</code>`;
-        await sendTelegramNotification(
-          telegramBotToken,
-          telegramChatId,
-          message,
-        );
-      } catch (e) {
-        process.stderr.write(
-          `[${nowIso()}] WARN Telegram notification failed: ${getErrorMessage(e)}\n`,
-        );
-      }
+      await sendScriptAlertNotifications(
+        packageName,
+        latest,
+        previous,
+        scriptType,
+        latestCmd,
+        null,
+        packument,
+        "added",
+      );
+      continue;
     }
 
-    // Send Discord notification if configured
-    if (discordWebhookUrl) {
-      try {
-        const message =
-          `🚨 **${scriptLabel} script added**\n\n` +
-          `**Package:** \`${packageName}@${latest}\`\n` +
-          `**Previous version:** ${previous ?? "none"}\n` +
-          `**${scriptLabel}:** \`\`\`${cmd}\`\`\``;
-        await sendDiscordNotification(discordWebhookUrl, message);
-      } catch (e) {
-        process.stderr.write(
-          `[${nowIso()}] WARN Discord notification failed: ${getErrorMessage(e)}\n`,
-        );
-      }
-    }
+    // Detect script changed (both versions have it but content differs)
+    if (prevHasScript && latestCmd !== prevCmd) {
+      process.stdout.write(
+        `[${nowIso()}] 🚨 MALICIOUS PACKAGE DETECTED: ${scriptType} changed: ${packageName}@${latest}${prevTxt}\n` +
+          `  Previous ${scriptType}: ${JSON.stringify(prevCmd)}\n` +
+          `  New ${scriptType}: ${JSON.stringify(latestCmd)}\n`,
+      );
 
-    // Create GitHub issue if configured
-    if (githubToken && packument.repository?.url) {
-      try {
-        await createGitHubIssue(
-          githubToken,
-          packument.repository.url,
-          packageName,
-          latest,
-          scriptType,
-          cmd,
-        );
-      } catch (e) {
-        process.stderr.write(
-          `[${nowIso()}] WARN GitHub issue creation failed: ${getErrorMessage(e)}\n`,
-        );
-      }
+      await sendScriptAlertNotifications(
+        packageName,
+        latest,
+        previous,
+        scriptType,
+        latestCmd,
+        prevCmd,
+        packument,
+        "changed",
+      );
     }
   }
 }
