@@ -207,7 +207,8 @@ export async function sendCombinedScriptAlertNotifications(
 
       let message =
         `🚨 <b>${alerts.length} script change${alerts.length > 1 ? "s" : ""} detected</b>\n\n` +
-        `<code>${escapeHtml(packageName)}</code> (<a href="${npmPackageUrl}">npm</a>) ${escapeHtml(previous ?? "none")} → ${escapeHtml(latest)}\n\n` +
+        `<code>${escapeHtml(packageName)}</code>\n` +
+        `<a href="${npmPackageUrl}">npm</a> ${escapeHtml(previous ?? "none")} → ${escapeHtml(latest)}\n\n` +
         alertParts.join("\n\n");
 
       if (previous && latest) {
@@ -239,7 +240,8 @@ export async function sendCombinedScriptAlertNotifications(
 
       let message =
         `🚨 **${alerts.length} script change${alerts.length > 1 ? "s" : ""} detected**\n\n` +
-        `\`${packageName}\` [npm](${npmPackageUrl}) ${previous ?? "none"} → ${latest}\n\n` +
+        `\`${packageName}\`\n` +
+        `[npm](${npmPackageUrl}) ${previous ?? "none"} → ${latest}\n\n` +
         alertParts.join("\n\n");
 
       if (previous && latest) {
