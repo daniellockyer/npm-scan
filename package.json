@@ -6,17 +6,20 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "node src/index.ts",
-    "dev": "node --watch src/index.ts",
+    "producer": "node src/producer.ts",
+    "worker": "node src/worker.ts",
+    "dev:producer": "node --watch src/producer.ts",
+    "dev:worker": "node --watch src/worker.ts",
+    "fetch-packument": "node src/fetch-packument.ts",
     "typecheck": "tsc --noEmit"
   },
   "engines": {
     "node": ">=24"
   },
   "dependencies": {
-    "@octokit/rest": "^22.0.1",
+    "bullmq": "^5.66.5",
     "dotenv": "^17.2.3",
-    "p-limit": "^5.0.0",
+    "ioredis": "^5.9.2",
     "semver": "^7.6.0"
   },
   "devDependencies": {

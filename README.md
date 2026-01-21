@@ -33,11 +33,12 @@ It is recommended to run this application with a process manager like PM2.
 
 ## Hall of Fame
 
-This project has led to the following results as of January 20th, 2026:
-- **7 packages** have been reported
-- **6 packages** has been removed
+Malicious packages are screened and reported by myself. This project has led to the following results as of January 20th, 2026:
 
-Including at least 1 instance of live malware:
+- **20 packages** have been reported
+- **19 packages** has been removed
+
+Including at least 6 instances of live malware:
 
 <img width="363" height="150" alt="image" src="https://github.com/user-attachments/assets/f3d6822e-5aac-4600-a7ec-7a2c63112ea8" />
 
