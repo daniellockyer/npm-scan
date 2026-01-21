@@ -203,9 +203,8 @@ export async function sendCombinedScriptAlertNotifications(
 
       let message =
         `🚨 <b>Security Alert: ${alerts.length} script change${alerts.length > 1 ? "s" : ""} detected</b>\n\n` +
-        `Package: <code>${packageName}@${latest}</code>\n` +
-        `<a href="${npmPackageUrl}">View on npm</a>\n` +
-        `Previous version: ${previous ?? "none"}\n\n` +
+        `<code>${packageName}</code> <a href="${npmPackageUrl}">View on npm</a>\n` +
+        `${previous ?? "none"} → ${latest}\n\n` +
         alertParts.join("\n\n");
 
       if (diffOutput) {
@@ -238,8 +237,8 @@ export async function sendCombinedScriptAlertNotifications(
 
       let message =
         `🚨 **Security Alert: ${alerts.length} script change${alerts.length > 1 ? "s" : ""} detected**\n\n` +
-        `**Package:** \`${packageName}@${latest}\`\n` +
-        `**Previous version:** ${previous ?? "none"}\n\n` +
+        `\`${packageName}\` [View on npm](${npmPackageUrl})\n` +
+        `${previous ?? "none"} → ${latest}\n\n` +
         alertParts.join("\n\n");
 
       if (diffOutput) {
