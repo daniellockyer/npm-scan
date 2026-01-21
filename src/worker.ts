@@ -11,6 +11,7 @@ import semver from "semver";
 import { type PackageJobData } from "./queue.ts";
 import { fetchPackument, type Packument } from "./lib/fetch-packument.ts";
 import { sendCombinedScriptAlertNotifications, type Alert } from "./lib/notifications.ts";
+import { saveFinding, type Finding } from "./lib/db.ts";
 
 const DEFAULT_REGISTRY_URL = "https://registry.npmjs.org/";
 
@@ -134,6 +135,19 @@ async function processPackage(job: { data: PackageJobData }): Promise<void> {
             : `  Previous ${alert.scriptType}: ${JSON.stringify(alert.prevCmd)}\n` +
               `  New ${alert.scriptType}: ${JSON.stringify(alert.latestCmd)}\n`),
       );
+    }
+
+    // Save findings to db.json
+    for (const alert of alerts) {
+      const finding: Finding = {
+        packageName: packageName,
+        version: latest,
+        scriptType: alert.scriptType,
+        scriptContent: alert.latestCmd,
+        previousVersion: previous,
+        timestamp: nowIso(),
+      };
+      await saveFinding(finding);
     }
 
     await sendCombinedScriptAlertNotifications(
