@@ -101,8 +101,8 @@ export async function createGitHubIssue(
 
   const isChanged = previousScriptContent !== null;
   const issueTitle = isChanged
-    ? `[Security Alert] \`${scriptType}\` script changed in \`${packageName}@${packageVersion}\``
-    : `[Security Alert] New \`${scriptType}\` script added in \`${packageName}@${packageVersion}\``;
+    ? `\`${scriptType}\` script changed in \`${packageName}@${packageVersion}\``
+    : `New \`${scriptType}\` script added in \`${packageName}@${packageVersion}\``;
 
   let issueBody: string;
   if (isChanged) {
@@ -132,9 +132,9 @@ ${scriptContent}
   }
 
   if (diffOutput) {
-    const diffLines = diffOutput.split('\n').slice(0, 10);
+    const diffLines = diffOutput.split('\n').slice(0, 20);
     const truncatedDiff = diffLines.join('\n');
-    const isTruncated = diffOutput.split('\n').length > 10;
+    const isTruncated = diffOutput.split('\n').length > 20;
     issueBody += `
 
 **Package Diff (${previousVersion} → ${packageVersion}):**
@@ -202,15 +202,14 @@ export async function sendCombinedScriptAlertNotifications(
       });
 
       let message =
-        `🚨 <b>Security Alert: ${alerts.length} script change${alerts.length > 1 ? "s" : ""} detected</b>\n\n` +
-        `<code>${packageName}</code> <a href="${npmPackageUrl}">View on npm</a>\n` +
-        `${previous ?? "none"} → ${latest}\n\n` +
+        `🚨 <b>${alerts.length} script change${alerts.length > 1 ? "s" : ""} detected</b>\n\n` +
+        `<code>${packageName}</code> <a href="${npmPackageUrl}">npm</a> ${previous ?? "none"} → ${latest}\n\n` +
         alertParts.join("\n\n");
 
       if (diffOutput) {
-        const diffLines = diffOutput.split('\n').slice(0, 10);
+        const diffLines = diffOutput.split('\n').slice(0, 20);
         const truncatedDiff = diffLines.join('\n');
-        const isTruncated = diffOutput.split('\n').length > 10;
+        const isTruncated = diffOutput.split('\n').length > 20;
         message += `\n\n<b>Package Diff (${previous} → ${latest}):</b>\n` +
           `<pre><code>${truncatedDiff}${isTruncated ? '\n\n... (truncated)' : ''}</code></pre>`;
       }
@@ -236,15 +235,14 @@ export async function sendCombinedScriptAlertNotifications(
       });
 
       let message =
-        `🚨 **Security Alert: ${alerts.length} script change${alerts.length > 1 ? "s" : ""} detected**\n\n` +
-        `\`${packageName}\` [View on npm](${npmPackageUrl})\n` +
-        `${previous ?? "none"} → ${latest}\n\n` +
+        `🚨 **${alerts.length} script change${alerts.length > 1 ? "s" : ""} detected**\n\n` +
+        `\`${packageName}\` [npm](${npmPackageUrl}) ${previous ?? "none"} → ${latest}\n\n` +
         alertParts.join("\n\n");
 
       if (diffOutput) {
-        const diffLines = diffOutput.split('\n').slice(0, 10);
+        const diffLines = diffOutput.split('\n').slice(0, 20);
         const truncatedDiff = diffLines.join('\n');
-        const isTruncated = diffOutput.split('\n').length > 10;
+        const isTruncated = diffOutput.split('\n').length > 20;
         message += `\n\n**Package Diff (${previous} → ${latest}):**\n` +
           `\`\`\`diff\n${truncatedDiff}${isTruncated ? '\n\n... (truncated)' : ''}\n\`\`\``;
       }
