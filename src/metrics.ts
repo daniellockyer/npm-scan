@@ -103,12 +103,6 @@ async function createSSHTunnel(
 
 async function getQueueMetrics(queue: Queue): Promise<Metrics> {
   const counts = await queue.getJobCounts();
-  const rateLimit = queue.opts.limiter
-    ? {
-        max: queue.opts.limiter.max,
-        duration: queue.opts.limiter.duration,
-      }
-    : undefined;
 
   return {
     waiting: counts.waiting || 0,
@@ -116,7 +110,7 @@ async function getQueueMetrics(queue: Queue): Promise<Metrics> {
     completed: counts.completed || 0,
     failed: counts.failed || 0,
     paused: counts.paused || 0,
-    rateLimit,
+    rateLimit: undefined, // Rate limiting is configured on Worker, not Queue
   };
 }
 
