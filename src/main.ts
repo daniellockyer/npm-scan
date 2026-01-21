@@ -1,7 +1,7 @@
 import "dotenv/config";
+import Piscina from "piscina";
+import path from "node:path";
 import { startProducer } from "./producer.ts";
-import { processPackage } from "./worker.ts";
-import { packageQueue } from "./lib/in-memory-queue.ts";
 
 if (process.env.GITHUB_ACTIONS === 'true') {
   console.log("Exécution dans une GitHub Action : activation du timeout de 5 minutes.");
@@ -21,12 +21,14 @@ function nowIso(): string {
 async function main() {
   console.log(`[${nowIso()}] Starting application...`);
 
-  // Start the worker processing
-  packageQueue.process(processPackage);
-  console.log(`[${nowIso()}] Worker started.`);
+  const piscina = new Piscina({
+    filename: path.resolve(__dirname, "piscina-worker.ts"),
+  });
+
+  console.log(`[${nowIso()}] Worker pool started.`);
 
   // Start the producer
-  await startProducer();
+  await startProducer(piscina);
 }
 
 main().catch((e) => {

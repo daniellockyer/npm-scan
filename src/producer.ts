@@ -6,8 +6,12 @@
  */
 
 import "dotenv/config";
+import Piscina from "piscina";
 import { setTimeout as delay } from "node:timers/promises";
-import { packageQueue, type PackageJobData } from "./lib/in-memory-queue.ts";
+
+export interface PackageJobData {
+  packageName: string;
+}
 
 const DEFAULT_REPLICATE_DB_URL = "https://replicate.npmjs.com/";
 const DEFAULT_CHANGES_URL = "https://replicate.npmjs.com/_changes";
@@ -81,7 +85,7 @@ async function getInitialSince(
   return dbInfo.update_seq;
 }
 
-export async function startProducer(): Promise<void> {
+export async function startProducer(piscina: Piscina): Promise<void> {
   const replicateDbUrl =
     process.env.NPM_REPLICATE_DB_URL || DEFAULT_REPLICATE_DB_URL;
   const changesUrl = process.env.NPM_CHANGES_URL || DEFAULT_CHANGES_URL;
@@ -125,13 +129,12 @@ export async function startProducer(): Promise<void> {
         if (name.startsWith("_design/")) continue;
 
         try {
-          // Add job to queue - worker will handle version detection
           const jobData: PackageJobData = {
             packageName: name,
           };
-
-          packageQueue.add(jobData);
-
+          piscina.run(jobData).catch(err => {
+            console.error(`[${nowIso()}] Piscina task failed for ${name}: ${getErrorMessage(err)}`);
+          });
           process.stdout.write(`[${nowIso()}] Queued: ${name}\n`);
         } catch (e) {
           process.stderr.write(

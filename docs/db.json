@@ -1,5 +1,21 @@
 [
   {
+    "packageName": "@shoulderdev/malware-demo",
+    "version": "1.0.0",
+    "scriptType": "postinstall",
+    "scriptContent": "node scripts/postinstall.js",
+    "previousVersion": null,
+    "timestamp": "2026-01-21T21:05:36.429Z"
+  },
+  {
+    "packageName": "@shoulderdev/malware-demo",
+    "version": "1.0.0",
+    "scriptType": "preinstall",
+    "scriptContent": "node scripts/preinstall.js",
+    "previousVersion": null,
+    "timestamp": "2026-01-21T21:05:36.421Z"
+  },
+  {
     "packageName": "acc-ai-cli-agent",
     "version": "1.0.0",
     "scriptType": "postinstall",
