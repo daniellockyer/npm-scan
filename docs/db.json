@@ -1,5 +1,13 @@
 [
   {
+    "packageName": "agentic-qe",
+    "version": "3.0.0",
+    "scriptType": "postinstall",
+    "scriptContent": "cd v3 && npm install",
+    "previousVersion": "2.8.2",
+    "timestamp": "2026-01-21T13:42:09.665Z"
+  },
+  {
     "packageName": "huashu-cc",
     "version": "1.0.4",
     "scriptType": "postinstall",
