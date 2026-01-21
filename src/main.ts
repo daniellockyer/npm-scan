@@ -1,7 +1,11 @@
 import "dotenv/config";
 import Piscina from "piscina";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { startProducer } from "./producer.ts";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 if (process.env.GITHUB_ACTIONS === 'true') {
   console.log("Exécution dans une GitHub Action : activation du timeout de 5 minutes.");
@@ -13,6 +17,7 @@ if (process.env.GITHUB_ACTIONS === 'true') {
 } else {
   console.log("Exécution locale : pas de timeout activé.");
 }
+
 
 function nowIso(): string {
   return new Date().toISOString();
