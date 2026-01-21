@@ -164,29 +164,20 @@ async function processPackage(job: { data: PackageJobData }): Promise<void> {
   const latestHasPostinstall = hasScript(latestDoc, "postinstall");
 
   let diffOutput: string | null = null;
-  if ((latestHasPreinstall || latestHasPostinstall) && previous) {
+  if (
+    (latestHasPreinstall || latestHasPostinstall) &&
+    previous &&
+    alerts.length
+  ) {
     process.stdout.write(
       `[${nowIso()}] ${packageName}: Running npm diff ${previous} -> ${latest}\n`,
     );
 
     diffOutput = await runNpmDiff(packageName, previous, latest);
-
     if (diffOutput) {
       process.stdout.write(
         `[${nowIso()}] ${packageName}: npm diff completed (${diffOutput.split("\n").length} lines)\n`,
       );
-      // Log first few lines of diff for visibility
-      const lines = diffOutput.split("\n").slice(0, 10);
-      if (lines.length > 0) {
-        process.stdout.write(
-          `[${nowIso()}] ${packageName}: diff preview:\n${lines.join("\n")}\n`,
-        );
-        if (diffOutput.split("\n").length > 10) {
-          process.stdout.write(
-            `[${nowIso()}] ${packageName}: ... (${diffOutput.split("\n").length - 10} more lines)\n`,
-          );
-        }
-      }
     } else {
       process.stdout.write(
         `[${nowIso()}] ${packageName}: npm diff failed or produced no output\n`,
