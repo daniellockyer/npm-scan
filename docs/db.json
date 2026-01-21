@@ -1,5 +1,13 @@
 [
   {
+    "packageName": "acc-ai-cli-agent",
+    "version": "1.0.0",
+    "scriptType": "postinstall",
+    "scriptContent": "node initializeConfig.js",
+    "previousVersion": null,
+    "timestamp": "2026-01-21T17:50:12.189Z"
+  },
+  {
     "packageName": "sra-testing-test",
     "version": "3.0.7",
     "scriptType": "postinstall",
