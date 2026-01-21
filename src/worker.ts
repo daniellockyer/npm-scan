@@ -77,7 +77,7 @@ function pickLatestAndPreviousVersions(doc: Packument): {
   return { latest, previous };
 }
 
-async function processPackage(job: PackageJobData): Promise<void> {
+export async function processPackage(job: PackageJobData): Promise<void> {
   const { packageName } = job;
   const registryBaseUrl = process.env.NPM_REGISTRY_URL || DEFAULT_REGISTRY_URL;
 
@@ -160,8 +160,3 @@ async function processPackage(job: PackageJobData): Promise<void> {
 }
 
 
-packageQueue.process(processPackage);
-
-process.stdout.write(
-  `[${nowIso()}] Worker started\n`,
-);

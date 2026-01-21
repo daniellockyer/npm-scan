@@ -81,7 +81,7 @@ async function getInitialSince(
   return dbInfo.update_seq;
 }
 
-async function run(): Promise<void> {
+export async function startProducer(): Promise<void> {
   const replicateDbUrl =
     process.env.NPM_REPLICATE_DB_URL || DEFAULT_REPLICATE_DB_URL;
   const changesUrl = process.env.NPM_CHANGES_URL || DEFAULT_CHANGES_URL;
@@ -155,10 +155,4 @@ async function run(): Promise<void> {
   }
 }
 
-run().catch((e) => {
-  const errorMessage =
-    e instanceof Error && e.stack ? e.stack : getErrorMessage(e);
-  process.stderr.write(`[${nowIso()}] fatal: ${errorMessage}\n`);
-  process.exitCode = 1;
-  process.exit(1);
-});
+
