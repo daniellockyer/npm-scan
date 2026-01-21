@@ -8,12 +8,15 @@
 import "dotenv/config";
 import { Worker } from "bullmq";
 import semver from "semver";
+import { exec } from "child_process";
+import { promisify } from "util";
 import { type PackageJobData } from "./queue.ts";
 import { fetchPackument, type Packument } from "./lib/fetch-packument.ts";
 import { sendCombinedScriptAlertNotifications, type Alert } from "./lib/notifications.ts";
 import { isScriptAllowed } from "./lib/script-allowlist.ts";
 
 const DEFAULT_REGISTRY_URL = "https://registry.npmjs.org/";
+const execAsync = promisify(exec);
 
 interface VersionDoc {
   scripts?: {
@@ -52,6 +55,19 @@ function getScript(
   scriptName: string,
 ): string {
   return versionDoc?.scripts?.[scriptName] ?? "";
+}
+
+async function runNpmDiff(packageName: string, fromVersion: string, toVersion: string): Promise<string | null> {
+  const command = `npm diff ${packageName}@${fromVersion} ${packageName}@${toVersion}`;
+  try {
+    const { stdout } = await execAsync(command, { timeout: 30000 }); // 30 second timeout
+    return stdout.trim();
+  } catch (error) {
+    process.stderr.write(
+      `[${nowIso()}] WARN npm diff failed for ${packageName}@${fromVersion} -> ${packageName}@${toVersion}: ${getErrorMessage(error)}\n`,
+    );
+    return null;
+  }
 }
 
 function pickLatestAndPreviousVersions(doc: Packument): {
@@ -133,6 +149,36 @@ async function processPackage(job: { data: PackageJobData }): Promise<void> {
       } else {
         alerts.push({ scriptType, action: "changed", latestCmd, prevCmd });
       }
+    }
+  }
+
+  // Run npm diff if latest version has pre/post-install scripts
+  const latestHasPreinstall = hasScript(latestDoc, "preinstall");
+  const latestHasPostinstall = hasScript(latestDoc, "postinstall");
+
+  if ((latestHasPreinstall || latestHasPostinstall) && previous) {
+    process.stdout.write(
+      `[${nowIso()}] ${packageName}: Running npm diff ${previous} -> ${latest}\n`,
+    );
+
+    const diffOutput = await runNpmDiff(packageName, previous, latest);
+
+    if (diffOutput) {
+      process.stdout.write(
+        `[${nowIso()}] ${packageName}: npm diff completed (${diffOutput.split('\n').length} lines)\n`,
+      );
+      // Log first few lines of diff for visibility
+      const lines = diffOutput.split('\n').slice(0, 10);
+      if (lines.length > 0) {
+        process.stdout.write(`[${nowIso()}] ${packageName}: diff preview:\n${lines.join('\n')}\n`);
+        if (diffOutput.split('\n').length > 10) {
+          process.stdout.write(`[${nowIso()}] ${packageName}: ... (${diffOutput.split('\n').length - 10} more lines)\n`);
+        }
+      }
+    } else {
+      process.stdout.write(
+        `[${nowIso()}] ${packageName}: npm diff failed or produced no output\n`,
+      );
     }
   }
 
