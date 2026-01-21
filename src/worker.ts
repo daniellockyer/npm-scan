@@ -12,7 +12,10 @@ import { exec } from "child_process";
 import { promisify } from "util";
 import { type PackageJobData } from "./queue.ts";
 import { fetchPackument, type Packument } from "./lib/fetch-packument.ts";
-import { sendCombinedScriptAlertNotifications, type Alert } from "./lib/notifications.ts";
+import {
+  sendCombinedScriptAlertNotifications,
+  type Alert,
+} from "./lib/notifications.ts";
 import { isScriptAllowed } from "./lib/script-allowlist.ts";
 
 const DEFAULT_REGISTRY_URL = "https://registry.npmjs.org/";
@@ -57,8 +60,12 @@ function getScript(
   return versionDoc?.scripts?.[scriptName] ?? "";
 }
 
-async function runNpmDiff(packageName: string, fromVersion: string, toVersion: string): Promise<string | null> {
-  const command = `npm diff ${packageName}@${fromVersion} ${packageName}@${toVersion}`;
+async function runNpmDiff(
+  packageName: string,
+  fromVersion: string,
+  toVersion: string,
+): Promise<string | null> {
+  const command = `npm diff ${packageName}@${fromVersion} ${packageName}@${toVersion} --diff-ignore-all-space`;
   try {
     const { stdout } = await execAsync(command, { timeout: 30000 }); // 30 second timeout
     return stdout.trim();
@@ -165,14 +172,18 @@ async function processPackage(job: { data: PackageJobData }): Promise<void> {
 
     if (diffOutput) {
       process.stdout.write(
-        `[${nowIso()}] ${packageName}: npm diff completed (${diffOutput.split('\n').length} lines)\n`,
+        `[${nowIso()}] ${packageName}: npm diff completed (${diffOutput.split("\n").length} lines)\n`,
       );
       // Log first few lines of diff for visibility
-      const lines = diffOutput.split('\n').slice(0, 10);
+      const lines = diffOutput.split("\n").slice(0, 10);
       if (lines.length > 0) {
-        process.stdout.write(`[${nowIso()}] ${packageName}: diff preview:\n${lines.join('\n')}\n`);
-        if (diffOutput.split('\n').length > 10) {
-          process.stdout.write(`[${nowIso()}] ${packageName}: ... (${diffOutput.split('\n').length - 10} more lines)\n`);
+        process.stdout.write(
+          `[${nowIso()}] ${packageName}: diff preview:\n${lines.join("\n")}\n`,
+        );
+        if (diffOutput.split("\n").length > 10) {
+          process.stdout.write(
+            `[${nowIso()}] ${packageName}: ... (${diffOutput.split("\n").length - 10} more lines)\n`,
+          );
         }
       }
     } else {
@@ -183,7 +194,9 @@ async function processPackage(job: { data: PackageJobData }): Promise<void> {
   }
 
   if (alerts.length > 0) {
-    const prevTxt = previous ? ` (prev: ${previous})` : " (first publish / unknown prev)";
+    const prevTxt = previous
+      ? ` (prev: ${previous})`
+      : " (first publish / unknown prev)";
     for (const alert of alerts) {
       process.stdout.write(
         `[${nowIso()}] 🚨 MALICIOUS PACKAGE DETECTED: ${alert.scriptType} ${alert.action}: ${packageName}@${latest}${prevTxt}\n` +
