@@ -11,6 +11,7 @@ import semver from "semver";
 import { type PackageJobData } from "./queue.ts";
 import { fetchPackument, type Packument } from "./lib/fetch-packument.ts";
 import { sendCombinedScriptAlertNotifications, type Alert } from "./lib/notifications.ts";
+import { isScriptAllowed } from "./lib/script-allowlist.ts";
 
 const DEFAULT_REGISTRY_URL = "https://registry.npmjs.org/";
 
@@ -117,10 +118,21 @@ async function processPackage(job: { data: PackageJobData }): Promise<void> {
     const latestCmd = getScript(latestDoc, scriptType);
     const prevCmd = prevDoc ? getScript(prevDoc, scriptType) : "";
 
+    if (latestHas && isScriptAllowed(latestCmd)) {
+      process.stdout.write(
+        `[${nowIso()}] ${packageName}: ${scriptType} script allowed (ignored): ${JSON.stringify(latestCmd)}\n`,
+      );
+      continue;
+    }
+
     if (latestHas && !prevHas) {
       alerts.push({ scriptType, action: "added", latestCmd, prevCmd: null });
     } else if (latestHas && prevHas && latestCmd !== prevCmd) {
-      alerts.push({ scriptType, action: "changed", latestCmd, prevCmd });
+      if (isScriptAllowed(prevCmd)) {
+        alerts.push({ scriptType, action: "added", latestCmd, prevCmd: null });
+      } else {
+        alerts.push({ scriptType, action: "changed", latestCmd, prevCmd });
+      }
     }
   }
 
