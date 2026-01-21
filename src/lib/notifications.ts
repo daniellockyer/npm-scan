@@ -150,44 +150,49 @@ This could be a security risk. Please investigate.
   );
 }
 
-export async function sendScriptAlertNotifications(
+export type Alert = {
+  scriptType: "preinstall" | "postinstall";
+  action: "added" | "changed";
+  latestCmd: string;
+  prevCmd: string | null;
+};
+
+export async function sendCombinedScriptAlertNotifications(
   packageName: string,
   latest: string,
   previous: string | null,
-  scriptType: "preinstall" | "postinstall",
-  latestCmd: string,
-  prevCmd: string | null,
+  alerts: Alert[],
   packument: Packument,
-  alertType: "added" | "changed",
 ): Promise<void> {
+  if (alerts.length === 0) return;
+
   const telegramBotToken = process.env.TELEGRAM_BOT_TOKEN;
   const telegramChatId = process.env.TELEGRAM_CHAT_ID;
   const discordWebhookUrl = process.env.DISCORD_WEBHOOK_URL;
   const githubToken = process.env.GITHUB_TOKEN;
-
-  const scriptLabel = scriptType.charAt(0).toUpperCase() + scriptType.slice(1);
   const npmPackageUrl = `https://www.npmjs.com/package/${encodePackageNameForRegistry(packageName)}`;
 
-  // Send Telegram notification if configured
+  // Build combined Telegram message
   if (telegramBotToken && telegramChatId) {
     try {
-      let message: string;
-      if (alertType === "added") {
-        message =
-          `🚨 <b>${scriptLabel} script added</b>\n\n` +
-          `Package: <code>${packageName}@${latest}</code>\n` +
-          `<a href="${npmPackageUrl}">View on npm</a>\n` +
-          `Previous version: ${previous ?? "none"}\n` +
-          `<code>${latestCmd.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</code>`;
-      } else {
-        message =
-          `🚨 <b>${scriptLabel} script changed</b>\n\n` +
-          `Package: <code>${packageName}@${latest}</code>\n` +
-          `<a href="${npmPackageUrl}">View on npm</a>\n` +
-          `Previous version: ${previous ?? "none"}\n` +
-          `Previous ${scriptLabel}: <code>${(prevCmd ?? "").replace(/</g, "&lt;").replace(/>/g, "&gt;")}</code>\n` +
-          `New ${scriptLabel}: <code>${latestCmd.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</code>`;
-      }
+      const alertParts = alerts.map((alert) => {
+        const scriptLabel = alert.scriptType.charAt(0).toUpperCase() + alert.scriptType.slice(1);
+        const escapedCmd = alert.latestCmd.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        if (alert.action === "added") {
+          return `• <b>${scriptLabel} added:</b> <code>${escapedCmd}</code>`;
+        } else {
+          const escapedPrev = (alert.prevCmd ?? "").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+          return `• <b>${scriptLabel} changed:</b>\n  Previous: <code>${escapedPrev}</code>\n  New: <code>${escapedCmd}</code>`;
+        }
+      });
+
+      const message =
+        `🚨 <b>Security Alert: ${alerts.length} script change${alerts.length > 1 ? "s" : ""} detected</b>\n\n` +
+        `Package: <code>${packageName}@${latest}</code>\n` +
+        `<a href="${npmPackageUrl}">View on npm</a>\n` +
+        `Previous version: ${previous ?? "none"}\n\n` +
+        alertParts.join("\n\n");
+
       await sendTelegramNotification(telegramBotToken, telegramChatId, message);
     } catch (e) {
       process.stderr.write(
@@ -196,24 +201,24 @@ export async function sendScriptAlertNotifications(
     }
   }
 
-  // Send Discord notification if configured
+  // Build combined Discord message
   if (discordWebhookUrl) {
     try {
-      let message: string;
-      if (alertType === "added") {
-        message =
-          `🚨 **${scriptLabel} script added**\n\n` +
-          `**Package:** \`${packageName}@${latest}\`\n` +
-          `**Previous version:** ${previous ?? "none"}\n` +
-          `**${scriptLabel}:** \`\`\`${latestCmd}\`\`\``;
-      } else {
-        message =
-          `🚨 **${scriptLabel} script changed**\n\n` +
-          `**Package:** \`${packageName}@${latest}\`\n` +
-          `**Previous version:** ${previous ?? "none"}\n` +
-          `**Previous ${scriptLabel}:** \`\`\`${prevCmd ?? ""}\`\`\`\n` +
-          `**New ${scriptLabel}:** \`\`\`${latestCmd}\`\`\``;
-      }
+      const alertParts = alerts.map((alert) => {
+        const scriptLabel = alert.scriptType.charAt(0).toUpperCase() + alert.scriptType.slice(1);
+        if (alert.action === "added") {
+          return `• **${scriptLabel} added:** \`\`\`${alert.latestCmd}\`\`\``;
+        } else {
+          return `• **${scriptLabel} changed:**\n  Previous: \`\`\`${alert.prevCmd ?? ""}\`\`\`\n  New: \`\`\`${alert.latestCmd}\`\`\``;
+        }
+      });
+
+      const message =
+        `🚨 **Security Alert: ${alerts.length} script change${alerts.length > 1 ? "s" : ""} detected**\n\n` +
+        `**Package:** \`${packageName}@${latest}\`\n` +
+        `**Previous version:** ${previous ?? "none"}\n\n` +
+        alertParts.join("\n\n");
+
       await sendDiscordNotification(discordWebhookUrl, message);
     } catch (e) {
       process.stderr.write(
@@ -222,23 +227,25 @@ export async function sendScriptAlertNotifications(
     }
   }
 
-  // Create GitHub issue if configured
+  // Create GitHub issues for each alert
   if (githubToken && packument.repository?.url) {
-    try {
-      await createGitHubIssue(
-        githubToken,
-        packument.repository.url,
-        packageName,
-        latest,
-        scriptType,
-        latestCmd,
-        previous,
-        alertType === "changed" ? prevCmd : null,
-      );
-    } catch (e) {
-      process.stderr.write(
-        `[${nowIso()}] WARN GitHub issue creation failed: ${getErrorMessage(e)}\n`,
-      );
+    for (const alert of alerts) {
+      try {
+        await createGitHubIssue(
+          githubToken,
+          packument.repository.url,
+          packageName,
+          latest,
+          alert.scriptType,
+          alert.latestCmd,
+          previous,
+          alert.action === "changed" ? alert.prevCmd : null,
+        );
+      } catch (e) {
+        process.stderr.write(
+          `[${nowIso()}] WARN GitHub issue creation failed: ${getErrorMessage(e)}\n`,
+        );
+      }
     }
   }
 }

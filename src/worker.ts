@@ -10,7 +10,7 @@ import { Worker } from "bullmq";
 import semver from "semver";
 import { type PackageJobData } from "./queue.ts";
 import { fetchPackument, type Packument } from "./lib/fetch-packument.ts";
-import { sendScriptAlertNotifications } from "./lib/notifications.ts";
+import { sendCombinedScriptAlertNotifications, type Alert } from "./lib/notifications.ts";
 
 const DEFAULT_REGISTRY_URL = "https://registry.npmjs.org/";
 
@@ -109,58 +109,40 @@ async function processPackage(job: { data: PackageJobData }): Promise<void> {
   const latestDoc = versions[latest];
   const prevDoc = previous ? versions[previous] : undefined;
 
-  for (const scriptType of ["postinstall", "preinstall"] as const) {
-    const latestHasScript = hasScript(latestDoc, scriptType);
-    const prevHasScript = prevDoc ? hasScript(prevDoc, scriptType) : false;
+  const alerts: Alert[] = [];
 
-    // Skip if latest version doesn't have the script
-    if (!latestHasScript) continue;
-
+  for (const scriptType of ["preinstall", "postinstall"] as const) {
+    const latestHas = hasScript(latestDoc, scriptType);
+    const prevHas = prevDoc ? hasScript(prevDoc, scriptType) : false;
     const latestCmd = getScript(latestDoc, scriptType);
-    const prevCmd = prevDoc ? getScript(prevDoc, scriptType) : null;
-    const prevTxt = previous
-      ? ` (prev: ${previous})`
-      : " (first publish / unknown prev)";
+    const prevCmd = prevDoc ? getScript(prevDoc, scriptType) : "";
 
-    // Detect script added (wasn't in previous version)
-    if (!prevHasScript) {
+    if (latestHas && !prevHas) {
+      alerts.push({ scriptType, action: "added", latestCmd, prevCmd: null });
+    } else if (latestHas && prevHas && latestCmd !== prevCmd) {
+      alerts.push({ scriptType, action: "changed", latestCmd, prevCmd });
+    }
+  }
+
+  if (alerts.length > 0) {
+    const prevTxt = previous ? ` (prev: ${previous})` : " (first publish / unknown prev)";
+    for (const alert of alerts) {
       process.stdout.write(
-        `[${nowIso()}] 🚨 MALICIOUS PACKAGE DETECTED: ${scriptType} added: ${packageName}@${latest}${prevTxt}\n` +
-          `  ${scriptType}: ${JSON.stringify(latestCmd)}\n`,
+        `[${nowIso()}] 🚨 MALICIOUS PACKAGE DETECTED: ${alert.scriptType} ${alert.action}: ${packageName}@${latest}${prevTxt}\n` +
+          (alert.action === "added"
+            ? `  ${alert.scriptType}: ${JSON.stringify(alert.latestCmd)}\n`
+            : `  Previous ${alert.scriptType}: ${JSON.stringify(alert.prevCmd)}\n` +
+              `  New ${alert.scriptType}: ${JSON.stringify(alert.latestCmd)}\n`),
       );
-
-      await sendScriptAlertNotifications(
-        packageName,
-        latest,
-        previous,
-        scriptType,
-        latestCmd,
-        null,
-        packument,
-        "added",
-      );
-      continue;
     }
 
-    // Detect script changed (both versions have it but content differs)
-    if (prevHasScript && latestCmd !== prevCmd) {
-      process.stdout.write(
-        `[${nowIso()}] 🚨 MALICIOUS PACKAGE DETECTED: ${scriptType} changed: ${packageName}@${latest}${prevTxt}\n` +
-          `  Previous ${scriptType}: ${JSON.stringify(prevCmd)}\n` +
-          `  New ${scriptType}: ${JSON.stringify(latestCmd)}\n`,
-      );
-
-      await sendScriptAlertNotifications(
-        packageName,
-        latest,
-        previous,
-        scriptType,
-        latestCmd,
-        prevCmd,
-        packument,
-        "changed",
-      );
-    }
+    await sendCombinedScriptAlertNotifications(
+      packageName,
+      latest,
+      previous,
+      alerts,
+      packument,
+    );
   }
 }
 
