@@ -88,6 +88,7 @@ export async function createGitHubIssue(
   scriptContent: string,
   previousVersion: string | null = null,
   previousScriptContent: string | null = null,
+  diffOutput: string | null = null,
 ): Promise<void> {
   const url = new URL(repoUrl);
   const pathParts = url.pathname.split("/").filter(Boolean);
@@ -118,8 +119,6 @@ ${previousScriptContent}
 \`\`\`
 ${scriptContent}
 \`\`\`
-
-This could be a security risk. Please investigate.
 `;
   } else {
     issueBody = `
@@ -129,10 +128,25 @@ A new \`${scriptType}\` script was detected in version \`${packageVersion}\` of 
 \`\`\`
 ${scriptContent}
 \`\`\`
-
-This could be a security risk. Please investigate.
 `;
   }
+
+  if (diffOutput) {
+    const diffLines = diffOutput.split('\n').slice(0, 10);
+    const truncatedDiff = diffLines.join('\n');
+    const isTruncated = diffOutput.split('\n').length > 10;
+    issueBody += `
+
+**Package Diff (${previousVersion} → ${packageVersion}):**
+\`\`\`diff
+${truncatedDiff}${isTruncated ? '\n\n... (truncated)' : ''}
+\`\`\`
+`;
+  }
+
+  issueBody += `
+
+This could be a security risk. Please investigate.`;
 
   await httpPostJson(
     apiUrl,
@@ -163,6 +177,7 @@ export async function sendCombinedScriptAlertNotifications(
   previous: string | null,
   alerts: Alert[],
   packument: Packument,
+  diffOutput: string | null = null,
 ): Promise<void> {
   if (alerts.length === 0) return;
 
@@ -186,12 +201,20 @@ export async function sendCombinedScriptAlertNotifications(
         }
       });
 
-      const message =
+      let message =
         `🚨 <b>Security Alert: ${alerts.length} script change${alerts.length > 1 ? "s" : ""} detected</b>\n\n` +
         `Package: <code>${packageName}@${latest}</code>\n` +
         `<a href="${npmPackageUrl}">View on npm</a>\n` +
         `Previous version: ${previous ?? "none"}\n\n` +
         alertParts.join("\n\n");
+
+      if (diffOutput) {
+        const diffLines = diffOutput.split('\n').slice(0, 10);
+        const truncatedDiff = diffLines.join('\n');
+        const isTruncated = diffOutput.split('\n').length > 10;
+        message += `\n\n<b>Package Diff (${previous} → ${latest}):</b>\n` +
+          `<pre><code>${truncatedDiff}${isTruncated ? '\n\n... (truncated)' : ''}</code></pre>`;
+      }
 
       await sendTelegramNotification(telegramBotToken, telegramChatId, message);
     } catch (e) {
@@ -213,11 +236,19 @@ export async function sendCombinedScriptAlertNotifications(
         }
       });
 
-      const message =
+      let message =
         `🚨 **Security Alert: ${alerts.length} script change${alerts.length > 1 ? "s" : ""} detected**\n\n` +
         `**Package:** \`${packageName}@${latest}\`\n` +
         `**Previous version:** ${previous ?? "none"}\n\n` +
         alertParts.join("\n\n");
+
+      if (diffOutput) {
+        const diffLines = diffOutput.split('\n').slice(0, 10);
+        const truncatedDiff = diffLines.join('\n');
+        const isTruncated = diffOutput.split('\n').length > 10;
+        message += `\n\n**Package Diff (${previous} → ${latest}):**\n` +
+          `\`\`\`diff\n${truncatedDiff}${isTruncated ? '\n\n... (truncated)' : ''}\n\`\`\``;
+      }
 
       await sendDiscordNotification(discordWebhookUrl, message);
     } catch (e) {
@@ -240,6 +271,7 @@ export async function sendCombinedScriptAlertNotifications(
           alert.latestCmd,
           previous,
           alert.action === "changed" ? alert.prevCmd : null,
+          diffOutput,
         );
       } catch (e) {
         process.stderr.write(

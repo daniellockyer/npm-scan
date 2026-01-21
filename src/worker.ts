@@ -163,12 +163,13 @@ async function processPackage(job: { data: PackageJobData }): Promise<void> {
   const latestHasPreinstall = hasScript(latestDoc, "preinstall");
   const latestHasPostinstall = hasScript(latestDoc, "postinstall");
 
+  let diffOutput: string | null = null;
   if ((latestHasPreinstall || latestHasPostinstall) && previous) {
     process.stdout.write(
       `[${nowIso()}] ${packageName}: Running npm diff ${previous} -> ${latest}\n`,
     );
 
-    const diffOutput = await runNpmDiff(packageName, previous, latest);
+    diffOutput = await runNpmDiff(packageName, previous, latest);
 
     if (diffOutput) {
       process.stdout.write(
@@ -213,6 +214,7 @@ async function processPackage(job: { data: PackageJobData }): Promise<void> {
       previous,
       alerts,
       packument,
+      diffOutput,
     );
   }
 }
