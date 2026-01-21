@@ -1,5 +1,13 @@
 [
   {
+    "packageName": "huashu-cc",
+    "version": "1.0.4",
+    "scriptType": "postinstall",
+    "scriptContent": "npm rebuild node-pty || echo '⚠️  node-pty 编译失败，请手动运行: npm rebuild node-pty'",
+    "previousVersion": "1.0.3",
+    "timestamp": "2026-01-21T07:23:02.214Z"
+  },
+  {
     "packageName": "pgroll",
     "version": "0.0.8",
     "scriptType": "postinstall",
