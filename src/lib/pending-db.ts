@@ -43,7 +43,7 @@ export async function getTask(): Promise<PendingTask | null> {
        await removePendingTask(firstTask.packageName, firstTask.version);
     }
    
-    return tasks.length > 0 ? tasks[0] : null;
+    return firstTask
 }
 export async function getPendingTasks(): Promise<PendingTask[]> {
     try {

