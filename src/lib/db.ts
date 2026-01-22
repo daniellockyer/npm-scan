@@ -5,7 +5,7 @@ const DB_PATH = "./docs/db.json";
 export interface Finding {
   packageName: string;
   version: string;
-  scriptType: "preinstall" | "postinstall";
+  scriptType: "preinstall" | "postinstall" | "prebuild" | "postbuild";
   scriptContent: string;
   previousVersion: string | null;
   timestamp: string;
@@ -23,7 +23,7 @@ export async function saveFinding(finding: Finding): Promise<void> {
 export async function updateFindingIssueStatus(
   packageName: string,
   version: string,
-  scriptType: "preinstall" | "postinstall",
+  scriptType: "preinstall" | "postinstall"|"prebuild" | "postbuild",
   status: boolean,
 ): Promise<void> {
   const findings = await db.read();

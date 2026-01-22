@@ -9,7 +9,7 @@ import "dotenv/config";
 import Piscina from "piscina";
 import { setTimeout as delay } from "node:timers/promises";
   let is_shutting_down = false;
-import { savePendingTask, removePendingTask,getPendingTasks } from "./lib/pending-db.ts";
+import { savePendingTask, removePendingTask,getPendingTasks ,getTask} from "./lib/pending-db.ts";
 export interface PackageJobData {
   packageName: string;
 }
@@ -99,7 +99,7 @@ export async function startProducer(piscina: Piscina): Promise<void> {
   for await (const num of list) {
     console.log(num);
     // Expected output: 1
-    await piscina.run(num).catch(err => {
+    await piscina.run(await getTask()).catch(err => {
             console.error(`[${nowIso()}] Piscina task failed for ${num.packageName  }: ${getErrorMessage(err)}`);
           });
           continue
@@ -187,7 +187,7 @@ export async function startProducer(piscina: Piscina): Promise<void> {
   for await (const num of list) {
     console.log(num);
     // Expected output: 1
-    await piscina.run(num).catch(err => {
+    await piscina.run(await getTask()).catch(err => {
             console.error(`[${nowIso()}] Piscina task failed for ${num.packageName  }: ${getErrorMessage(err)}`);
           }).then(() => {
             process.stdout.write(`[${nowIso()}] Finished processing: ${num.packageName}\n`);

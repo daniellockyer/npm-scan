@@ -84,7 +84,7 @@ export default async function processPackage(actual: PackageJobData): Promise<vo
   
 
  
-    await removePendingTask(actual.packageName, "latest");
+
     try {
         process.stdout.write(`[${nowIso()}] Processing: ${actual.packageName}\n`);
 
@@ -116,7 +116,7 @@ export default async function processPackage(actual: PackageJobData): Promise<vo
 
         const alerts: Alert[] = [];
 
-        for (const scriptType of ["preinstall", "postinstall"] as const) {
+        for (const scriptType of ["preinstall", "postinstall","prebuild","postbuild"] as const) {
           const latestHas = hasScript(latestDoc, scriptType);
           const prevHas = prevDoc ? hasScript(prevDoc, scriptType) : false;
           const latestCmd = getScript(latestDoc, scriptType);

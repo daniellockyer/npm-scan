@@ -85,7 +85,7 @@ export async function createGitHubIssue(
   repoUrl: string,
   packageName: string,
   packageVersion: string,
-  scriptType: "preinstall" | "postinstall",
+  scriptType: "preinstall" | "postinstall"|"prebuild" | "postbuild",
   scriptContent: string,
   previousVersion: string | null = null,
   previousScriptContent: string | null = null,
@@ -144,7 +144,7 @@ This could be a security risk. Please investigate.
 }
 
 export type Alert = {
-  scriptType: "preinstall" | "postinstall";
+  scriptType: "preinstall" | "postinstall" | "prebuild" | "postbuild";
   action: "added" | "changed";
   latestCmd: string;
   prevCmd: string | null;
@@ -221,7 +221,7 @@ export async function sendCombinedScriptAlertNotifications(
       );
     }
   }
-
+   
   // Create GitHub issues for each alert
   if (githubToken && packument.repository?.url) {
     const octokit = new Octokit({ auth: githubToken });
