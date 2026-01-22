@@ -1,42 +1,1037 @@
 [
   {
-    "packageName": "polyfill-common",
+    "packageName": "@matpb/mysql-mcp-server",
     "version": "latest",
-    "timestamp": "2026-01-22T15:22:51.662Z"
+    "timestamp": "2026-01-22T16:27:12.910Z"
   },
   {
-    "packageName": "wiggum-cli",
+    "packageName": "@modern-js/plugin-module-vue",
     "version": "latest",
-    "timestamp": "2026-01-22T15:22:51.647Z"
+    "timestamp": "2026-01-22T16:27:12.909Z"
   },
   {
-    "packageName": "@atlassian-test-staging/synth-check",
+    "packageName": "@modern-js/plugin-module-polyfill",
     "version": "latest",
-    "timestamp": "2026-01-22T15:22:51.645Z"
+    "timestamp": "2026-01-22T16:27:12.908Z"
   },
   {
-    "packageName": "@bitwarden/commercial-sdk-internal",
+    "packageName": "@modern-js/sandpack-react",
     "version": "latest",
-    "timestamp": "2026-01-22T15:22:40.453Z"
+    "timestamp": "2026-01-22T16:27:01.811Z"
   },
   {
-    "packageName": "@bitwarden/sdk-internal",
+    "packageName": "@buynomics-lib/bn-shared",
     "version": "latest",
-    "timestamp": "2026-01-22T15:22:40.436Z"
+    "timestamp": "2026-01-22T16:27:01.811Z"
   },
   {
-    "packageName": "@ikalogic/at1000",
+    "packageName": "@tiba-spark/client-shared-lib",
     "version": "latest",
-    "timestamp": "2026-01-22T15:22:40.433Z"
+    "timestamp": "2026-01-22T16:27:01.810Z"
   },
   {
-    "packageName": "@lightdash/cli",
+    "packageName": "@hievilmath/browser-formidavim",
     "version": "latest",
-    "timestamp": "2026-01-22T15:22:29.196Z"
+    "timestamp": "2026-01-22T16:27:01.809Z"
+  },
+  {
+    "packageName": "@modern-js/upgrade",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:27:01.808Z"
+  },
+  {
+    "packageName": "@versini/sassysaint",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:27:01.807Z"
+  },
+  {
+    "packageName": "@lcdp/api-react-rest-client",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:27:01.807Z"
+  },
+  {
+    "packageName": "design-system-senai-react",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:27:01.806Z"
+  },
+  {
+    "packageName": "@embedreach/components",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:27:01.805Z"
+  },
+  {
+    "packageName": "@modern-js/server",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:27:01.804Z"
+  },
+  {
+    "packageName": "@fern-api/fdr-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:50.755Z"
+  },
+  {
+    "packageName": "@nightlylabs/dex-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:50.755Z"
+  },
+  {
+    "packageName": "@modern-js/plugin-module-node-polyfill",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:50.754Z"
+  },
+  {
+    "packageName": "@extrahorizon/exh-cli",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:50.753Z"
+  },
+  {
+    "packageName": "@pipedream/jira_data_center",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:50.752Z"
+  },
+  {
+    "packageName": "@canton-network/wallet-gateway-remote",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:50.752Z"
+  },
+  {
+    "packageName": "@modern-js/plugin-module-import",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:50.751Z"
+  },
+  {
+    "packageName": "@canton-network/dapp-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:50.750Z"
+  },
+  {
+    "packageName": "@canton-network/core-splice-provider",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:50.749Z"
+  },
+  {
+    "packageName": "@modern-js/plugin-module-banner",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:39.793Z"
+  },
+  {
+    "packageName": "@canton-network/core-wallet-ui-components",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:39.648Z"
+  },
+  {
+    "packageName": "@canton-network/core-wallet-user-rpc-client",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:39.647Z"
+  },
+  {
+    "packageName": "@modern-js/plugin-module-babel",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:39.647Z"
+  },
+  {
+    "packageName": "@canton-network/core-wallet-store-sql",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:39.646Z"
+  },
+  {
+    "packageName": "@dfinity/gix-components",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:39.645Z"
+  },
+  {
+    "packageName": "@canton-network/core-wallet-store-inmemory",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:39.645Z"
+  },
+  {
+    "packageName": "deepseek-coder-agent-cli",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:39.644Z"
+  },
+  {
+    "packageName": "@0dotxyz/p0-ts-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:39.643Z"
+  },
+  {
+    "packageName": "@fern-api/ui-core-utils",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:39.643Z"
+  },
+  {
+    "packageName": "@modern-js/tailwindcss-generator",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:39.642Z"
+  },
+  {
+    "packageName": "@canton-network/core-signing-internal",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:39.641Z"
+  },
+  {
+    "packageName": "@olbrain/cdp-api-mcp",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:39.640Z"
+  },
+  {
+    "packageName": "@canton-network/core-signing-store-sql",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:39.639Z"
+  },
+  {
+    "packageName": "@okta/odyssey-design-tokens",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:28.793Z"
+  },
+  {
+    "packageName": "@canton-network/core-wallet-store",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:28.689Z"
+  },
+  {
+    "packageName": "@canton-network/core-wallet-dapp-rpc-client",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:28.688Z"
+  },
+  {
+    "packageName": "@lobehub/ui",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:28.688Z"
+  },
+  {
+    "packageName": "@flarehr/superhero-account-registry",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:28.687Z"
+  },
+  {
+    "packageName": "@modern-js/storybook-next-generator",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:28.686Z"
+  },
+  {
+    "packageName": "@canton-network/core-wallet-dapp-remote-rpc-client",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:28.685Z"
+  },
+  {
+    "packageName": "@canton-network/core-signing-participant",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:28.685Z"
+  },
+  {
+    "packageName": "@canton-network/core-ledger-client",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:28.684Z"
+  },
+  {
+    "packageName": "@canton-network/core-splice-client",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:28.684Z"
+  },
+  {
+    "packageName": "@nuxtjs/snipcart",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:28.683Z"
+  },
+  {
+    "packageName": "polotno-node",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:28.682Z"
+  },
+  {
+    "packageName": "@canton-network/core-signing-fireblocks",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:17.745Z"
+  },
+  {
+    "packageName": "@modern-js/ssg-generator",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:17.744Z"
+  },
+  {
+    "packageName": "@canton-network/core-signing-blockdaemon",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:17.744Z"
+  },
+  {
+    "packageName": "@canton-network/core-signing-lib",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:17.743Z"
+  },
+  {
+    "packageName": "footballsim",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:17.742Z"
+  },
+  {
+    "packageName": "@canton-network/core-wallet-auth",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:17.742Z"
+  },
+  {
+    "packageName": "@decaf-ts/decoration",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:17.741Z"
+  },
+  {
+    "packageName": "@modern-js/server-generator",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:17.740Z"
+  },
+  {
+    "packageName": "@canton-network/core-token-standard",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:17.739Z"
+  },
+  {
+    "packageName": "@canton-network/core-rpc-transport",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:06.738Z"
+  },
+  {
+    "packageName": "@modern-js/router-v5-generator",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:06.737Z"
+  },
+  {
+    "packageName": "@canton-network/core-types",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:06.737Z"
+  },
+  {
+    "packageName": "@canton-network/core-tx-visualizer",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:06.736Z"
+  },
+  {
+    "packageName": "svg-bbox",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:06.735Z"
+  },
+  {
+    "packageName": "@canton-network/core-rpc-errors",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:06.735Z"
+  },
+  {
+    "packageName": "@hestia-earth/utils",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:06.734Z"
   },
   {
     "packageName": "@atlassian-test-prod/synth-check",
     "version": "latest",
-    "timestamp": "2026-01-22T15:22:29.192Z"
+    "timestamp": "2026-01-22T16:26:06.733Z"
+  },
+  {
+    "packageName": "@canton-network/core-ledger-proto",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:06.733Z"
+  },
+  {
+    "packageName": "@modern-js/mwa-generator",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:06.732Z"
+  },
+  {
+    "packageName": "journalowl-mcp",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:26:06.731Z"
+  },
+  {
+    "packageName": "@modern-js/monorepo-tools",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:55.735Z"
+  },
+  {
+    "packageName": "@acecchini/dashboard-components",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:55.734Z"
+  },
+  {
+    "packageName": "@agentsmith.bgd/as-components",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:55.734Z"
+  },
+  {
+    "packageName": "@modern-js/module-tools",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:55.733Z"
+  },
+  {
+    "packageName": "abtn-faux",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:55.732Z"
+  },
+  {
+    "packageName": "use-state-debounced",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:55.732Z"
+  },
+  {
+    "packageName": "@codemieai/cdk",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:44.751Z"
+  },
+  {
+    "packageName": "@gatekeeperx/cordova-plugin-devicex",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:44.750Z"
+  },
+  {
+    "packageName": "@mindly/ui-components",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:44.750Z"
+  },
+  {
+    "packageName": "vizor_mvc",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:33.752Z"
+  },
+  {
+    "packageName": "arbentia-dataverse-mcp",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:33.751Z"
+  },
+  {
+    "packageName": "workflow-agent-cli",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:33.750Z"
+  },
+  {
+    "packageName": "@atlassian-test-prod/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:33.750Z"
+  },
+  {
+    "packageName": "@genexus/designer-layout-win",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:33.749Z"
+  },
+  {
+    "packageName": "@genexus/designer-web-controls-library-abstract",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:33.749Z"
+  },
+  {
+    "packageName": "@genexus/designer-web-controls-library-designers",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:33.747Z"
+  },
+  {
+    "packageName": "@genexus/designer-abstract-layout",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:22.806Z"
+  },
+  {
+    "packageName": "@genexus/designer-common-components",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:22.805Z"
+  },
+  {
+    "packageName": "mqw1aoo7stgagetg7byy6zprnuchpoi8guvx",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:22.804Z"
+  },
+  {
+    "packageName": "@genexus/designer-common-layout",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:22.804Z"
+  },
+  {
+    "packageName": "@genexus/designer-common",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:22.803Z"
+  },
+  {
+    "packageName": "codemie-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:22.802Z"
+  },
+  {
+    "packageName": "@lwc/sfdx-local-dev-dist",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:11.739Z"
+  },
+  {
+    "packageName": "@fishjam-cloud/react-client",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:11.738Z"
+  },
+  {
+    "packageName": "@lwc/lwc-dev-server",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:11.738Z"
+  },
+  {
+    "packageName": "@lwc/sfdc-lwc-compiler",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:00.780Z"
+  },
+  {
+    "packageName": "trix-ui",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:00.779Z"
+  },
+  {
+    "packageName": "@lwc/hmr-client",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:00.779Z"
+  },
+  {
+    "packageName": "@okta/odyssey-contribution-tooling",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:00.778Z"
+  },
+  {
+    "packageName": "@lwc/metadata",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:00.778Z"
+  },
+  {
+    "packageName": "@webitel/ui-chats",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:00.777Z"
+  },
+  {
+    "packageName": "@lwc/dev-server-plugin-lex",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:00.776Z"
+  },
+  {
+    "packageName": "@lwc/lwc-dev-server-types",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:00.776Z"
+  },
+  {
+    "packageName": "easyrlm",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:00.775Z"
+  },
+  {
+    "packageName": "@lwc/sfdc-compiler-utils",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:25:00.774Z"
+  },
+  {
+    "packageName": "vite-plugin-version-bumper",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:49.782Z"
+  },
+  {
+    "packageName": "@vertesia/cli",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:49.781Z"
+  },
+  {
+    "packageName": "@streamlayer/web-os",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:49.780Z"
+  },
+  {
+    "packageName": "@vertesia/workflow",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:49.780Z"
+  },
+  {
+    "packageName": "@aboutcircles/sdk",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:49.779Z"
+  },
+  {
+    "packageName": "react-native-security-checks",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:49.779Z"
+  },
+  {
+    "packageName": "@vertesia/ui",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:49.778Z"
+  },
+  {
+    "packageName": "@streamlayer/react",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:49.778Z"
+  },
+  {
+    "packageName": "@aboutcircles/sdk-runner",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:49.777Z"
+  },
+  {
+    "packageName": "@fishjam-cloud/ts-client",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:49.776Z"
+  },
+  {
+    "packageName": "@vertesia/tools-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:49.775Z"
+  },
+  {
+    "packageName": "@vertesia/react",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:38.497Z"
+  },
+  {
+    "packageName": "@streamlayer/react-ui",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:38.496Z"
+  },
+  {
+    "packageName": "@fishjam-cloud/react-native-client",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:38.495Z"
+  },
+  {
+    "packageName": "@aboutcircles/sdk-invitations",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:38.495Z"
+  },
+  {
+    "packageName": "@vertesia/memory-cli",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:38.494Z"
+  },
+  {
+    "packageName": "@vertesia/memory-commands",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:38.494Z"
+  },
+  {
+    "packageName": "@streamlayer/react-polyfills",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:38.493Z"
+  },
+  {
+    "packageName": "@fishjam-cloud/webrtc-client",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:38.492Z"
+  },
+  {
+    "packageName": "@aboutcircles/sdk-transfers",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:38.492Z"
+  },
+  {
+    "packageName": "@vertesia/client",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:38.491Z"
+  },
+  {
+    "packageName": "@streamlayer/sdk-web-anonymous-auth",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:38.490Z"
+  },
+  {
+    "packageName": "@vertesia/build-tools",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:38.490Z"
+  },
+  {
+    "packageName": "@aboutcircles/sdk-pathfinder",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:38.489Z"
+  },
+  {
+    "packageName": "@vertesia/memory",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:38.488Z"
+  },
+  {
+    "packageName": "@streamlayer/sdk-web",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.609Z"
+  },
+  {
+    "packageName": "@vertesia/common",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.608Z"
+  },
+  {
+    "packageName": "@aboutcircles/sdk-rpc",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.608Z"
+  },
+  {
+    "packageName": "@vertesia/plugin-builder",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.605Z"
+  },
+  {
+    "packageName": "@streamlayer/sdk-web-analytics",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.604Z"
+  },
+  {
+    "packageName": "@nc-global/glaze-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.604Z"
+  },
+  {
+    "packageName": "@vertesia/json",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.603Z"
+  },
+  {
+    "packageName": "@streamlayer/sdk-web-features",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.603Z"
+  },
+  {
+    "packageName": "@vertesia/create-worker",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.602Z"
+  },
+  {
+    "packageName": "@aboutcircles/sdk-core",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.602Z"
+  },
+  {
+    "packageName": "@vertesia/create-plugin",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.601Z"
+  },
+  {
+    "packageName": "@streamlayer/feature-gamification",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.600Z"
+  },
+  {
+    "packageName": "test-web-ui-kit1",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.600Z"
+  },
+  {
+    "packageName": "@calimero-network/mero-js",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.599Z"
+  },
+  {
+    "packageName": "@aboutcircles/sdk-profiles",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.599Z"
+  },
+  {
+    "packageName": "@vertesia/converters",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.598Z"
+  },
+  {
+    "packageName": "@streamlayer/sdk-web-core",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:27.597Z"
+  },
+  {
+    "packageName": "@vertesia/api-fetch-client",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:16.580Z"
+  },
+  {
+    "packageName": "@grafana/ui",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:16.580Z"
+  },
+  {
+    "packageName": "@aboutcircles/sdk-utils",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:16.579Z"
+  },
+  {
+    "packageName": "@streamlayer/sdk-web-notifications",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:16.574Z"
+  },
+  {
+    "packageName": "opencode-bonfire",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:16.573Z"
+  },
+  {
+    "packageName": "sixtyone",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:16.573Z"
+  },
+  {
+    "packageName": "@engineerix/ix-swcl",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:16.572Z"
+  },
+  {
+    "packageName": "@streamlayer/sdk-web-api",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:16.571Z"
+  },
+  {
+    "packageName": "@aboutcircles/sdk-abis",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:16.571Z"
+  },
+  {
+    "packageName": "polyfill-commons",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:16.570Z"
+  },
+  {
+    "packageName": "@streamlayer/sdk-web-interfaces",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:16.569Z"
+  },
+  {
+    "packageName": "@aboutcircles/sdk-types",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:16.569Z"
+  },
+  {
+    "packageName": "@streamlayer/sdk-web-storage",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:05.625Z"
+  },
+  {
+    "packageName": "@streamlayer/sdk-web-logger",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:05.625Z"
+  },
+  {
+    "packageName": "@streamlayer/sdk-web-types",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:05.625Z"
+  },
+  {
+    "packageName": "@grafana/schema",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:05.624Z"
+  },
+  {
+    "packageName": "@atlassian-test-prod/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:24:05.623Z"
+  },
+  {
+    "packageName": "@materializeinc/sql-pretty",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:52.952Z"
+  },
+  {
+    "packageName": "@grafana/runtime",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:52.952Z"
+  },
+  {
+    "packageName": "@caloti/shared-utils",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:52.951Z"
+  },
+  {
+    "packageName": "@schematichq/schematic-typescript-node",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:41.782Z"
+  },
+  {
+    "packageName": "@grafana/prometheus",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:41.781Z"
+  },
+  {
+    "packageName": "@caloti/types",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:41.781Z"
+  },
+  {
+    "packageName": "@grafana/i18n",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:41.780Z"
+  },
+  {
+    "packageName": "@dylandepass/helix-product-shared",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:41.780Z"
+  },
+  {
+    "packageName": "@gearbox-protocol/permissionless-ui",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:30.778Z"
+  },
+  {
+    "packageName": "@grafana/flamegraph",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:30.777Z"
+  },
+  {
+    "packageName": "@grafana/e2e-selectors",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:24.499Z"
+  },
+  {
+    "packageName": "@materializeinc/sql-lexer",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:24.498Z"
+  },
+  {
+    "packageName": "@grafana/data",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:13.486Z"
+  },
+  {
+    "packageName": "web-agent-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:13.486Z"
+  },
+  {
+    "packageName": "@decaf-ts/logging",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:13.485Z"
+  },
+  {
+    "packageName": "@webitel/ui-chats",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:13.485Z"
+  },
+  {
+    "packageName": "@atlassian-test-prod/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:13.484Z"
+  },
+  {
+    "packageName": "@browserless/cli",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:13.484Z"
+  },
+  {
+    "packageName": "browserless",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:13.483Z"
+  },
+  {
+    "packageName": "@grafana/alerting",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:00.813Z"
+  },
+  {
+    "packageName": "@browserless/pdf",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:00.813Z"
+  },
+  {
+    "packageName": "@browserless/screenshot",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:00.812Z"
+  },
+  {
+    "packageName": "@browserless/goto",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:00.812Z"
+  },
+  {
+    "packageName": "raain-app",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:00.811Z"
+  },
+  {
+    "packageName": "@carichat/common",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:00.811Z"
+  },
+  {
+    "packageName": "@browserless/screencast",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:00.810Z"
+  },
+  {
+    "packageName": "@browserless/lighthouse",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:00.810Z"
+  },
+  {
+    "packageName": "@browserless/function",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:23:00.809Z"
+  },
+  {
+    "packageName": "@browserless/test",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:49.606Z"
+  },
+  {
+    "packageName": "@browserless/errors",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:49.605Z"
+  },
+  {
+    "packageName": "react-markup",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:49.605Z"
+  },
+  {
+    "packageName": "polyfill-commons",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:49.604Z"
+  },
+  {
+    "packageName": "scheduler",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:38.629Z"
+  },
+  {
+    "packageName": "use-sync-external-store",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:38.628Z"
+  },
+  {
+    "packageName": "use-subscription",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:38.628Z"
+  },
+  {
+    "packageName": "@firestitch/tabs",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:38.627Z"
+  },
+  {
+    "packageName": "react-test-renderer",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:38.626Z"
+  },
+  {
+    "packageName": "react-refresh",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:27.679Z"
+  },
+  {
+    "packageName": "@aurodesignsystem-dev/auro-backtotop",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:27.678Z"
+  },
+  {
+    "packageName": "ton-provider-system",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:27.678Z"
+  },
+  {
+    "packageName": "react-reconciler",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:27.677Z"
+  },
+  {
+    "packageName": "wiggum-cli",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:27.677Z"
+  },
+  {
+    "packageName": "react-is",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:27.676Z"
+  },
+  {
+    "packageName": "react-server-dom-parcel",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:27.675Z"
+  },
+  {
+    "packageName": "react-server-dom-turbopack",
+    "version": "latest",
+    "timestamp": "2026-01-22T16:22:16.751Z"
   }
 ]
