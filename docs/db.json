@@ -1,5 +1,14 @@
 [
   {
+    "packageName": "@jacobtread/secret-sync",
+    "version": "0.1.0",
+    "scriptType": "postinstall",
+    "scriptContent": "node ./install.js",
+    "previousVersion": null,
+    "timestamp": "2026-01-22T23:13:35.197Z",
+    "issuesend": false
+  },
+  {
     "packageName": "uuu8lgd",
     "version": "1.0.28",
     "scriptType": "postinstall",
