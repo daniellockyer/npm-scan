@@ -1,1 +1,752 @@
-[]
+[
+  {
+    "packageName": "@hellboy/alert",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:24:30.192Z"
+  },
+  {
+    "packageName": "auth-monitorias-uniandes",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:24:30.191Z"
+  },
+  {
+    "packageName": "@hellboy/accordion",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:24:30.191Z"
+  },
+  {
+    "packageName": "@jhidalgo3/nomos-cli",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:24:30.190Z"
+  },
+  {
+    "packageName": "@evanp/activitypub-bot",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:24:19.457Z"
+  },
+  {
+    "packageName": "handler-playable-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:24:19.379Z"
+  },
+  {
+    "packageName": "anmo",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:24:19.378Z"
+  },
+  {
+    "packageName": "@ainoflow/n8n-nodes-ainoflow",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:24:07.092Z"
+  },
+  {
+    "packageName": "@quicklogio/quicklog",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:24:07.091Z"
+  },
+  {
+    "packageName": "beast-core-create",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:24:07.090Z"
+  },
+  {
+    "packageName": "@alicloud/polardb20170801",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:56.311Z"
+  },
+  {
+    "packageName": "@atlassian-test-prod/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:56.311Z"
+  },
+  {
+    "packageName": "atriusmaps-node-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:56.310Z"
+  },
+  {
+    "packageName": "@sekyuriti/attest",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:45.568Z"
+  },
+  {
+    "packageName": "support-kurdistan",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:34.346Z"
+  },
+  {
+    "packageName": "@bloodhoundenterprise/doodleui",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:23.577Z"
+  },
+  {
+    "packageName": "@alicloud/esa20240910",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:23.576Z"
+  },
+  {
+    "packageName": "@livestore/sync-s2",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:12.790Z"
+  },
+  {
+    "packageName": "@livestore/svelte",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:12.789Z"
+  },
+  {
+    "packageName": "@livestore/solid",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:12.788Z"
+  },
+  {
+    "packageName": "@livestore/cli",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:12.787Z"
+  },
+  {
+    "packageName": "@livestore/react",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:12.786Z"
+  },
+  {
+    "packageName": "@livestore/graphql",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:12.786Z"
+  },
+  {
+    "packageName": "@livestore/adapter-cloudflare",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:12.785Z"
+  },
+  {
+    "packageName": "@atlassian-test-prod/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:12.784Z"
+  },
+  {
+    "packageName": "harvester_sdk",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:02.025Z"
+  },
+  {
+    "packageName": "@livestore/livestore",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:02.025Z"
+  },
+  {
+    "packageName": "@runesx/api-client",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:02.024Z"
+  },
+  {
+    "packageName": "@livestore/devtools-expo",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:02.024Z"
+  },
+  {
+    "packageName": "@livestore/adapter-web",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:02.023Z"
+  },
+  {
+    "packageName": "@livestore/adapter-node",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:23:02.022Z"
+  },
+  {
+    "packageName": "@livestore/sync-electric",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.065Z"
+  },
+  {
+    "packageName": "@ibm/telemetry-js-config-generator",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.065Z"
+  },
+  {
+    "packageName": "@livestore/sqlite-wasm",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.064Z"
+  },
+  {
+    "packageName": "@ibm/telemetry-config-schema",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.064Z"
+  },
+  {
+    "packageName": "@merkl/api",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.063Z"
+  },
+  {
+    "packageName": "@livestore/sync-cf",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.063Z"
+  },
+  {
+    "packageName": "@livestore/devtools-web-common",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.062Z"
+  },
+  {
+    "packageName": "@livestore/adapter-expo",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.061Z"
+  },
+  {
+    "packageName": "@ibm/telemetry-attributes-js",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.060Z"
+  },
+  {
+    "packageName": "@ibm/plex-sans-thai-looped",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.060Z"
+  },
+  {
+    "packageName": "@ibm/plex-sans-kr",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.059Z"
+  },
+  {
+    "packageName": "@ibm/plex-sans-jp",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.059Z"
+  },
+  {
+    "packageName": "@livestore/common",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.058Z"
+  },
+  {
+    "packageName": "@ibm/plex-sans-condensed",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.058Z"
+  },
+  {
+    "packageName": "anmo",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.057Z"
+  },
+  {
+    "packageName": "@ibm/plex-sans",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.056Z"
+  },
+  {
+    "packageName": "@wdio/mcp",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.056Z"
+  },
+  {
+    "packageName": "@ibm/plex-math",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:51.055Z"
+  },
+  {
+    "packageName": "@ibm/motion",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:40.261Z"
+  },
+  {
+    "packageName": "@ibm/mobx-react-router",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:40.260Z"
+  },
+  {
+    "packageName": "@needle-tools/engine",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:40.260Z"
+  },
+  {
+    "packageName": "@ibm/mapepire-js",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:40.259Z"
+  },
+  {
+    "packageName": "@ibm/ibmi-mcp-server",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:40.258Z"
+  },
+  {
+    "packageName": "@netfoundry/docusaurus-theme",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:40.258Z"
+  },
+  {
+    "packageName": "@livestore/webmesh",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:40.257Z"
+  },
+  {
+    "packageName": "@livestore/common-cf",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:40.257Z"
+  },
+  {
+    "packageName": "@livestore/utils-dev",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:29.492Z"
+  },
+  {
+    "packageName": "@alicloud/dianjin20240628",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:29.372Z"
+  },
+  {
+    "packageName": "@livestore/wa-sqlite",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:29.372Z"
+  },
+  {
+    "packageName": "@livestore/utils",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:29.371Z"
+  },
+  {
+    "packageName": "@livestore/peer-deps",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:18.551Z"
+  },
+  {
+    "packageName": "@alicloud/agentrun20250910",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:18.550Z"
+  },
+  {
+    "packageName": "@zerodev/wallet-react",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:18.550Z"
+  },
+  {
+    "packageName": "@zerodev/wallet-core",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:18.549Z"
+  },
+  {
+    "packageName": "@package-uploader/ui",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:18.548Z"
+  },
+  {
+    "packageName": "@alicloud/ims20190815",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:18.547Z"
+  },
+  {
+    "packageName": "teen_process",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:06.266Z"
+  },
+  {
+    "packageName": "react-ui-mat",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:06.265Z"
+  },
+  {
+    "packageName": "@livestore/devtools-vite",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:06.265Z"
+  },
+  {
+    "packageName": "@decaf-ts/for-pouch",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:06.264Z"
+  },
+  {
+    "packageName": "@alicloud/polardbx20200202",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:22:06.263Z"
+  },
+  {
+    "packageName": "@dtect/security-sdk-react",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:55.477Z"
+  },
+  {
+    "packageName": "@levrbet/shared",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:55.476Z"
+  },
+  {
+    "packageName": "@alicloud/ehpcinstant20230701",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:44.693Z"
+  },
+  {
+    "packageName": "@decaf-ts/for-nest",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:44.692Z"
+  },
+  {
+    "packageName": "@atlassian-test-staging/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:44.692Z"
+  },
+  {
+    "packageName": "@zerodev/wallet-core",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:33.861Z"
+  },
+  {
+    "packageName": "@contentful/experiences-core",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:33.861Z"
+  },
+  {
+    "packageName": "@synap-core/types",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:33.860Z"
+  },
+  {
+    "packageName": "@contentful/experiences-components-react",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:33.859Z"
+  },
+  {
+    "packageName": "@contentful/experiences-validators",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:33.859Z"
+  },
+  {
+    "packageName": "extension",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:23.074Z"
+  },
+  {
+    "packageName": "@cinemaz/contracts",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:23.073Z"
+  },
+  {
+    "packageName": "com.chartboost.mediation.unity.adapter.pangle",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:23.073Z"
+  },
+  {
+    "packageName": "extension-develop",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:23.072Z"
+  },
+  {
+    "packageName": "support-kurdistan",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:12.268Z"
+  },
+  {
+    "packageName": "extension-create",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:12.267Z"
+  },
+  {
+    "packageName": "@atlassian-test-staging/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:12.266Z"
+  },
+  {
+    "packageName": "@kawaiininja/fetch",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:21:12.266Z"
+  },
+  {
+    "packageName": "@wistia/ui",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:59.929Z"
+  },
+  {
+    "packageName": "@pager/minion",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:59.929Z"
+  },
+  {
+    "packageName": "@wistia/vhs",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:49.137Z"
+  },
+  {
+    "packageName": "@package-uploader/ui",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:49.137Z"
+  },
+  {
+    "packageName": "@workday/canvas-kit-docs",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:49.136Z"
+  },
+  {
+    "packageName": "@graphql-mesh/transform-federation",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:49.136Z"
+  },
+  {
+    "packageName": "@graphql-mesh/transform-hive",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:49.135Z"
+  },
+  {
+    "packageName": "@graphql-mesh/plugin-hive",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:49.134Z"
+  },
+  {
+    "packageName": "disnibra-henry-control",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:38.360Z"
+  },
+  {
+    "packageName": "@graphql-mesh/plugin-statsd",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:38.241Z"
+  },
+  {
+    "packageName": "@graphql-mesh/migrate-config-cli",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:38.241Z"
+  },
+  {
+    "packageName": "@workday/canvas-kit-labs-react",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:38.240Z"
+  },
+  {
+    "packageName": "@workday/canvas-kit-preview-react",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:38.240Z"
+  },
+  {
+    "packageName": "@workday/canvas-kit-styling-transform",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:38.239Z"
+  },
+  {
+    "packageName": "rimelight-components",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:38.239Z"
+  },
+  {
+    "packageName": "@workday/canvas-kit-react",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:38.238Z"
+  },
+  {
+    "packageName": "@workday/canvas-kit-styling",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:38.237Z"
+  },
+  {
+    "packageName": "@pager/hapi-raven",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:38.236Z"
+  },
+  {
+    "packageName": "@workday/canvas-kit-react-fonts",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:38.235Z"
+  },
+  {
+    "packageName": "@gvnrdao/dh-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:38.235Z"
+  },
+  {
+    "packageName": "@workday/canvas-kit-preview-css",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:38.234Z"
+  },
+  {
+    "packageName": "@workday/canvas-kit-popup-stack",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:38.233Z"
+  },
+  {
+    "packageName": "@wistia/vhs-design-tokens",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:25.879Z"
+  },
+  {
+    "packageName": "@workday/canvas-kit-mcp",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:25.879Z"
+  },
+  {
+    "packageName": "@workday/canvas-kit-codemod",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:25.878Z"
+  },
+  {
+    "packageName": "@workday/canvas-kit-css",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:25.878Z"
+  },
+  {
+    "packageName": "doomcode",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:25.877Z"
+  },
+  {
+    "packageName": "@workday/canvas-kit-labs-css",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:25.877Z"
+  },
+  {
+    "packageName": "rlm-analyzer",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:25.876Z"
+  },
+  {
+    "packageName": "scv-esm",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:25.875Z"
+  },
+  {
+    "packageName": "@workrock/cli",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:25.875Z"
+  },
+  {
+    "packageName": "@channel47/dataforseo-mcp-server",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:25.874Z"
+  },
+  {
+    "packageName": "@remix_labs/mixc-starter",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:15.068Z"
+  },
+  {
+    "packageName": "atlas-guardrails",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:15.067Z"
+  },
+  {
+    "packageName": "@avalabs/bridge-unified",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:15.066Z"
+  },
+  {
+    "packageName": "@mhalder/qdrant-mcp-server",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:04.267Z"
+  },
+  {
+    "packageName": "@grunnverk/commands-git",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:04.149Z"
+  },
+  {
+    "packageName": "power-compass",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:04.149Z"
+  },
+  {
+    "packageName": "support-kurdistan",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:04.148Z"
+  },
+  {
+    "packageName": "beast-core-create",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:04.148Z"
+  },
+  {
+    "packageName": "ezfw-core",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:04.147Z"
+  },
+  {
+    "packageName": "@humeai/voice-react",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:04.146Z"
+  },
+  {
+    "packageName": "@humeai/voice",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:20:04.145Z"
+  },
+  {
+    "packageName": "@humeai/voice-embed-react",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:53.290Z"
+  },
+  {
+    "packageName": "@package-uploader/ui",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:53.289Z"
+  },
+  {
+    "packageName": "mjstl",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:53.289Z"
+  },
+  {
+    "packageName": "@octopusdeploy/design-system-components",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:53.288Z"
+  },
+  {
+    "packageName": "@graphql-mesh/transform-federation",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:53.287Z"
+  },
+  {
+    "packageName": "@graphql-mesh/plugin-statsd",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:53.287Z"
+  },
+  {
+    "packageName": "@graphql-mesh/plugin-hive",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:53.286Z"
+  },
+  {
+    "packageName": "@graphql-mesh/migrate-config-cli",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:53.285Z"
+  },
+  {
+    "packageName": "@graphql-mesh/transform-hive",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:53.285Z"
+  },
+  {
+    "packageName": "@jkalasas/opencode-antigravity-image",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:53.284Z"
+  },
+  {
+    "packageName": "@octopusdeploy/type-utils",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:53.283Z"
+  },
+  {
+    "packageName": "automacao-core-playwright",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:53.282Z"
+  },
+  {
+    "packageName": "parquetlens",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:53.277Z"
+  },
+  {
+    "packageName": "@opencode-ai/plugin",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:42.508Z"
+  },
+  {
+    "packageName": "@opencode-ai/sdk",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:42.507Z"
+  },
+  {
+    "packageName": "@octopusdeploy/design-system-tokens",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:42.506Z"
+  },
+  {
+    "packageName": "@octopusdeploy/design-system-icons",
+    "version": "latest",
+    "timestamp": "2026-01-22T18:19:42.505Z"
+  }
+]
