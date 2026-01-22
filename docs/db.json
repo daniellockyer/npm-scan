@@ -1,5 +1,13 @@
 [
   {
+    "packageName": "astn",
+    "version": "1.20.5",
+    "scriptType": "postinstall",
+    "scriptContent": "cd client && npm install && cd ../server && npm install && cd ..",
+    "previousVersion": "0.113.35",
+    "timestamp": "2026-01-22T09:27:20.607Z"
+  },
+  {
     "packageName": "rank253222",
     "version": "1.0.0",
     "scriptType": "postinstall",
