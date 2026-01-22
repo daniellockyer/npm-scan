@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "packageName": "polyfill-common",
+    "version": "latest",
+    "timestamp": "2026-01-22T15:22:51.662Z"
+  },
+  {
+    "packageName": "wiggum-cli",
+    "version": "latest",
+    "timestamp": "2026-01-22T15:22:51.647Z"
+  },
+  {
+    "packageName": "@atlassian-test-staging/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-22T15:22:51.645Z"
+  },
+  {
+    "packageName": "@bitwarden/commercial-sdk-internal",
+    "version": "latest",
+    "timestamp": "2026-01-22T15:22:40.453Z"
+  },
+  {
+    "packageName": "@bitwarden/sdk-internal",
+    "version": "latest",
+    "timestamp": "2026-01-22T15:22:40.436Z"
+  },
+  {
+    "packageName": "@ikalogic/at1000",
+    "version": "latest",
+    "timestamp": "2026-01-22T15:22:40.433Z"
+  },
+  {
+    "packageName": "@lightdash/cli",
+    "version": "latest",
+    "timestamp": "2026-01-22T15:22:29.196Z"
+  },
+  {
+    "packageName": "@atlassian-test-prod/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-22T15:22:29.192Z"
+  }
+]

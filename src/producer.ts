@@ -181,7 +181,7 @@ export async function startProducer(piscina: Piscina): Promise<void> {
       backoffMs = Math.min(backoffMs * 2, 30000);
     }
   };
-   if (process.env.GITHUB_ACTIONS === 'true') {
+   if (process.env.GITHUB_ACTIONS !== 'true') {
    (async () => {
     const list = await getPendingTasks();
   for await (const num of list) {
