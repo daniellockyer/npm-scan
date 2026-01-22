@@ -99,7 +99,7 @@ export async function startProducer(piscina: Piscina): Promise<void> {
   for await (const num of list) {
     console.log(num);
     // Expected output: 1
-     piscina.run(num).catch(err => {
+    await piscina.run(num).catch(err => {
             console.error(`[${nowIso()}] Piscina task failed for ${num.packageName  }: ${getErrorMessage(err)}`);
           });
           continue
@@ -143,9 +143,10 @@ export async function startProducer(piscina: Piscina): Promise<void> {
       ) {
         throw new Error("unexpected _changes response shape");
       }
-
+      console.log(`[${nowIso()}] Fetched ${changes.results.length} changes since ${since}.`);
       for (const row of changes.results) {
         if (!row || typeof row.id !== "string") continue;
+        console.log(`[${nowIso()}] Queuing package: ${JSON.stringify(row)}`);
         const name = row.id;
         if (name.startsWith("_design/")) continue;
 
@@ -186,7 +187,7 @@ export async function startProducer(piscina: Piscina): Promise<void> {
   for await (const num of list) {
     console.log(num);
     // Expected output: 1
-     piscina.run(num).catch(err => {
+    await piscina.run(num).catch(err => {
             console.error(`[${nowIso()}] Piscina task failed for ${num.packageName  }: ${getErrorMessage(err)}`);
           }).then(() => {
             process.stdout.write(`[${nowIso()}] Finished processing: ${num.packageName}\n`);
