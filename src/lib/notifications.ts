@@ -156,14 +156,16 @@ export async function sendCombinedScriptAlertNotifications(
   previous: string | null,
   alerts: Alert[],
   packument: Packument,
-): Promise<void> {
-  if (alerts.length === 0) return;
+): Promise<Alert[]> { // Changed return type
+  if (alerts.length === 0) return []; // Return empty array if no alerts
 
   const telegramBotToken = process.env.TELEGRAM_BOT_TOKEN;
   const telegramChatId = process.env.TELEGRAM_CHAT_ID;
   const discordWebhookUrl = process.env.DISCORD_WEBHOOK_URL;
   const githubToken = process.env.GITHUB_TOKEN;
   const npmPackageUrl = `https://www.npmjs.com/package/${encodePackageNameForRegistry(packageName)}`;
+
+  const successfulGithubAlerts: Alert[] = []; // Collect successful alerts
 
   // Build combined Telegram message
   if (telegramBotToken && telegramChatId) {
@@ -235,6 +237,7 @@ export async function sendCombinedScriptAlertNotifications(
           previous,
           alert.action === "changed" ? alert.prevCmd : null,
         );
+        successfulGithubAlerts.push(alert); // Add to successful alerts
       } catch (e) {
         process.stderr.write(
           `[${nowIso()}] WARN GitHub issue creation failed: ${getErrorMessage(e)}\n`,
@@ -242,4 +245,5 @@ export async function sendCombinedScriptAlertNotifications(
       }
     }
   }
+  return successfulGithubAlerts; // Return collected successful alerts
 }

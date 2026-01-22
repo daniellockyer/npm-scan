@@ -2,7 +2,7 @@ import "dotenv/config";
 import semver from "semver";
 import { fetchPackument, type Packument } from "./lib/fetch-packument.ts";
 import { sendCombinedScriptAlertNotifications, type Alert } from "./lib/notifications.ts";
-import { saveFinding, type Finding } from "./lib/db.ts";
+import { saveFinding, updateFindingIssueStatus, type Finding } from "./lib/db.ts";
 import { savePendingTask, removePendingTask,getPendingTasks } from "./lib/pending-db.ts";
 
 // This will be passed from the main thread
@@ -150,17 +150,27 @@ export default async function processPackage(actual: PackageJobData): Promise<vo
               scriptContent: alert.latestCmd,
               previousVersion: previous,
               timestamp: nowIso(),
+              issuesend: false,
             };
             await saveFinding(finding);
           }
 
-          await sendCombinedScriptAlertNotifications(
+          const successfulGithubAlerts = await sendCombinedScriptAlertNotifications(
             actual.packageName,
             latest,
             previous,
             alerts,
             packument,
           );
+
+          for (const alert of successfulGithubAlerts) {
+            await updateFindingIssueStatus(
+              actual.packageName,
+              latest,
+              alert.scriptType,
+              true,
+            );
+          }
         }
     } finally {
         process.stdout.write(`[${nowIso()}] Removing from pending queue: ${actual.packageName}\n`);
