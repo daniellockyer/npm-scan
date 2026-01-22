@@ -94,6 +94,24 @@
                 </tbody>
             </table>
         </main>
+        <hr>
+        <header>
+            <h1>Pending Tasks</h1>
+        </header>
+        <main>
+            <table id="pending-tasks-table">
+                <thead>
+                    <tr>
+                        <th>Package</th>
+                        <th>Version</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </main>
     </div>
 
     <script>
@@ -151,6 +169,47 @@
             }
         }
 
+        async function loadPendingTasks() {
+            const tbody = document.querySelector('#pending-tasks-table tbody');
+            try {
+                const response = await fetch('pending-db.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const tasks = await response.json();
+
+                if (tasks.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="3" style="text-align: center; padding: 20px;">No pending tasks.</td></tr>';
+                    return;
+                }
+
+                tbody.innerHTML = '';
+
+                tasks.forEach(task => {
+                    const row = document.createElement('tr');
+                    
+                    const packageNameCell = document.createElement('td');
+                    packageNameCell.innerHTML = `<code>${escapeHtml(task.packageName)}</code>`;
+                    
+                    const versionCell = document.createElement('td');
+                    versionCell.textContent = task.version;
+                    
+                    const timestampCell = document.createElement('td');
+                    timestampCell.textContent = new Date(task.timestamp).toLocaleString();
+                    
+                    row.appendChild(packageNameCell);
+                    row.appendChild(versionCell);
+                    row.appendChild(timestampCell);
+                    
+                    tbody.appendChild(row);
+                });
+
+            } catch (error) {
+                console.error('Error loading pending tasks:', error);
+                tbody.innerHTML = '<tr><td colspan="3" style="text-align: center; padding: 20px; color: red;">Could not load pending tasks.</td></tr>';
+            }
+        }
+
         function escapeHtml(unsafe) {
             if (unsafe === null || unsafe === undefined) return '';
             return unsafe
@@ -162,7 +221,10 @@
                 .replace(/'/g, "&#039;");
         }
 
-        document.addEventListener('DOMContentLoaded', loadFindings);
+        document.addEventListener('DOMContentLoaded', () => {
+            loadFindings();
+            loadPendingTasks();
+        });
     </script>
 </body>
 </html>

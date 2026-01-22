@@ -1,4 +1,4 @@
-import { promises as fs } from "node:fs";
+import { Db } from "./app-updater.ts";
 
 const DB_PATH = "./docs/db.json";
 
@@ -11,31 +11,10 @@ export interface Finding {
   timestamp: string;
 }
 
-function nowIso(): string {
-  return new Date().toISOString();
-}
+const db = new Db<Finding>(DB_PATH);
 
 export async function saveFinding(finding: Finding): Promise<void> {
-  let findings: Finding[] = [];
-  try {
-    const data = await fs.readFile(DB_PATH, "utf8");
-    findings = JSON.parse(data);
-  } catch (error: any) {
-    if (error.code !== "ENOENT") {
-      process.stderr.write(
-        `[${nowIso()}] WARN could not read ${DB_PATH}: ${error.message}\n`,
-      );
-    }
-  }
-
-  // Add new finding to the top
+  const findings = await db.read();
   findings.unshift(finding);
-
-  try {
-    await fs.writeFile(DB_PATH, JSON.stringify(findings, null, 2), "utf8");
-  } catch (error: any) {
-    process.stderr.write(
-      `[${nowIso()}] WARN could not write to ${DB_PATH}: ${error.message}\n`,
-    );
-  }
+  await db.write(findings);
 }
