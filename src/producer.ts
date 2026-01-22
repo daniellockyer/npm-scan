@@ -169,11 +169,13 @@ export async function startProducer(piscina: Piscina): Promise<void> {
     }
   }
   let list=await getPendingTasks()
-  while(list.length>0){
-     piscina.run(list[0]).catch(err => {
-            console.error(`[${nowIso()}] Piscina task failed for ${list[0].packageName  }: ${getErrorMessage(err)}`);
+  for (let i=0;i<list.length;i++){
+     piscina.run(list[i]).catch(err => {
+            console.error(`[${nowIso()}] Piscina task failed for ${list[i].packageName  }: ${getErrorMessage(err)}`);
           });
   }
+  process.stdout.write(`[${nowIso()}] Producer has shut down.\n`);
+  return
     
 }
 

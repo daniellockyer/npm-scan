@@ -1,5 +1,30 @@
 [
   {
+    "packageName": "@pagecraft/sdk",
+    "version": "latest",
+    "timestamp": "2026-01-22T14:10:51.909Z"
+  },
+  {
+    "packageName": "@typescript-eslint/type-utils",
+    "version": "latest",
+    "timestamp": "2026-01-22T14:10:51.894Z"
+  },
+  {
+    "packageName": "@typescript-eslint/rule-tester",
+    "version": "latest",
+    "timestamp": "2026-01-22T14:10:51.879Z"
+  },
+  {
+    "packageName": "@mhamz.01/easyflow-texteditor",
+    "version": "latest",
+    "timestamp": "2026-01-22T14:10:51.862Z"
+  },
+  {
+    "packageName": "beeai-framework",
+    "version": "latest",
+    "timestamp": "2026-01-22T14:10:51.858Z"
+  },
+  {
     "packageName": "@typescript-eslint/utils",
     "version": "latest",
     "timestamp": "2026-01-22T14:10:40.761Z"
@@ -68,11 +93,6 @@
     "packageName": "diff-cover",
     "version": "latest",
     "timestamp": "2026-01-22T14:10:27.658Z"
-  },
-  {
-    "packageName": "@hed-hog/content",
-    "version": "latest",
-    "timestamp": "2026-01-22T14:10:27.645Z"
   },
   {
     "packageName": "@w0nna_dev/lina-widget",
