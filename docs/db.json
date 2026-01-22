@@ -1,5 +1,21 @@
 [
   {
+    "packageName": "stepzen-graphiql",
+    "version": "2.0.1-experimental.1",
+    "scriptType": "postinstall",
+    "scriptContent": "patch-package",
+    "previousVersion": "2.0.0",
+    "timestamp": "2026-01-22T07:21:47.613Z"
+  },
+  {
+    "packageName": "pdf-toolkit-cloud",
+    "version": "0.0.4",
+    "scriptType": "postinstall",
+    "scriptContent": "node scripts/copy-pdftron-assets.js",
+    "previousVersion": "0.0.3",
+    "timestamp": "2026-01-22T07:20:31.460Z"
+  },
+  {
     "packageName": "flockbay",
     "version": "0.10.15",
     "scriptType": "postinstall",
