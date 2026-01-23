@@ -1,1 +1,427 @@
-[]
+[
+  {
+    "packageName": "cloud-web-corejs",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:46:34.102Z"
+  },
+  {
+    "packageName": "esisl_genoa_client",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:46:34.102Z"
+  },
+  {
+    "packageName": "nvis-fe-cms-libs",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:46:34.101Z"
+  },
+  {
+    "packageName": "payservedb",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:46:23.185Z"
+  },
+  {
+    "packageName": "@supernote-plugin/template",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:46:12.238Z"
+  },
+  {
+    "packageName": "sit-onyx",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:46:01.331Z"
+  },
+  {
+    "packageName": "@sit-onyx/storybook-utils",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:46:01.331Z"
+  },
+  {
+    "packageName": "@sit-onyx/figma-utils",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:46:01.330Z"
+  },
+  {
+    "packageName": "turbos-margin-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:46:01.330Z"
+  },
+  {
+    "packageName": "gap-nodejs-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:46:01.329Z"
+  },
+  {
+    "packageName": "@commercetools-frontend-extensions/import-resources-modal",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:46:01.328Z"
+  },
+  {
+    "packageName": "@commercetools-frontend-extensions/export-resources-modal",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:45:50.473Z"
+  },
+  {
+    "packageName": "@commercetools-frontend-extensions/unpublish-products-modal",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:45:50.472Z"
+  },
+  {
+    "packageName": "@commercetools-frontend-extensions/delete-resources-modal",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:45:50.472Z"
+  },
+  {
+    "packageName": "@smart-factor/gem-ui-components",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:45:50.471Z"
+  },
+  {
+    "packageName": "xendit-fn",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:45:50.470Z"
+  },
+  {
+    "packageName": "@makolabs/ripple",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:45:50.470Z"
+  },
+  {
+    "packageName": "hytopia",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:45:50.469Z"
+  },
+  {
+    "packageName": "@etools-plugin/devtools",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:45:39.557Z"
+  },
+  {
+    "packageName": "@peng_kai/kit",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:45:39.557Z"
+  },
+  {
+    "packageName": "@jdlien/validator-utils",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:45:39.556Z"
+  },
+  {
+    "packageName": "@globalart/nestjs-typeorm-outbox",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:45:39.555Z"
+  },
+  {
+    "packageName": "claude-pangu",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:45:05.527Z"
+  },
+  {
+    "packageName": "@cplace/test-mcp-server",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:54.562Z"
+  },
+  {
+    "packageName": "agent-window",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:54.561Z"
+  },
+  {
+    "packageName": "vibe-and-thrive",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:43.650Z"
+  },
+  {
+    "packageName": "@justram/pie",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:43.649Z"
+  },
+  {
+    "packageName": "@ray-js/graffiti",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:43.649Z"
+  },
+  {
+    "packageName": "@boxlite-ai/boxlite",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:43.648Z"
+  },
+  {
+    "packageName": "@umituz/react-native-settings",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:43.647Z"
+  },
+  {
+    "packageName": "@boxlite-ai/boxlite-linux-x64-gnu",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:32.390Z"
+  },
+  {
+    "packageName": "@umituz/react-native-firebase",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:32.389Z"
+  },
+  {
+    "packageName": "@umituz/react-native-auth",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:32.388Z"
+  },
+  {
+    "packageName": "@iflow-ai/iflow-cli",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:32.388Z"
+  },
+  {
+    "packageName": "@freelog/tools-lib",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:21.462Z"
+  },
+  {
+    "packageName": "@asgard-js/react",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:21.462Z"
+  },
+  {
+    "packageName": "@boxlite-ai/boxlite-darwin-arm64",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:21.461Z"
+  },
+  {
+    "packageName": "@asgard-js/core",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:21.460Z"
+  },
+  {
+    "packageName": "transit-core-taf",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:21.459Z"
+  },
+  {
+    "packageName": "@umituz/react-native-ai-generation-content",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:10.592Z"
+  },
+  {
+    "packageName": "@sparkstudio/realtime-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:10.592Z"
+  },
+  {
+    "packageName": "@eusoumarlon/wa-version",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:10.591Z"
+  },
+  {
+    "packageName": "microboard-temp",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:44:10.591Z"
+  },
+  {
+    "packageName": "@be-link/ecommerce-bff-service-node-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:43:59.693Z"
+  },
+  {
+    "packageName": "bililive-cli",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:43:59.692Z"
+  },
+  {
+    "packageName": "mcp-adder-simple",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:43:48.786Z"
+  },
+  {
+    "packageName": "@lx-frontend/wx-minapp-monitor",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:43:37.860Z"
+  },
+  {
+    "packageName": "@muflih_kh/profile-ui",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:43:37.859Z"
+  },
+  {
+    "packageName": "@dongit/n8n-nodes-reporter",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:43:28.511Z"
+  },
+  {
+    "packageName": "@insforge/react",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:43:28.510Z"
+  },
+  {
+    "packageName": "md2x",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:43:28.509Z"
+  },
+  {
+    "packageName": "@terra-js/terra-kit",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:43:16.123Z"
+  },
+  {
+    "packageName": "@erp-galoper/types",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:43:16.122Z"
+  },
+  {
+    "packageName": "onshore-forms",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:43:16.121Z"
+  },
+  {
+    "packageName": "homebridge-openwrt-control",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:43:16.121Z"
+  },
+  {
+    "packageName": "@reverbia/portal",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:43:05.189Z"
+  },
+  {
+    "packageName": "lighter-sdk-client",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:43:05.188Z"
+  },
+  {
+    "packageName": "raydit-editor",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:42:54.257Z"
+  },
+  {
+    "packageName": "@bworlds/launchkit",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:42:54.256Z"
+  },
+  {
+    "packageName": "lighter-sdk-client",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:42:54.255Z"
+  },
+  {
+    "packageName": "netender-web-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:42:43.322Z"
+  },
+  {
+    "packageName": "expo-gaode-map-web-api",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:42:32.339Z"
+  },
+  {
+    "packageName": "@clawdbot/voice-call",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:42:32.338Z"
+  },
+  {
+    "packageName": "archondev",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:42:32.338Z"
+  },
+  {
+    "packageName": "@matrixhub/cli",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:42:32.337Z"
+  },
+  {
+    "packageName": "@insforge/shared",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:42:32.336Z"
+  },
+  {
+    "packageName": "opencode-orchestrator",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:42:32.335Z"
+  },
+  {
+    "packageName": "@betterinternship/core",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:42:10.634Z"
+  },
+  {
+    "packageName": "@leet4tari/pnpm-trusted-publish-test",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:42:10.633Z"
+  },
+  {
+    "packageName": "@lobehub/lobehub",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:42:10.633Z"
+  },
+  {
+    "packageName": "@matrixhub/cli",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:41:57.989Z"
+  },
+  {
+    "packageName": "@mittwald/flow-stylesheet",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:41:57.988Z"
+  },
+  {
+    "packageName": "@mittwald/flow-remote-react-components",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:41:57.987Z"
+  },
+  {
+    "packageName": "pjd-eui",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:41:57.986Z"
+  },
+  {
+    "packageName": "@mittwald/flow-react-components",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:41:57.986Z"
+  },
+  {
+    "packageName": "@mittwald/flow-remote-react-renderer",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:41:57.985Z"
+  },
+  {
+    "packageName": "@supernal/tts-widget",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:41:57.984Z"
+  },
+  {
+    "packageName": "@mittwald/flow-remote-elements",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:41:47.070Z"
+  },
+  {
+    "packageName": "@mittwald/react-tunnel",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:41:47.070Z"
+  },
+  {
+    "packageName": "@mittwald/flow-remote-core",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:41:47.069Z"
+  },
+  {
+    "packageName": "@mittwald/flow-design-tokens",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:41:47.068Z"
+  },
+  {
+    "packageName": "@mittwald/mstudio-ext-react-components",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:41:47.067Z"
+  },
+  {
+    "packageName": "@mittwald/ext-bridge",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:41:47.066Z"
+  },
+  {
+    "packageName": "@leet4tari/ootle-ts-bindings",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:41:47.065Z"
+  },
+  {
+    "packageName": "cats-data-grid",
+    "version": "latest",
+    "timestamp": "2026-01-23T07:41:36.097Z"
+  }
+]
