@@ -1,1 +1,1587 @@
-[]
+[
+  {
+    "packageName": "@thi.ng/distance-transform",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:23:20.285Z"
+  },
+  {
+    "packageName": "@thi.ng/dl-asset",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:23:20.284Z"
+  },
+  {
+    "packageName": "microi-pageengine",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:23:20.283Z"
+  },
+  {
+    "packageName": "@thi.ng/dsp-io-wav",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:23:20.282Z"
+  },
+  {
+    "packageName": "@thi.ng/dsp",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:23:09.572Z"
+  },
+  {
+    "packageName": "@thi.ng/dual-algebra",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:23:09.571Z"
+  },
+  {
+    "packageName": "bfg-common",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:23:09.570Z"
+  },
+  {
+    "packageName": "@atlassian-test-prod/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:23:09.570Z"
+  },
+  {
+    "packageName": "@thi.ng/dynvar",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:23:09.568Z"
+  },
+  {
+    "packageName": "@acrontum/moxy",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:57.242Z"
+  },
+  {
+    "packageName": "@thi.ng/ecs",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:57.241Z"
+  },
+  {
+    "packageName": "@thi.ng/egf",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:57.240Z"
+  },
+  {
+    "packageName": "@topconsultnpm/sdkui-react",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:57.240Z"
+  },
+  {
+    "packageName": "@thi.ng/expose",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:46.494Z"
+  },
+  {
+    "packageName": "hmac-auth-builder",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:46.493Z"
+  },
+  {
+    "packageName": "@thi.ng/fibers",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:46.493Z"
+  },
+  {
+    "packageName": "@alien_org/react",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:46.492Z"
+  },
+  {
+    "packageName": "@thi.ng/fuzzy-viz",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:46.491Z"
+  },
+  {
+    "packageName": "dossiers",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:46.490Z"
+  },
+  {
+    "packageName": "@thi.ng/geom-axidraw",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.224Z"
+  },
+  {
+    "packageName": "@colisweb/rescript-toolkit",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.223Z"
+  },
+  {
+    "packageName": "@astrojs/upgrade",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.222Z"
+  },
+  {
+    "packageName": "astro",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.222Z"
+  },
+  {
+    "packageName": "@astrojs/markdown-remark",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.221Z"
+  },
+  {
+    "packageName": "@thi.ng/geom-fuzz",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.220Z"
+  },
+  {
+    "packageName": "@astrojs/preact",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.219Z"
+  },
+  {
+    "packageName": "@astrojs/mdx",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.218Z"
+  },
+  {
+    "packageName": "@astrojs/solid-js",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.218Z"
+  },
+  {
+    "packageName": "@astrojs/markdoc",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.217Z"
+  },
+  {
+    "packageName": "@astrojs/svelte",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.216Z"
+  },
+  {
+    "packageName": "@astrojs/react",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.215Z"
+  },
+  {
+    "packageName": "@astrojs/prism",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.214Z"
+  },
+  {
+    "packageName": "create-astro",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.213Z"
+  },
+  {
+    "packageName": "tim-logger",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.213Z"
+  },
+  {
+    "packageName": "@thi.ng/geom-io-obj",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.212Z"
+  },
+  {
+    "packageName": "@utexo/rgb-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:34.211Z"
+  },
+  {
+    "packageName": "@signageos/lib-ci",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:23.462Z"
+  },
+  {
+    "packageName": "@superfluid-finance/metadata",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:23.461Z"
+  },
+  {
+    "packageName": "@thi.ng/geom-sdf",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:23.460Z"
+  },
+  {
+    "packageName": "@superfluid-finance/sdk-redux",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:23.459Z"
+  },
+  {
+    "packageName": "@signageos/lib-bundler",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:23.459Z"
+  },
+  {
+    "packageName": "@thi.ng/geom-trace-bitmap",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:23.458Z"
+  },
+  {
+    "packageName": "@superfluid-finance/sdk-core",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:23.457Z"
+  },
+  {
+    "packageName": "@signageos/lib",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:23.456Z"
+  },
+  {
+    "packageName": "@bb-labs/deep-equal-test",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:23.456Z"
+  },
+  {
+    "packageName": "@thi.ng/geom-voronoi",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:23.455Z"
+  },
+  {
+    "packageName": "@atlassian-test-prod/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:23.454Z"
+  },
+  {
+    "packageName": "@pimcore/studio-ui-bundle",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:11.141Z"
+  },
+  {
+    "packageName": "@thi.ng/geom-webgl",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:11.140Z"
+  },
+  {
+    "packageName": "@superfluid-finance/ethereum-contracts",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:11.139Z"
+  },
+  {
+    "packageName": "coder-config",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:11.138Z"
+  },
+  {
+    "packageName": "@thi.ng/gp",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:11.138Z"
+  },
+  {
+    "packageName": "@hantarex/ngx-carousel",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:11.137Z"
+  },
+  {
+    "packageName": "@thi.ng/hdiff",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:00.242Z"
+  },
+  {
+    "packageName": "aids-remote-test",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:00.241Z"
+  },
+  {
+    "packageName": "@alien_org/bridge",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:00.240Z"
+  },
+  {
+    "packageName": "@putout/processor-filesystem",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:00.239Z"
+  },
+  {
+    "packageName": "@thi.ng/hdom-canvas",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:00.238Z"
+  },
+  {
+    "packageName": "@kottvideo/contracts",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:00.238Z"
+  },
+  {
+    "packageName": "@thi.ng/hdom-components",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:22:00.237Z"
+  },
+  {
+    "packageName": "@thi.ng/hdom-mock",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:49.473Z"
+  },
+  {
+    "packageName": "@open-mercato/ui",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:49.473Z"
+  },
+  {
+    "packageName": "@adyen/bento-design-tokens",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:49.472Z"
+  },
+  {
+    "packageName": "@pulumi/meraki",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:49.471Z"
+  },
+  {
+    "packageName": "@thi.ng/hiccup-carbon-icons",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:49.470Z"
+  },
+  {
+    "packageName": "videx-3d",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:49.470Z"
+  },
+  {
+    "packageName": "@open-mercato/shared",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:49.469Z"
+  },
+  {
+    "packageName": "@open-mercato/search",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:49.468Z"
+  },
+  {
+    "packageName": "@thi.ng/hiccup-html-parse",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:49.467Z"
+  },
+  {
+    "packageName": "fansunited-data-layer",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:49.466Z"
+  },
+  {
+    "packageName": "@azure/arm-maps",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:49.466Z"
+  },
+  {
+    "packageName": "@open-mercato/queue",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:49.465Z"
+  },
+  {
+    "packageName": "@open-mercato/onboarding",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:37.207Z"
+  },
+  {
+    "packageName": "@open-mercato/events",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:37.206Z"
+  },
+  {
+    "packageName": "@thi.ng/hiccup-markdown",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:37.205Z"
+  },
+  {
+    "packageName": "@inferencesh/sdk",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:37.204Z"
+  },
+  {
+    "packageName": "@vira-ui/ui",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:37.204Z"
+  },
+  {
+    "packageName": "@open-mercato/core",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:37.203Z"
+  },
+  {
+    "packageName": "@vira-ui/core",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:37.202Z"
+  },
+  {
+    "packageName": "@thi.ng/iges",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:37.201Z"
+  },
+  {
+    "packageName": "@vira-ui/bindings-react",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:37.201Z"
+  },
+  {
+    "packageName": "@vira-ui/babel-plugin",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:37.200Z"
+  },
+  {
+    "packageName": "@open-mercato/content",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:37.199Z"
+  },
+  {
+    "packageName": "@vira-ui/react",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:37.198Z"
+  },
+  {
+    "packageName": "@open-mercato/cli",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:26.370Z"
+  },
+  {
+    "packageName": "@thi.ng/imgui",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:26.262Z"
+  },
+  {
+    "packageName": "@vira-ui/cli",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:26.262Z"
+  },
+  {
+    "packageName": "@open-mercato/cache",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:26.261Z"
+  },
+  {
+    "packageName": "@open-mercato/ai-assistant",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:26.260Z"
+  },
+  {
+    "packageName": "@thi.ng/interceptors",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:26.259Z"
+  },
+  {
+    "packageName": "@thi.ng/intervals",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:26.259Z"
+  },
+  {
+    "packageName": "@bahmni/widgets",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:26.258Z"
+  },
+  {
+    "packageName": "@thi.ng/ksuid",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:15.002Z"
+  },
+  {
+    "packageName": "@grafana/ui",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:15.001Z"
+  },
+  {
+    "packageName": "@thi.ng/leb128",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:15.001Z"
+  },
+  {
+    "packageName": "@thi.ng/lispy",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:15.000Z"
+  },
+  {
+    "packageName": "@thi.ng/lowdisc",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:04.272Z"
+  },
+  {
+    "packageName": "@bugzy-ai/teams-mcp-server",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:04.271Z"
+  },
+  {
+    "packageName": "@thi.ng/lsys",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:04.270Z"
+  },
+  {
+    "packageName": "@thi.ng/markdown-table",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:21:04.269Z"
+  },
+  {
+    "packageName": "@grafana/schema",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:52.043Z"
+  },
+  {
+    "packageName": "@thi.ng/meta-css",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:52.042Z"
+  },
+  {
+    "packageName": "@naiv/api-agent",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:52.042Z"
+  },
+  {
+    "packageName": "@open-captable-protocol/canton",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:52.041Z"
+  },
+  {
+    "packageName": "jdeploy-installer",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:52.040Z"
+  },
+  {
+    "packageName": "@thi.ng/msgpack",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:52.039Z"
+  },
+  {
+    "packageName": "@grafana/runtime",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:52.039Z"
+  },
+  {
+    "packageName": "aids-remote-test",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:52.038Z"
+  },
+  {
+    "packageName": "@thi.ng/oquery",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:41.228Z"
+  },
+  {
+    "packageName": "@thi.ng/pixel-analysis",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:41.227Z"
+  },
+  {
+    "packageName": "@pulumi/newrelic",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:41.227Z"
+  },
+  {
+    "packageName": "jdeploy-installer-linux-arm64",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:41.226Z"
+  },
+  {
+    "packageName": "@credo-ts/webvh",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:41.225Z"
+  },
+  {
+    "packageName": "@grafana/prometheus",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:41.224Z"
+  },
+  {
+    "packageName": "@thi.ng/pixel-flow",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:41.223Z"
+  },
+  {
+    "packageName": "@credo-ts/drizzle-storage",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:41.223Z"
+  },
+  {
+    "packageName": "@credo-ts/openid4vc",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:41.220Z"
+  },
+  {
+    "packageName": "jdeploy-installer-linux-x64",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:41.220Z"
+  },
+  {
+    "packageName": "@credo-ts/tenants",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.450Z"
+  },
+  {
+    "packageName": "@thi.ng/pixel-io-geotiff",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.449Z"
+  },
+  {
+    "packageName": "@credo-ts/core",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.449Z"
+  },
+  {
+    "packageName": "@atlassian-test-staging/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.448Z"
+  },
+  {
+    "packageName": "@credo-ts/question-answer",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.447Z"
+  },
+  {
+    "packageName": "@unith-ai/core-client",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.446Z"
+  },
+  {
+    "packageName": "@credo-ts/redis-cache",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.446Z"
+  },
+  {
+    "packageName": "jdeploy-installer-win-arm64",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.445Z"
+  },
+  {
+    "packageName": "@thi.ng/pixel-io-netpbm",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.444Z"
+  },
+  {
+    "packageName": "@grafana/i18n",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.444Z"
+  },
+  {
+    "packageName": "@credo-ts/node",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.443Z"
+  },
+  {
+    "packageName": "@credo-ts/react-native",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.442Z"
+  },
+  {
+    "packageName": "@credo-ts/indy-vdr",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.441Z"
+  },
+  {
+    "packageName": "@credo-ts/didcomm",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.441Z"
+  },
+  {
+    "packageName": "@thi.ng/pixel-io-pfm",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.440Z"
+  },
+  {
+    "packageName": "jdeploy-installer-win-x64",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.439Z"
+  },
+  {
+    "packageName": "@grafana/flamegraph",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:30.438Z"
+  },
+  {
+    "packageName": "@thi.ng/pixel-io-tiff",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:19.605Z"
+  },
+  {
+    "packageName": "jdeploy-installer-mac-arm64",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:19.605Z"
+  },
+  {
+    "packageName": "@thi.ng/pointfree-lang",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:19.604Z"
+  },
+  {
+    "packageName": "@grafana/e2e-selectors",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:19.603Z"
+  },
+  {
+    "packageName": "jdeploy-installer-mac-x64",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:19.602Z"
+  },
+  {
+    "packageName": "@thi.ng/poisson",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:19.601Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-excel-export",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.809Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-editor",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.725Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-charts",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.725Z"
+  },
+  {
+    "packageName": "@thi.ng/proctext",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.724Z"
+  },
+  {
+    "packageName": "bigmathix",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.723Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-listbox",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.723Z"
+  },
+  {
+    "packageName": "@grafana/data",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.722Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-scheduler",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.721Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-treelist",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.721Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-scrollview",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.720Z"
+  },
+  {
+    "packageName": "@credo-ts/anoncreds",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.719Z"
+  },
+  {
+    "packageName": "@thi.ng/random-fxhash",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.718Z"
+  },
+  {
+    "packageName": "@credo-ts/cheqd",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.718Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-listview",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.717Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-notification",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.717Z"
+  },
+  {
+    "packageName": "@credo-ts/hedera",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.716Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-conversational-ui",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.715Z"
+  },
+  {
+    "packageName": "@thi.ng/range-coder",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.715Z"
+  },
+  {
+    "packageName": "@credo-ts/askar",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.714Z"
+  },
+  {
+    "packageName": "@atlassian-test-staging/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:20:08.713Z"
+  },
+  {
+    "packageName": "@credo-ts/askar-to-drizzle-storage-migration",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.524Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-tooltip",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.524Z"
+  },
+  {
+    "packageName": "@credo-ts/action-menu",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.523Z"
+  },
+  {
+    "packageName": "@credo-ts/drpc",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.523Z"
+  },
+  {
+    "packageName": "@lucide/svelte",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.522Z"
+  },
+  {
+    "packageName": "jdeploy",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.521Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-gauges",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.520Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-upload",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.520Z"
+  },
+  {
+    "packageName": "@grafana/alerting",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.519Z"
+  },
+  {
+    "packageName": "@thi.ng/rasterize",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.519Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-grid",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.518Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-indicators",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.517Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-pdf",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.517Z"
+  },
+  {
+    "packageName": "@thi.ng/rdom-canvas",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.516Z"
+  },
+  {
+    "packageName": "@revolugo/elements-vue3",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.515Z"
+  },
+  {
+    "packageName": "@revolugo/common",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.514Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-form",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.514Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-data-tools",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.513Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-dateinputs",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:57.512Z"
+  },
+  {
+    "packageName": "@thi.ng/rdom-components",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.750Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-dropdowns",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.749Z"
+  },
+  {
+    "packageName": "agent-window",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.748Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-treeview",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.748Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-inputs",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.747Z"
+  },
+  {
+    "packageName": "@revolugo/elements",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.746Z"
+  },
+  {
+    "packageName": "@thi.ng/rdom-forms",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.746Z"
+  },
+  {
+    "packageName": "@unith-ai/react",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.745Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-layout",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.744Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-dialogs",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.744Z"
+  },
+  {
+    "packageName": "@zill-protocol/contracts",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.743Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-labels",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.742Z"
+  },
+  {
+    "packageName": "@pep/term-deck",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.742Z"
+  },
+  {
+    "packageName": "@revolugo/booking-api-client",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.741Z"
+  },
+  {
+    "packageName": "@redhat-cloud-services/frontend-components-testing",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.741Z"
+  },
+  {
+    "packageName": "homebridge-openwrt-control",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.740Z"
+  },
+  {
+    "packageName": "@thi.ng/rle-pack",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.739Z"
+  },
+  {
+    "packageName": "@redhat-cloud-services/frontend-components-config",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.739Z"
+  },
+  {
+    "packageName": "@gkits/collect",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.738Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-buttons",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.737Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-progressbars",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.737Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-popup",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.736Z"
+  },
+  {
+    "packageName": "@sirlund/mindset-ui",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:46.735Z"
+  },
+  {
+    "packageName": "@thi.ng/rstream-csp",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.925Z"
+  },
+  {
+    "packageName": "@redhat-cloud-services/eslint-config-redhat-cloud-services",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.924Z"
+  },
+  {
+    "packageName": "@nxtedition/lib",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.924Z"
+  },
+  {
+    "packageName": "@redhat-cloud-services/tsc-transform-imports",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.923Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-animation",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.923Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-common",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.922Z"
+  },
+  {
+    "packageName": "calculate-packing",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.922Z"
+  },
+  {
+    "packageName": "@progress/kendo-vue-intl",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.921Z"
+  },
+  {
+    "packageName": "@tiptap/vue-2",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.920Z"
+  },
+  {
+    "packageName": "@tiptap/vue-3",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.920Z"
+  },
+  {
+    "packageName": "@tiptap/static-renderer",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.919Z"
+  },
+  {
+    "packageName": "@tiptap/suggestion",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.919Z"
+  },
+  {
+    "packageName": "@atlassian-test-staging/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.918Z"
+  },
+  {
+    "packageName": "@thi.ng/rstream-gestures",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.918Z"
+  },
+  {
+    "packageName": "@tiptap/starter-kit",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.917Z"
+  },
+  {
+    "packageName": "@tiptap/react",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.916Z"
+  },
+  {
+    "packageName": "b-dashboard-plugin-cms",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.916Z"
+  },
+  {
+    "packageName": "@tiptap/markdown",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.915Z"
+  },
+  {
+    "packageName": "@tiptap/pm",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.915Z"
+  },
+  {
+    "packageName": "@tiptap/html",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.914Z"
+  },
+  {
+    "packageName": "@tiptap/extensions",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.913Z"
+  },
+  {
+    "packageName": "@tiptap/extension-youtube",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.913Z"
+  },
+  {
+    "packageName": "@tiptap/extension-unique-id",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.912Z"
+  },
+  {
+    "packageName": "@thi.ng/rstream-graph",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.912Z"
+  },
+  {
+    "packageName": "@tiptap/extension-underline",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.911Z"
+  },
+  {
+    "packageName": "@tiptap/extension-typography",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.910Z"
+  },
+  {
+    "packageName": "@tiptap/extension-twitch",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.910Z"
+  },
+  {
+    "packageName": "@tiptap/extension-text-style",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:35.909Z"
+  },
+  {
+    "packageName": "@thi.ng/rstream-log-file",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.170Z"
+  },
+  {
+    "packageName": "@tiptap/extension-text-align",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.170Z"
+  },
+  {
+    "packageName": "@tiptap/extension-text",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.169Z"
+  },
+  {
+    "packageName": "@tiptap/extension-table-of-contents",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.169Z"
+  },
+  {
+    "packageName": "@axa-fr/slimfaas-planet-saver",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.168Z"
+  },
+  {
+    "packageName": "@tiptap/extension-table",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.167Z"
+  },
+  {
+    "packageName": "devpilot-cli",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.167Z"
+  },
+  {
+    "packageName": "@tiptap/extension-superscript",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.166Z"
+  },
+  {
+    "packageName": "@tiptap/extension-subscript",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.166Z"
+  },
+  {
+    "packageName": "@tiptap/extension-strike",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.165Z"
+  },
+  {
+    "packageName": "@tiptap/extension-paragraph",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.164Z"
+  },
+  {
+    "packageName": "@tiptap/extension-ordered-list",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.164Z"
+  },
+  {
+    "packageName": "@tiptap/extension-node-range",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.163Z"
+  },
+  {
+    "packageName": "@thi.ng/rstream-log",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.162Z"
+  },
+  {
+    "packageName": "@qwed-ai/legal",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.162Z"
+  },
+  {
+    "packageName": "@tiptap/extension-mention",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.161Z"
+  },
+  {
+    "packageName": "@tiptap/extension-list",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.161Z"
+  },
+  {
+    "packageName": "@tiptap/extension-mathematics",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.160Z"
+  },
+  {
+    "packageName": "@tiptap/extension-link",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.160Z"
+  },
+  {
+    "packageName": "@thi.ng/rstream-query",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.159Z"
+  },
+  {
+    "packageName": "@tiptap/extension-italic",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.158Z"
+  },
+  {
+    "packageName": "@tiptap/extension-invisible-characters",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.158Z"
+  },
+  {
+    "packageName": "@tiptap/extension-image",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.157Z"
+  },
+  {
+    "packageName": "@tiptap/extension-highlight",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.157Z"
+  },
+  {
+    "packageName": "@tiptap/extension-horizontal-rule",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.156Z"
+  },
+  {
+    "packageName": "@tiptap/extension-heading",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:25.155Z"
+  },
+  {
+    "packageName": "@tiptap/extension-font-family",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.342Z"
+  },
+  {
+    "packageName": "@pulumi/nomad",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.342Z"
+  },
+  {
+    "packageName": "@tiptap/extension-hard-break",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.341Z"
+  },
+  {
+    "packageName": "@tiptap/extension-floating-menu",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.340Z"
+  },
+  {
+    "packageName": "@dahawa/hawa-code",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.340Z"
+  },
+  {
+    "packageName": "@thi.ng/sax",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.339Z"
+  },
+  {
+    "packageName": "@tiptap/extension-file-handler",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.338Z"
+  },
+  {
+    "packageName": "aids-remote-test",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.338Z"
+  },
+  {
+    "packageName": "@tiptap/extension-emoji",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.337Z"
+  },
+  {
+    "packageName": "@tiptap/extension-drag-handle-vue-3",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.337Z"
+  },
+  {
+    "packageName": "@tiptap/extension-drag-handle-vue-2",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.333Z"
+  },
+  {
+    "packageName": "@tiptap/extension-details",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.333Z"
+  },
+  {
+    "packageName": "@tiptap/extension-drag-handle",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.332Z"
+  },
+  {
+    "packageName": "@tiptap/extension-drag-handle-react",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.332Z"
+  },
+  {
+    "packageName": "@thi.ng/scenegraph",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.331Z"
+  },
+  {
+    "packageName": "@tiptap/extension-document",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.330Z"
+  },
+  {
+    "packageName": "@tiptap/extension-color",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.330Z"
+  },
+  {
+    "packageName": "@tiptap/extension-collaboration-caret",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.329Z"
+  },
+  {
+    "packageName": "@tiptap/extension-collaboration",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.329Z"
+  },
+  {
+    "packageName": "typecheck-files",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.328Z"
+  },
+  {
+    "packageName": "@atlassian-test-staging/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.328Z"
+  },
+  {
+    "packageName": "@tiptap/extension-code-block-lowlight",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.327Z"
+  },
+  {
+    "packageName": "@tiptap/extension-code-block",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.327Z"
+  },
+  {
+    "packageName": "n8n-nodes-jygse-vw-weconnect",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.326Z"
+  },
+  {
+    "packageName": "@thi.ng/seq",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:14.325Z"
+  },
+  {
+    "packageName": "@tiptap/core",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.330Z"
+  },
+  {
+    "packageName": "@tiptap/extension-bubble-menu",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.329Z"
+  },
+  {
+    "packageName": "@tiptap/extension-code",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.328Z"
+  },
+  {
+    "packageName": "@tiptap/extension-audio",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.328Z"
+  },
+  {
+    "packageName": "@tiptap/extension-blockquote",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.327Z"
+  },
+  {
+    "packageName": "@tiptap/extension-bullet-list",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.326Z"
+  },
+  {
+    "packageName": "@tiptap/extension-bold",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.326Z"
+  },
+  {
+    "packageName": "@tiptap/extension-task-list",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.325Z"
+  },
+  {
+    "packageName": "@thi.ng/shader-ast-js",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.324Z"
+  },
+  {
+    "packageName": "@tiptap/extension-task-item",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.323Z"
+  },
+  {
+    "packageName": "@tiptap/extension-table-row",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.323Z"
+  },
+  {
+    "packageName": "sass-template-common",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.322Z"
+  },
+  {
+    "packageName": "@thi.ng/shader-ast-optimize",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.321Z"
+  },
+  {
+    "packageName": "test-related",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.320Z"
+  },
+  {
+    "packageName": "@tiptap/extension-placeholder",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.319Z"
+  },
+  {
+    "packageName": "@tiptap/extension-history",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.319Z"
+  },
+  {
+    "packageName": "@tiptap/extension-dropcursor",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.318Z"
+  },
+  {
+    "packageName": "@tiptap/extension-list-keymap",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.317Z"
+  },
+  {
+    "packageName": "@tiptap/extension-table-cell",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.317Z"
+  },
+  {
+    "packageName": "@tiptap/extension-list-item",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.316Z"
+  },
+  {
+    "packageName": "@tiptap/extension-gapcursor",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.315Z"
+  },
+  {
+    "packageName": "@tiptap/extension-table-header",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.315Z"
+  },
+  {
+    "packageName": "@tiptap/extension-character-count",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.314Z"
+  },
+  {
+    "packageName": "@tiptap/extension-focus",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:19:03.314Z"
+  },
+  {
+    "packageName": "@thi.ng/simd",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:18:52.483Z"
+  },
+  {
+    "packageName": "@oomfware/cgr",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:18:52.483Z"
+  },
+  {
+    "packageName": "@thi.ng/soa",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:18:52.482Z"
+  },
+  {
+    "packageName": "teodor-new-chat-ui",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:18:52.481Z"
+  },
+  {
+    "packageName": "@thi.ng/sorted-map",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:18:52.480Z"
+  },
+  {
+    "packageName": "@thi.ng/sparse-set",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:18:41.605Z"
+  },
+  {
+    "packageName": "@thi.ng/system",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:18:41.605Z"
+  },
+  {
+    "packageName": "@bahmni/clinical-app",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:18:41.604Z"
+  },
+  {
+    "packageName": "@thi.ng/tangle",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:18:41.603Z"
+  },
+  {
+    "packageName": "mautourco-components",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:18:30.845Z"
+  },
+  {
+    "packageName": "@thi.ng/tensors",
+    "version": "latest",
+    "timestamp": "2026-01-23T13:18:30.844Z"
+  }
+]
