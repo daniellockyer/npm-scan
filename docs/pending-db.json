@@ -1,1 +1,1092 @@
-[]
+[
+  {
+    "packageName": "superdoc",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:14:01.463Z"
+  },
+  {
+    "packageName": "@open-captable-protocol/canton",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:14:01.462Z"
+  },
+  {
+    "packageName": "@slicemachine/adapter-sveltekit",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:14:01.461Z"
+  },
+  {
+    "packageName": "@cubic-dev-ai/cli-darwin-x64-baseline",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:14:01.460Z"
+  },
+  {
+    "packageName": "@slicemachine/adapter-nuxt2",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:14:01.459Z"
+  },
+  {
+    "packageName": "@cubic-dev-ai/cli-darwin-x64",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:50.463Z"
+  },
+  {
+    "packageName": "@merkl/registry",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:50.462Z"
+  },
+  {
+    "packageName": "@slicemachine/adapter-next",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:50.461Z"
+  },
+  {
+    "packageName": "@slicemachine/adapter-nuxt",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:50.460Z"
+  },
+  {
+    "packageName": "@open-captable-protocol/canton",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:50.460Z"
+  },
+  {
+    "packageName": "@gr4vy/sdk",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:50.459Z"
+  },
+  {
+    "packageName": "@cubic-dev-ai/cli-darwin-arm64",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:50.458Z"
+  },
+  {
+    "packageName": "@cubic-dev-ai/cli-linux-x64-baseline-musl",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:39.404Z"
+  },
+  {
+    "packageName": "@renderbase/mcp-server",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:39.404Z"
+  },
+  {
+    "packageName": "@slicemachine/plugin-kit",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:39.402Z"
+  },
+  {
+    "packageName": "overtake",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:39.402Z"
+  },
+  {
+    "packageName": "nemar-cli",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:28.376Z"
+  },
+  {
+    "packageName": "@decaf-ts/utils",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:28.375Z"
+  },
+  {
+    "packageName": "@cubic-dev-ai/cli-linux-x64-musl",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:28.375Z"
+  },
+  {
+    "packageName": "@vx-js/vx-linux-arm64-gnu",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:28.374Z"
+  },
+  {
+    "packageName": "surf-cli",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:28.373Z"
+  },
+  {
+    "packageName": "@cubic-dev-ai/cli-linux-arm64-musl",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:17.397Z"
+  },
+  {
+    "packageName": "directus-extension-schema-sync",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:17.396Z"
+  },
+  {
+    "packageName": "@icanbwell/composite",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:06.233Z"
+  },
+  {
+    "packageName": "quicksilver-mcp",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:06.232Z"
+  },
+  {
+    "packageName": "@cubic-dev-ai/cli-linux-x64-baseline",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:06.231Z"
+  },
+  {
+    "packageName": "awolve-myoffice-cli",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:06.231Z"
+  },
+  {
+    "packageName": "newman-reporter-qamaster",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:06.230Z"
+  },
+  {
+    "packageName": "legalesign-document-viewer-react",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:13:06.229Z"
+  },
+  {
+    "packageName": "kiro-mobile-bridge",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:55.261Z"
+  },
+  {
+    "packageName": "@vx-js/vx-darwin-x64",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:55.260Z"
+  },
+  {
+    "packageName": "@cubic-dev-ai/cli-linux-x64",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:55.259Z"
+  },
+  {
+    "packageName": "@fiscal-io/ds-components",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:55.259Z"
+  },
+  {
+    "packageName": "@cubic-dev-ai/cli-linux-arm64",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:44.232Z"
+  },
+  {
+    "packageName": "@skybridge/devtools",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:44.232Z"
+  },
+  {
+    "packageName": "@aceplus/smartace-api",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:44.231Z"
+  },
+  {
+    "packageName": "parse-dashboard",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:44.230Z"
+  },
+  {
+    "packageName": "create-skybridge",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:44.229Z"
+  },
+  {
+    "packageName": "adapt-authoring-docs",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:44.228Z"
+  },
+  {
+    "packageName": "skybridge",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:33.332Z"
+  },
+  {
+    "packageName": "dc-cli-mcp",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:22.445Z"
+  },
+  {
+    "packageName": "legalesign-document-viewer",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:22.444Z"
+  },
+  {
+    "packageName": "@done-coding/cli",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:22.444Z"
+  },
+  {
+    "packageName": "@vx-js/vx-darwin-arm64",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:22.443Z"
+  },
+  {
+    "packageName": "create-done-coding",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:22.442Z"
+  },
+  {
+    "packageName": "claude-all-config",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:22.442Z"
+  },
+  {
+    "packageName": "@done-coding/cli-extract",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:22.441Z"
+  },
+  {
+    "packageName": "@done-coding/cli-component",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:22.440Z"
+  },
+  {
+    "packageName": "@done-coding/cli-git",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:22.439Z"
+  },
+  {
+    "packageName": "@done-coding/cli-template",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:22.439Z"
+  },
+  {
+    "packageName": "@done-coding/cli-config",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:22.438Z"
+  },
+  {
+    "packageName": "@done-coding/cli-publish",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:22.438Z"
+  },
+  {
+    "packageName": "sqs-producer",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:22.437Z"
+  },
+  {
+    "packageName": "@done-coding/cli-inject",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:22.436Z"
+  },
+  {
+    "packageName": "@partium/js-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:22.435Z"
+  },
+  {
+    "packageName": "@done-coding/cli-utils",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:22.434Z"
+  },
+  {
+    "packageName": "@edifice.io/edifice-ent-client",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:11.446Z"
+  },
+  {
+    "packageName": "@luomus/laji-form",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:11.445Z"
+  },
+  {
+    "packageName": "@vx-js/vx-linux-x64-gnu",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:00.502Z"
+  },
+  {
+    "packageName": "qovery-typescript-axios",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:00.370Z"
+  },
+  {
+    "packageName": "@tugitark/react-widget",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:12:00.369Z"
+  },
+  {
+    "packageName": "@mcp-fe/react-event-tracker",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:48.242Z"
+  },
+  {
+    "packageName": "@performant-software/visualize",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:48.241Z"
+  },
+  {
+    "packageName": "@agentsmith.bgd/as-components",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:48.241Z"
+  },
+  {
+    "packageName": "@performant-software/user-defined-fields",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:48.240Z"
+  },
+  {
+    "packageName": "@base44-preview/cli",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:48.239Z"
+  },
+  {
+    "packageName": "@mcp-fe/event-tracker",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:48.238Z"
+  },
+  {
+    "packageName": "qovery-ws-typescript-axios",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:48.238Z"
+  },
+  {
+    "packageName": "@sitepark/js-project",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:48.237Z"
+  },
+  {
+    "packageName": "@wxn0brp/flanker-ui",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:48.236Z"
+  },
+  {
+    "packageName": "@tugitark/vue-widget",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:36.246Z"
+  },
+  {
+    "packageName": "zj-to-hydrooj",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:36.139Z"
+  },
+  {
+    "packageName": "miniread",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:36.139Z"
+  },
+  {
+    "packageName": "@performant-software/shared-components",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:36.138Z"
+  },
+  {
+    "packageName": "@mcp-fe/mcp-worker",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:36.138Z"
+  },
+  {
+    "packageName": "chrv-components",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:36.136Z"
+  },
+  {
+    "packageName": "@jupyterlab/workspaces-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:36.136Z"
+  },
+  {
+    "packageName": "@bb-labs/deep-equal",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:36.135Z"
+  },
+  {
+    "packageName": "@bb-labs/deep-sort",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:36.134Z"
+  },
+  {
+    "packageName": "@d-kuehn/eslint-config",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:26.096Z"
+  },
+  {
+    "packageName": "@jupyterlab/workspaces",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:26.094Z"
+  },
+  {
+    "packageName": "@performant-software/semantic-components",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:26.094Z"
+  },
+  {
+    "packageName": "node-ezsp-ash-posix",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:26.093Z"
+  },
+  {
+    "packageName": "@jupyterlab/video-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:26.092Z"
+  },
+  {
+    "packageName": "agenda",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:26.092Z"
+  },
+  {
+    "packageName": "@jupyterlab/vega5-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:26.091Z"
+  },
+  {
+    "packageName": "@eudiplo/sdk-core",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:26.090Z"
+  },
+  {
+    "packageName": "ff-test-bidi-har-export",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:26.089Z"
+  },
+  {
+    "packageName": "@github/copilot-win32-x64",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:13.888Z"
+  },
+  {
+    "packageName": "bashen-ts-lib",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:13.753Z"
+  },
+  {
+    "packageName": "@jupyterlab/ui-components-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:13.752Z"
+  },
+  {
+    "packageName": "tdm-react",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:13.752Z"
+  },
+  {
+    "packageName": "hammer-jquery",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:13.751Z"
+  },
+  {
+    "packageName": "@jupyterlab/ui-components",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:13.750Z"
+  },
+  {
+    "packageName": "scandit-datacapture-frameworks-label",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:13.750Z"
+  },
+  {
+    "packageName": "@jupyterlab/translation-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:13.749Z"
+  },
+  {
+    "packageName": "@tugitark/declarative-widget",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:13.749Z"
+  },
+  {
+    "packageName": "@performant-software/geospatial",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:13.748Z"
+  },
+  {
+    "packageName": "scandit-datacapture-frameworks-id",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:02.072Z"
+  },
+  {
+    "packageName": "@github/copilot-win32-arm64",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:02.071Z"
+  },
+  {
+    "packageName": "@jupyterlab/translation",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:02.071Z"
+  },
+  {
+    "packageName": "@desplega.ai/brain",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:02.070Z"
+  },
+  {
+    "packageName": "@jupyterlab/tooltip-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:02.069Z"
+  },
+  {
+    "packageName": "scandit-datacapture-frameworks-barcode",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:02.069Z"
+  },
+  {
+    "packageName": "@performant-software/core-data",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:02.068Z"
+  },
+  {
+    "packageName": "@jupyterlab/tooltip",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:02.067Z"
+  },
+  {
+    "packageName": "@guardian/feast-multiplatform-library",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:02.067Z"
+  },
+  {
+    "packageName": "ctx-cc",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:11:02.066Z"
+  },
+  {
+    "packageName": "@jupyterlab/toc-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:51.414Z"
+  },
+  {
+    "packageName": "@github/copilot-linux-x64",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:51.414Z"
+  },
+  {
+    "packageName": "scandit-datacapture-frameworks-core",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:51.413Z"
+  },
+  {
+    "packageName": "@jwn-js/plugins",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:51.413Z"
+  },
+  {
+    "packageName": "@jupyterlab/toc",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:51.412Z"
+  },
+  {
+    "packageName": "@lytical/ioc",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:51.411Z"
+  },
+  {
+    "packageName": "@metaxia/scriptures-source-stepbible-tagnt-tr",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:51.411Z"
+  },
+  {
+    "packageName": "@performant-software/controlled-vocabulary",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:51.410Z"
+  },
+  {
+    "packageName": "@jupyterlab/theme-light-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:51.409Z"
+  },
+  {
+    "packageName": "react-native-color-picker-palette",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:51.408Z"
+  },
+  {
+    "packageName": "@jupyterlab/theme-dark-high-contrast-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:38.539Z"
+  },
+  {
+    "packageName": "@hed-hog/content",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:38.539Z"
+  },
+  {
+    "packageName": "@jupyterlab/theme-dark-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:38.538Z"
+  },
+  {
+    "packageName": "@threaded/ai",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:38.538Z"
+  },
+  {
+    "packageName": "element-ai-vue",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:38.537Z"
+  },
+  {
+    "packageName": "@atlanhq/atlan-auth",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:38.536Z"
+  },
+  {
+    "packageName": "@jupyterlab/testutils",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:38.536Z"
+  },
+  {
+    "packageName": "@github/copilot-linux-arm64",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:38.535Z"
+  },
+  {
+    "packageName": "kimaki",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:38.534Z"
+  },
+  {
+    "packageName": "@jupyterlab/testing",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:26.029Z"
+  },
+  {
+    "packageName": "@rool-dev/client",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:26.029Z"
+  },
+  {
+    "packageName": "claviz-liminal-qlik",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:26.028Z"
+  },
+  {
+    "packageName": "@atlassian-test-prod/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:26.028Z"
+  },
+  {
+    "packageName": "@loxia-labs/spitfire",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:26.027Z"
+  },
+  {
+    "packageName": "@jupyterlab/terminal-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:26.026Z"
+  },
+  {
+    "packageName": "eslint",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:26.026Z"
+  },
+  {
+    "packageName": "@jupyterlab/terminal",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:26.025Z"
+  },
+  {
+    "packageName": "@meistrari/sandbox-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:26.025Z"
+  },
+  {
+    "packageName": "@capacitor/toast",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:26.024Z"
+  },
+  {
+    "packageName": "@capacitor/text-zoom",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:26.023Z"
+  },
+  {
+    "packageName": "@jupyterlab/template",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.253Z"
+  },
+  {
+    "packageName": "@capacitor/splash-screen",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.252Z"
+  },
+  {
+    "packageName": "@capacitor/status-bar",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.252Z"
+  },
+  {
+    "packageName": "@capacitor/share",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.251Z"
+  },
+  {
+    "packageName": "@github/copilot-darwin-x64",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.250Z"
+  },
+  {
+    "packageName": "@capacitor/screen-orientation",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.250Z"
+  },
+  {
+    "packageName": "@capacitor/screen-reader",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.249Z"
+  },
+  {
+    "packageName": "@capacitor/push-notifications",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.249Z"
+  },
+  {
+    "packageName": "@jupyterlab/statusbar-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.248Z"
+  },
+  {
+    "packageName": "@seomator/seo-audit",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.247Z"
+  },
+  {
+    "packageName": "@capacitor/network",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.246Z"
+  },
+  {
+    "packageName": "@capacitor/preferences",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.246Z"
+  },
+  {
+    "packageName": "@capacitor/motion",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.245Z"
+  },
+  {
+    "packageName": "@jupyterlab/statusbar",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.245Z"
+  },
+  {
+    "packageName": "@capacitor/device",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.244Z"
+  },
+  {
+    "packageName": "@capacitor/dialog",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.244Z"
+  },
+  {
+    "packageName": "@capacitor/local-notifications",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:14.243Z"
+  },
+  {
+    "packageName": "@jupyterlab/statedb",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:03.270Z"
+  },
+  {
+    "packageName": "@capacitor/clipboard",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:03.173Z"
+  },
+  {
+    "packageName": "@capacitor/camera",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:03.172Z"
+  },
+  {
+    "packageName": "@capacitor/browser",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:03.171Z"
+  },
+  {
+    "packageName": "@capacitor/app",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:03.171Z"
+  },
+  {
+    "packageName": "@capacitor/app-launcher",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:03.170Z"
+  },
+  {
+    "packageName": "@jupyterlab/shortcuts-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:03.170Z"
+  },
+  {
+    "packageName": "@capacitor/action-sheet",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:03.169Z"
+  },
+  {
+    "packageName": "@greghowe79/the-lib",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:03.169Z"
+  },
+  {
+    "packageName": "@github/copilot-darwin-arm64",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:03.168Z"
+  },
+  {
+    "packageName": "@jupyterlab/settingregistry",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:03.167Z"
+  },
+  {
+    "packageName": "@falcondev-oss/workflow",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:03.166Z"
+  },
+  {
+    "packageName": "@atlassian-test-prod/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:10:03.164Z"
+  },
+  {
+    "packageName": "@jupyterlab/settingeditor-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:52.553Z"
+  },
+  {
+    "packageName": "@scandit/web-datacapture-label",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:52.552Z"
+  },
+  {
+    "packageName": "@jupyterlab/settingeditor",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:52.551Z"
+  },
+  {
+    "packageName": "@buynomics-lib/bn-shared",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:52.551Z"
+  },
+  {
+    "packageName": "@jupyterlab/services-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:52.550Z"
+  },
+  {
+    "packageName": "@github/copilot",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:52.549Z"
+  },
+  {
+    "packageName": "@scandit/web-datacapture-parser",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:40.836Z"
+  },
+  {
+    "packageName": "@jupyterlab/services",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:40.836Z"
+  },
+  {
+    "packageName": "ccjk",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:40.835Z"
+  },
+  {
+    "packageName": "@jupyterlab/running-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:40.835Z"
+  },
+  {
+    "packageName": "@scandit/web-datacapture-id",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:40.834Z"
+  },
+  {
+    "packageName": "@jupyterlab/running",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:40.834Z"
+  },
+  {
+    "packageName": "@hed-hog/contact",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:29.540Z"
+  },
+  {
+    "packageName": "@metaxia/scriptures-source-crosswire-kjv",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:29.540Z"
+  },
+  {
+    "packageName": "@jupyterlab/rendermime-interfaces",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:29.539Z"
+  },
+  {
+    "packageName": "errore",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:29.539Z"
+  },
+  {
+    "packageName": "@jupyterlab/rendermime-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:29.538Z"
+  },
+  {
+    "packageName": "@scandit/web-datacapture-barcode",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:29.537Z"
+  },
+  {
+    "packageName": "@wellesley/system-toast",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:29.536Z"
+  },
+  {
+    "packageName": "@wellesley/apps",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:29.536Z"
+  },
+  {
+    "packageName": "@wellesley/sentry",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:29.535Z"
+  },
+  {
+    "packageName": "@wellesley/router",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:29.534Z"
+  },
+  {
+    "packageName": "@jupyterlab/rendermime",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:29.534Z"
+  },
+  {
+    "packageName": "@wellesley/notifications",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:29.533Z"
+  },
+  {
+    "packageName": "frontpl",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:29.533Z"
+  },
+  {
+    "packageName": "@wellesley/ui",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:29.532Z"
+  },
+  {
+    "packageName": "@wellesley/search",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:18.232Z"
+  },
+  {
+    "packageName": "@wellesley/auth",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:18.107Z"
+  },
+  {
+    "packageName": "@wellesley/events",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:18.107Z"
+  },
+  {
+    "packageName": "@wellesley/network",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.783Z"
+  },
+  {
+    "packageName": "@wellesley/openapi",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.783Z"
+  },
+  {
+    "packageName": "@wellesley/emoji-picker",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.620Z"
+  },
+  {
+    "packageName": "@wellesley/settings",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.619Z"
+  },
+  {
+    "packageName": "@wellesley/user",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.619Z"
+  },
+  {
+    "packageName": "@wellesley/media-playback",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.618Z"
+  },
+  {
+    "packageName": "@jupyterlab/property-inspector",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.618Z"
+  },
+  {
+    "packageName": "@scandit/web-datacapture-core",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.617Z"
+  },
+  {
+    "packageName": "@wellesley/error-kit",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.617Z"
+  },
+  {
+    "packageName": "@wellesley/group",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.616Z"
+  },
+  {
+    "packageName": "@wellesley/instanceinfo",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.616Z"
+  },
+  {
+    "packageName": "@wellesley/ws",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.615Z"
+  },
+  {
+    "packageName": "@wellesley/uploads",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.614Z"
+  },
+  {
+    "packageName": "@wellesley/host-remote",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.614Z"
+  },
+  {
+    "packageName": "@wellesley/vendor",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.613Z"
+  },
+  {
+    "packageName": "@wellesley/server-info",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.612Z"
+  },
+  {
+    "packageName": "@wellesley/store",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.611Z"
+  },
+  {
+    "packageName": "@wellesley/redux-subscribe-action",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.611Z"
+  },
+  {
+    "packageName": "@jupyterlab/pluginmanager-extension",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.610Z"
+  },
+  {
+    "packageName": "legalesign-document-viewer-react",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.609Z"
+  },
+  {
+    "packageName": "@jupyterlab/pluginmanager",
+    "version": "latest",
+    "timestamp": "2026-01-23T15:09:17.608Z"
+  }
+]
