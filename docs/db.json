@@ -1,5 +1,59 @@
 [
   {
+    "packageName": "contextcue",
+    "version": "1.2.5",
+    "scriptType": "postinstall",
+    "scriptContent": "node scripts/mcp-config.js",
+    "previousVersion": "1.2.4",
+    "timestamp": "2026-01-23T12:26:19.481Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "patron-pro",
+    "version": "2.0.0",
+    "scriptType": "preinstall",
+    "scriptContent": "node ./engine-requirements.js",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T12:24:04.300Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "ocppsim",
+    "version": "1.0.0",
+    "scriptType": "prebuild",
+    "scriptContent": "tsc --noEmit",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T12:14:59.136Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "@appliedblockchain/sodium-native",
+    "version": "3.3.2",
+    "scriptType": "prebuild",
+    "scriptContent": "prebuildify --napi --strip",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T12:09:58.069Z",
+    "issuesend": true
+  },
+  {
+    "packageName": "@appliedblockchain/sodium-native-vrf",
+    "version": "3.3.2",
+    "scriptType": "prebuild",
+    "scriptContent": "prebuildify --napi --strip",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T12:09:56.641Z",
+    "issuesend": true
+  },
+  {
+    "packageName": "test-on-other-again",
+    "version": "99.9.8",
+    "scriptType": "preinstall",
+    "scriptContent": "node index.js",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T11:49:26.169Z",
+    "issuesend": false
+  },
+  {
     "packageName": "hemi-btc-staking-actions",
     "version": "10.0.0",
     "scriptType": "preinstall",
