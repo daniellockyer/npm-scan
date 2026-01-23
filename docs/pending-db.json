@@ -1,372 +1,297 @@
 [
   {
-    "packageName": "@transcommerce/cwm-shared",
+    "packageName": "@atlassian-test-staging/synth-check",
     "version": "latest",
-    "timestamp": "2026-01-22T23:18:19.707Z"
+    "timestamp": "2026-01-23T01:07:20.145Z"
   },
   {
-    "packageName": "houdin-mcp",
+    "packageName": "@snf/qa-bot-core",
     "version": "latest",
-    "timestamp": "2026-01-22T23:18:19.707Z"
+    "timestamp": "2026-01-23T01:07:20.145Z"
   },
   {
-    "packageName": "recker",
+    "packageName": "@atlassian-test-prod/synth-check",
     "version": "latest",
-    "timestamp": "2026-01-22T23:18:19.706Z"
+    "timestamp": "2026-01-23T01:07:20.144Z"
   },
   {
-    "packageName": "@markjaquith/agency",
+    "packageName": "claude-ps",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:57.836Z"
+    "timestamp": "2026-01-23T01:06:58.271Z"
   },
   {
-    "packageName": "recker",
+    "packageName": "svg-path-kit",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:57.835Z"
+    "timestamp": "2026-01-23T01:06:58.271Z"
   },
   {
-    "packageName": "@aptos-labs/wallet-adapter-react",
+    "packageName": "@atlassian-test-staging/synth-check",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:57.835Z"
+    "timestamp": "2026-01-23T01:06:47.285Z"
   },
   {
-    "packageName": "@aptos-labs/cross-chain-core",
+    "packageName": "@principal-ai/principal-view-core",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:57.834Z"
+    "timestamp": "2026-01-23T01:06:47.284Z"
   },
   {
-    "packageName": "@aptos-labs/wallet-adapter-core",
+    "packageName": "@prexy-libs/common",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:57.833Z"
+    "timestamp": "2026-01-23T01:06:36.274Z"
   },
   {
-    "packageName": "@aptos-labs/wallet-adapter-mui-design",
+    "packageName": "aidevops",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:57.833Z"
+    "timestamp": "2026-01-23T01:06:36.273Z"
   },
   {
-    "packageName": "@aptos-labs/wallet-adapter-ant-design",
+    "packageName": "meeting-context-hub",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:57.832Z"
+    "timestamp": "2026-01-23T01:06:25.305Z"
   },
   {
-    "packageName": "@aptos-labs/derived-wallet-sui",
+    "packageName": "@singcl/ad-execute-manager",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:57.832Z"
+    "timestamp": "2026-01-23T01:06:25.304Z"
   },
   {
-    "packageName": "@aptos-labs/derived-wallet-solana",
+    "packageName": "@vncsleal/prisml",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:57.831Z"
+    "timestamp": "2026-01-23T01:06:03.586Z"
   },
   {
-    "packageName": "@aptos-labs/derived-wallet-ethereum",
+    "packageName": "@514labs/moose-proto",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:57.831Z"
+    "timestamp": "2026-01-23T01:05:52.592Z"
   },
   {
-    "packageName": "@aptos-labs/derived-wallet-base",
+    "packageName": "@digital8/lighting-illusions-ts-sdk",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:57.830Z"
+    "timestamp": "2026-01-23T01:05:52.591Z"
   },
   {
-    "packageName": "@tapcart/mobile-components",
+    "packageName": "locus-product-planning",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:46.840Z"
+    "timestamp": "2026-01-23T01:05:52.590Z"
   },
   {
-    "packageName": "neosqlite",
+    "packageName": "@azure/service-bus",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:35.842Z"
+    "timestamp": "2026-01-23T01:05:41.572Z"
   },
   {
-    "packageName": "react-native-macos",
+    "packageName": "@atlassian-test-staging/synth-check",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:24.867Z"
+    "timestamp": "2026-01-23T01:05:41.572Z"
   },
   {
-    "packageName": "@react-native-macos/virtualized-lists",
+    "packageName": "@sprig-and-prose/sprig",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:24.866Z"
+    "timestamp": "2026-01-23T01:05:30.595Z"
   },
   {
-    "packageName": "@azure/arm-pineconevectordb",
+    "packageName": "cucumber-reactive-reporter",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:24.866Z"
+    "timestamp": "2026-01-23T01:05:30.594Z"
   },
   {
-    "packageName": "@digitalculture/ochre-sdk",
+    "packageName": "@514labs/event-capture",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:24.865Z"
+    "timestamp": "2026-01-23T01:05:19.293Z"
   },
   {
-    "packageName": "@azure/arm-healthbot",
+    "packageName": "dev-playbooks-cn",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:13.566Z"
+    "timestamp": "2026-01-23T01:05:19.292Z"
   },
   {
-    "packageName": "@centreon/ui",
+    "packageName": "@514labs/design-system-base",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:13.566Z"
+    "timestamp": "2026-01-23T01:05:08.286Z"
   },
   {
-    "packageName": "@react-native-macos/virtualized-lists",
+    "packageName": "@atlassian-test-staging/synth-check",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:13.565Z"
+    "timestamp": "2026-01-23T01:05:08.286Z"
   },
   {
-    "packageName": "@azure/arm-resourcehealth",
+    "packageName": "opencode-kilocode-auth",
     "version": "latest",
-    "timestamp": "2026-01-22T23:17:02.444Z"
+    "timestamp": "2026-01-23T01:05:08.285Z"
   },
   {
-    "packageName": "@c8y/websdk",
+    "packageName": "@514labs/moose-connector-s3",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:51.465Z"
+    "timestamp": "2026-01-23T01:05:08.284Z"
   },
   {
-    "packageName": "@jrmc/adonis-mcp",
+    "packageName": "mirra-cc-bridge",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:40.383Z"
+    "timestamp": "2026-01-23T01:04:57.229Z"
   },
   {
-    "packageName": "@centreon/js-config",
+    "packageName": "@514labs/moose-connector-api",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:40.383Z"
+    "timestamp": "2026-01-23T01:04:46.190Z"
   },
   {
-    "packageName": "@moreillon/vue_application_template_vuetify",
+    "packageName": "@wireio/stake",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:40.382Z"
+    "timestamp": "2026-01-23T01:04:46.189Z"
   },
   {
-    "packageName": "@c8y/tutorial",
+    "packageName": "@primer/react",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:40.382Z"
+    "timestamp": "2026-01-23T01:04:35.168Z"
   },
   {
-    "packageName": "@centreon/ui-context",
+    "packageName": "mcp-token-data",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:40.381Z"
+    "timestamp": "2026-01-23T01:04:35.167Z"
   },
   {
-    "packageName": "@c8y/toolkit",
+    "packageName": "@primer/styled-react",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:29.399Z"
+    "timestamp": "2026-01-23T01:04:35.166Z"
   },
   {
-    "packageName": "@flarehr/apollo-customer-workplace-link",
+    "packageName": "cpeak",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:29.399Z"
+    "timestamp": "2026-01-23T01:04:24.185Z"
   },
   {
-    "packageName": "@c8y/style",
+    "packageName": "@atlassian-test-staging/synth-check",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:29.398Z"
+    "timestamp": "2026-01-23T01:04:24.184Z"
   },
   {
-    "packageName": "@hellboy/utils",
+    "packageName": "@demox-site/mcp-server",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:18.417Z"
+    "timestamp": "2026-01-23T01:04:13.204Z"
   },
   {
-    "packageName": "@hellboy/tooltip",
+    "packageName": "@514labs/moose-lib",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:18.416Z"
+    "timestamp": "2026-01-23T01:04:13.203Z"
   },
   {
-    "packageName": "@c8y/websdk",
+    "packageName": "@vitoyucepi/audioplayer-deploy",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:18.416Z"
+    "timestamp": "2026-01-23T01:04:02.233Z"
   },
   {
-    "packageName": "@handsondigital/idplugger-admin",
+    "packageName": "@vitoyucepi/audioplayer-userscript",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:18.415Z"
+    "timestamp": "2026-01-23T01:04:02.232Z"
   },
   {
-    "packageName": "@fastly/js-compute",
+    "packageName": "@khanacademy/perseus",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:18.415Z"
+    "timestamp": "2026-01-23T01:04:02.232Z"
   },
   {
-    "packageName": "@happy-dom/server-renderer",
+    "packageName": "@khanacademy/perseus-editor",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:07.385Z"
+    "timestamp": "2026-01-23T01:04:02.231Z"
   },
   {
-    "packageName": "@happy-dom/jest-environment",
+    "packageName": "@khanacademy/math-input",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:07.384Z"
+    "timestamp": "2026-01-23T01:04:02.230Z"
   },
   {
-    "packageName": "eleventy-plugin-search",
+    "packageName": "@khanacademy/perseus-core",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:07.383Z"
+    "timestamp": "2026-01-23T01:04:02.230Z"
   },
   {
-    "packageName": "@happy-dom/global-registrator",
+    "packageName": "@khanacademy/perseus-linter",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:07.383Z"
+    "timestamp": "2026-01-23T01:04:02.229Z"
   },
   {
-    "packageName": "@c8y/tutorial",
+    "packageName": "@khanacademy/keypad-context",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:07.382Z"
+    "timestamp": "2026-01-23T01:04:02.229Z"
   },
   {
-    "packageName": "happy-dom",
+    "packageName": "@khanacademy/perseus-score",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:07.382Z"
+    "timestamp": "2026-01-23T01:04:02.228Z"
   },
   {
-    "packageName": "@bb-labs/pkce",
+    "packageName": "@khanacademy/kmath",
     "version": "latest",
-    "timestamp": "2026-01-22T23:16:07.381Z"
+    "timestamp": "2026-01-23T01:04:02.227Z"
   },
   {
-    "packageName": "@c8y/toolkit",
+    "packageName": "handler-playable-sdk",
     "version": "latest",
-    "timestamp": "2026-01-22T23:15:56.422Z"
+    "timestamp": "2026-01-23T01:04:02.222Z"
   },
   {
-    "packageName": "@hellboy/toggle-group",
+    "packageName": "contractspec",
     "version": "latest",
-    "timestamp": "2026-01-22T23:15:56.421Z"
+    "timestamp": "2026-01-23T01:03:29.270Z"
   },
   {
-    "packageName": "@craftreactnative/ui",
+    "packageName": "spec-driven-development",
     "version": "latest",
-    "timestamp": "2026-01-22T23:15:45.423Z"
+    "timestamp": "2026-01-23T01:03:29.269Z"
   },
   {
-    "packageName": "@c8y/style",
+    "packageName": "@contractspec/app.cli-contractspec",
     "version": "latest",
-    "timestamp": "2026-01-22T23:15:45.422Z"
+    "timestamp": "2026-01-23T01:03:29.268Z"
   },
   {
-    "packageName": "@norrix/cli",
+    "packageName": "@cc-component/cc-guide",
     "version": "latest",
-    "timestamp": "2026-01-22T23:15:45.422Z"
+    "timestamp": "2026-01-23T01:03:29.268Z"
   },
   {
-    "packageName": "@c8y/sample-plugin",
+    "packageName": "@jrnv/good-enough-parser",
     "version": "latest",
-    "timestamp": "2026-01-22T23:15:45.420Z"
+    "timestamp": "2026-01-23T01:03:29.267Z"
   },
   {
-    "packageName": "@c8y/options",
+    "packageName": "jsonfixerdev",
     "version": "latest",
-    "timestamp": "2026-01-22T23:15:23.553Z"
+    "timestamp": "2026-01-23T01:03:29.267Z"
   },
   {
-    "packageName": "@c8y/package-blueprint",
+    "packageName": "gomtm-cli",
     "version": "latest",
-    "timestamp": "2026-01-22T23:15:23.553Z"
+    "timestamp": "2026-01-23T01:03:29.266Z"
   },
   {
-    "packageName": "@c8y/sample-plugin",
+    "packageName": "@adguard/dnr-rulesets",
     "version": "latest",
-    "timestamp": "2026-01-22T23:15:12.522Z"
+    "timestamp": "2026-01-23T01:03:18.300Z"
   },
   {
-    "packageName": "@c8y/ngx-components",
+    "packageName": "vite-plugin-json-partial-merge",
     "version": "latest",
-    "timestamp": "2026-01-22T23:15:12.521Z"
+    "timestamp": "2026-01-23T01:03:18.300Z"
   },
   {
-    "packageName": "@webjet/react",
+    "packageName": "ralphy-cli",
     "version": "latest",
-    "timestamp": "2026-01-22T23:15:12.521Z"
+    "timestamp": "2026-01-23T01:03:18.299Z"
   },
   {
-    "packageName": "dbdock",
+    "packageName": "@seer-bigdata/sport-project-code",
     "version": "latest",
-    "timestamp": "2026-01-22T23:15:01.523Z"
+    "timestamp": "2026-01-23T01:02:54.854Z"
   },
   {
-    "packageName": "@c8y/options",
+    "packageName": "@brennhill/gasoline-win32-x64",
     "version": "latest",
-    "timestamp": "2026-01-22T23:14:50.578Z"
+    "timestamp": "2026-01-23T01:02:54.853Z"
   },
   {
-    "packageName": "@c8y/package-blueprint",
+    "packageName": "@brennhill/gasoline-linux-x64",
     "version": "latest",
-    "timestamp": "2026-01-22T23:14:50.577Z"
-  },
-  {
-    "packageName": "@carichat/common",
-    "version": "latest",
-    "timestamp": "2026-01-22T23:14:39.538Z"
-  },
-  {
-    "packageName": "@c8y/ng1-modules",
-    "version": "latest",
-    "timestamp": "2026-01-22T23:14:39.537Z"
-  },
-  {
-    "packageName": "@carichat/business",
-    "version": "latest",
-    "timestamp": "2026-01-22T23:14:39.537Z"
-  },
-  {
-    "packageName": "playwright-codemirror",
-    "version": "latest",
-    "timestamp": "2026-01-22T23:14:39.536Z"
-  },
-  {
-    "packageName": "@carichat/auth",
-    "version": "latest",
-    "timestamp": "2026-01-22T23:14:39.536Z"
-  },
-  {
-    "packageName": "@c8y/ngx-components",
-    "version": "latest",
-    "timestamp": "2026-01-22T23:14:28.566Z"
-  },
-  {
-    "packageName": "@axos-web-dev/shared-components",
-    "version": "latest",
-    "timestamp": "2026-01-22T23:14:28.566Z"
-  },
-  {
-    "packageName": "@c8y/login",
-    "version": "latest",
-    "timestamp": "2026-01-22T23:14:28.565Z"
-  },
-  {
-    "packageName": "diffstalker",
-    "version": "latest",
-    "timestamp": "2026-01-22T23:14:17.545Z"
-  },
-  {
-    "packageName": "@c8y/hybrid",
-    "version": "latest",
-    "timestamp": "2026-01-22T23:14:17.545Z"
-  },
-  {
-    "packageName": "teodor-new-chat-ui",
-    "version": "latest",
-    "timestamp": "2026-01-22T23:14:17.544Z"
-  },
-  {
-    "packageName": "@c8y/ng1-modules",
-    "version": "latest",
-    "timestamp": "2026-01-22T23:14:06.540Z"
-  },
-  {
-    "packageName": "@retab/node",
-    "version": "latest",
-    "timestamp": "2026-01-22T19:19:06.935Z"
-  },
-  {
-    "packageName": "@nestkit-x/core",
-    "version": "latest",
-    "timestamp": "2026-01-22T19:19:06.934Z"
-  },
-  {
-    "packageName": "@grafana/e2e-selectors",
-    "version": "latest",
-    "timestamp": "2026-01-22T19:19:06.933Z"
+    "timestamp": "2026-01-23T01:02:54.852Z"
   }
 ]
