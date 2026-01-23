@@ -1,1 +1,27 @@
-[]
+[
+  {
+    "packageName": "@servicetitan/titan-chatbot-ui",
+    "version": "latest",
+    "timestamp": "2026-01-23T11:34:00.881Z"
+  },
+  {
+    "packageName": "@servicetitan/titan-chatbot-api",
+    "version": "latest",
+    "timestamp": "2026-01-23T11:34:00.591Z"
+  },
+  {
+    "packageName": "@servicetitan/titan-chat-ui",
+    "version": "latest",
+    "timestamp": "2026-01-23T11:34:00.579Z"
+  },
+  {
+    "packageName": "@servicetitan/titan-chat-ui-anvil2",
+    "version": "latest",
+    "timestamp": "2026-01-23T11:34:00.563Z"
+  },
+  {
+    "packageName": "@servicetitan/titan-chat-ui-common",
+    "version": "latest",
+    "timestamp": "2026-01-23T11:34:00.559Z"
+  }
+]
