@@ -25,6 +25,9 @@ jobs:
 
       - name: Run scan
         run: npm start
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
      
 
       - name: Commit and push changes
