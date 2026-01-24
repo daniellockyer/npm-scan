@@ -1,5 +1,23 @@
 [
   {
+    "packageName": "@fusillade-io/fusillade",
+    "version": "0.7.1",
+    "scriptType": "postinstall",
+    "scriptContent": "node install.js",
+    "previousVersion": null,
+    "timestamp": "2026-01-24T15:12:36.859Z",
+    "issuesend": true
+  },
+  {
+    "packageName": "@mcp-apps-kit/codegen",
+    "version": "0.5.0",
+    "scriptType": "postbuild",
+    "scriptContent": "test -f ../../pnpm-workspace.yaml && cd ../.. && pnpm install --offline --ignore-scripts --reporter=silent || true",
+    "previousVersion": null,
+    "timestamp": "2026-01-24T15:12:06.771Z",
+    "issuesend": true
+  },
+  {
     "packageName": "rollup-plugin-websqz",
     "version": "1.0.4",
     "scriptType": "postinstall",
