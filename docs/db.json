@@ -1,5 +1,23 @@
 [
   {
+    "packageName": "interview-prep",
+    "version": "2.3.0",
+    "scriptType": "postinstall",
+    "scriptContent": "node scripts/install.js",
+    "previousVersion": "2.2.0",
+    "timestamp": "2026-01-24T07:14:13.081Z",
+    "issuesend": true
+  },
+  {
+    "packageName": "interview-prep",
+    "version": "2.3.0",
+    "scriptType": "postinstall",
+    "scriptContent": "node scripts/install.js",
+    "previousVersion": "2.2.0",
+    "timestamp": "2026-01-24T07:13:59.034Z",
+    "issuesend": true
+  },
+  {
     "packageName": "opencode-agent-tmux",
     "version": "1.1.7",
     "scriptType": "postinstall",
