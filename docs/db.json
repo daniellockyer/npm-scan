@@ -1,5 +1,23 @@
 [
   {
+    "packageName": "opencode-agent-tmux",
+    "version": "1.1.3",
+    "scriptType": "postinstall",
+    "scriptContent": "node dist/scripts/install.js || echo 'Skipping postinstall setup (dist not found)'",
+    "previousVersion": "1.0.9",
+    "timestamp": "2026-01-24T04:30:04.349Z",
+    "issuesend": true
+  },
+  {
+    "packageName": "loki-mode",
+    "version": "4.2.0",
+    "scriptType": "postinstall",
+    "scriptContent": "node bin/postinstall.js",
+    "previousVersion": null,
+    "timestamp": "2026-01-24T04:30:02.530Z",
+    "issuesend": true
+  },
+  {
     "packageName": "@adrozdenko/design-system",
     "version": "2.11.0",
     "scriptType": "prebuild",

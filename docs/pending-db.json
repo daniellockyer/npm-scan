@@ -1,877 +1,1347 @@
 [
   {
-    "packageName": "@dropgate/core",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:15:47.309Z"
-  },
-  {
-    "packageName": "@claude-flow/cli",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:15:47.308Z"
-  },
-  {
-    "packageName": "@willjackson/claude-code-bridge",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:15:47.307Z"
-  },
-  {
-    "packageName": "wassocketesm",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:15:36.444Z"
-  },
-  {
-    "packageName": "aws-iam-data",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:15:23.976Z"
-  },
-  {
     "packageName": "gomtm-cli",
     "version": "latest",
-    "timestamp": "2026-01-24T04:15:23.975Z"
+    "timestamp": "2026-01-24T04:49:55.018Z"
   },
   {
-    "packageName": "tripstorekrabi-shared",
+    "packageName": "@esri/solution-simple-types",
     "version": "latest",
-    "timestamp": "2026-01-24T04:15:13.046Z"
+    "timestamp": "2026-01-24T04:49:55.018Z"
   },
   {
-    "packageName": "bhd-components",
+    "packageName": "@esri/solution-hub-types",
     "version": "latest",
-    "timestamp": "2026-01-24T04:15:02.108Z"
+    "timestamp": "2026-01-24T04:49:55.017Z"
   },
   {
-    "packageName": "@yrysmatby/contracts",
+    "packageName": "@esri/solution-group",
     "version": "latest",
-    "timestamp": "2026-01-24T04:15:02.107Z"
+    "timestamp": "2026-01-24T04:49:55.016Z"
   },
   {
-    "packageName": "mixpanel-import",
+    "packageName": "@esri/solution-form",
     "version": "latest",
-    "timestamp": "2026-01-24T04:14:28.085Z"
+    "timestamp": "2026-01-24T04:49:55.015Z"
   },
   {
-    "packageName": "@azure-rest/ai-content-safety",
+    "packageName": "@atlassian-test-staging/synth-check",
     "version": "latest",
-    "timestamp": "2026-01-24T04:14:17.166Z"
+    "timestamp": "2026-01-24T04:49:55.014Z"
   },
   {
-    "packageName": "@whitegodkingsley/arena-cli",
+    "packageName": "@esri/solution-file",
     "version": "latest",
-    "timestamp": "2026-01-24T04:14:06.260Z"
+    "timestamp": "2026-01-24T04:49:55.013Z"
   },
   {
-    "packageName": "@versini/sassysaint",
+    "packageName": "@esri/solution-feature-layer",
     "version": "latest",
-    "timestamp": "2026-01-24T04:13:44.541Z"
+    "timestamp": "2026-01-24T04:49:44.195Z"
   },
   {
-    "packageName": "@apidevtools/json-schema-ref-parser",
+    "packageName": "@esri/solution-deployer",
     "version": "latest",
-    "timestamp": "2026-01-24T04:13:44.540Z"
+    "timestamp": "2026-01-24T04:49:44.194Z"
   },
   {
-    "packageName": "meeting-scheduler-npm-package",
+    "packageName": "@esri/solution-creator",
     "version": "latest",
-    "timestamp": "2026-01-24T04:13:33.613Z"
+    "timestamp": "2026-01-24T04:49:44.193Z"
   },
   {
-    "packageName": "@capillarytech/blaze-ui",
+    "packageName": "@esri/solution-common",
     "version": "latest",
-    "timestamp": "2026-01-24T04:13:22.677Z"
+    "timestamp": "2026-01-24T04:49:44.192Z"
   },
   {
-    "packageName": "@opensite/ui",
+    "packageName": "@cliangdev/flux-plugin",
     "version": "latest",
-    "timestamp": "2026-01-24T04:13:22.676Z"
+    "timestamp": "2026-01-24T04:49:33.282Z"
   },
   {
-    "packageName": "@ekkolyth/ui",
+    "packageName": "nodejs-insta-private-api-mqtt",
     "version": "latest",
-    "timestamp": "2026-01-24T04:13:01.076Z"
+    "timestamp": "2026-01-24T04:49:33.281Z"
   },
   {
-    "packageName": "@objectstack/plugin-msw",
+    "packageName": "@terreno/ui",
     "version": "latest",
-    "timestamp": "2026-01-24T04:13:01.075Z"
+    "timestamp": "2026-01-24T04:49:33.280Z"
   },
   {
-    "packageName": "@activepieces/piece-oracle-fusion-cloud-erp",
+    "packageName": "@kanjijs/throttler",
     "version": "latest",
-    "timestamp": "2026-01-24T04:12:50.250Z"
+    "timestamp": "2026-01-24T04:49:22.370Z"
   },
   {
-    "packageName": "@atlassian-test-prod/synth-check",
+    "packageName": "@kanjijs/logger",
     "version": "latest",
-    "timestamp": "2026-01-24T04:12:50.249Z"
+    "timestamp": "2026-01-24T04:49:22.369Z"
   },
   {
-    "packageName": "velar-ui",
+    "packageName": "@kanjijs/auth",
     "version": "latest",
-    "timestamp": "2026-01-24T04:12:39.385Z"
+    "timestamp": "2026-01-24T04:49:22.369Z"
   },
   {
-    "packageName": "@mcp-b/chrome-devtools-mcp",
+    "packageName": "@robhan-cdk-lib/aws_mwaa",
     "version": "latest",
-    "timestamp": "2026-01-24T04:12:39.384Z"
+    "timestamp": "2026-01-24T04:49:22.367Z"
   },
   {
-    "packageName": "fend-wasm-web",
+    "packageName": "@kanjijs/store",
     "version": "latest",
-    "timestamp": "2026-01-24T04:12:19.201Z"
+    "timestamp": "2026-01-24T04:49:11.459Z"
   },
   {
-    "packageName": "loki-mode",
+    "packageName": "@kanjijs/config",
     "version": "latest",
-    "timestamp": "2026-01-24T04:12:19.200Z"
+    "timestamp": "2026-01-24T04:49:11.458Z"
   },
   {
-    "packageName": "@atlassian-test-prod/synth-check",
+    "packageName": "@kanjijs/openapi",
     "version": "latest",
-    "timestamp": "2026-01-24T04:12:19.199Z"
+    "timestamp": "2026-01-24T04:49:11.457Z"
   },
   {
-    "packageName": "ecinc-cloud-yoabase",
+    "packageName": "@kanjijs/cli",
     "version": "latest",
-    "timestamp": "2026-01-24T04:11:55.937Z"
+    "timestamp": "2026-01-24T04:49:11.457Z"
   },
   {
-    "packageName": "fend-wasm",
+    "packageName": "@kanjijs/testing",
     "version": "latest",
-    "timestamp": "2026-01-24T04:11:55.936Z"
+    "timestamp": "2026-01-24T04:49:11.456Z"
   },
   {
-    "packageName": "gga-kit",
+    "packageName": "@kanjijs/platform-bun",
     "version": "latest",
-    "timestamp": "2026-01-24T04:11:34.248Z"
+    "timestamp": "2026-01-24T04:49:00.590Z"
   },
   {
-    "packageName": "ctrf-html-reporter",
+    "packageName": "@atlassian-test-staging/synth-check",
     "version": "latest",
-    "timestamp": "2026-01-24T04:11:34.247Z"
+    "timestamp": "2026-01-24T04:49:00.589Z"
   },
   {
-    "packageName": "@backstage-community/plugin-techdocs-backend-module-confluence",
+    "packageName": "@kanjijs/platform-hono",
     "version": "latest",
-    "timestamp": "2026-01-24T04:11:34.247Z"
+    "timestamp": "2026-01-24T04:49:00.589Z"
   },
   {
-    "packageName": "scv-bilara",
+    "packageName": "@kanjijs/contracts",
     "version": "latest",
-    "timestamp": "2026-01-24T04:11:34.246Z"
+    "timestamp": "2026-01-24T04:49:00.587Z"
   },
   {
-    "packageName": "homebridge-unifi-access",
+    "packageName": "@kanjijs/core",
     "version": "latest",
-    "timestamp": "2026-01-24T04:11:34.245Z"
+    "timestamp": "2026-01-24T04:49:00.586Z"
   },
   {
-    "packageName": "yuangs",
+    "packageName": "the-grid-cc",
     "version": "latest",
-    "timestamp": "2026-01-24T04:11:23.015Z"
+    "timestamp": "2026-01-24T04:49:00.586Z"
   },
   {
-    "packageName": "prjct-cli",
+    "packageName": "@mcpc-tech/builder",
     "version": "latest",
-    "timestamp": "2026-01-24T04:11:23.014Z"
+    "timestamp": "2026-01-24T04:49:00.585Z"
   },
   {
-    "packageName": "zerocut",
+    "packageName": "@kanjijs/common",
     "version": "latest",
-    "timestamp": "2026-01-24T04:11:23.014Z"
+    "timestamp": "2026-01-24T04:48:48.237Z"
   },
   {
-    "packageName": "opencode-agent-tmux",
+    "packageName": "@esri/solution-creator",
     "version": "latest",
-    "timestamp": "2026-01-24T04:11:23.013Z"
+    "timestamp": "2026-01-24T04:48:26.609Z"
   },
   {
-    "packageName": "@kaitranntt/ccs",
+    "packageName": "@esri/solution-deployer",
     "version": "latest",
-    "timestamp": "2026-01-24T04:11:12.137Z"
+    "timestamp": "2026-01-24T04:48:26.609Z"
   },
   {
-    "packageName": "cerevox",
+    "packageName": "@esri/solution-web-tool",
     "version": "latest",
-    "timestamp": "2026-01-24T04:11:12.136Z"
+    "timestamp": "2026-01-24T04:48:26.608Z"
   },
   {
-    "packageName": "@blorkfield/overlay-core",
+    "packageName": "@esri/solution-form",
     "version": "latest",
-    "timestamp": "2026-01-24T04:11:12.135Z"
+    "timestamp": "2026-01-24T04:48:26.607Z"
   },
   {
-    "packageName": "glassine-paper",
+    "packageName": "@esri/solution-workflow",
     "version": "latest",
-    "timestamp": "2026-01-24T04:11:01.183Z"
+    "timestamp": "2026-01-24T04:48:26.606Z"
   },
   {
-    "packageName": "@buley/hexgrid-3d",
+    "packageName": "@esri/solution-web-experience",
     "version": "latest",
-    "timestamp": "2026-01-24T04:11:01.182Z"
+    "timestamp": "2026-01-24T04:48:26.605Z"
   },
   {
-    "packageName": "@claude-flow/plugin-hyperbolic-reasoning",
+    "packageName": "@esri/solution-velocity",
     "version": "latest",
-    "timestamp": "2026-01-24T04:10:39.466Z"
+    "timestamp": "2026-01-24T04:48:15.745Z"
   },
   {
-    "packageName": "@kexi/vibe-native",
+    "packageName": "@esri/solution-storymap",
     "version": "latest",
-    "timestamp": "2026-01-24T04:10:28.280Z"
+    "timestamp": "2026-01-24T04:48:15.744Z"
   },
   {
-    "packageName": "@claude-flow/plugin-quantum-optimizer",
+    "packageName": "@esri/solution-file",
     "version": "latest",
-    "timestamp": "2026-01-24T04:10:28.280Z"
+    "timestamp": "2026-01-24T04:48:15.743Z"
   },
   {
-    "packageName": "@tencent-ai/codebuddy-code",
+    "packageName": "@esri/solution-hub-types",
     "version": "latest",
-    "timestamp": "2026-01-24T04:10:28.279Z"
+    "timestamp": "2026-01-24T04:48:15.742Z"
   },
   {
-    "packageName": "@claude-flow/plugin-cognitive-kernel",
+    "packageName": "@esri/solution-viewer",
     "version": "latest",
-    "timestamp": "2026-01-24T04:10:28.278Z"
+    "timestamp": "2026-01-24T04:48:15.741Z"
   },
   {
-    "packageName": "@claude-flow/plugin-neural-coordination",
+    "packageName": "@esri/solution-simple-types",
     "version": "latest",
-    "timestamp": "2026-01-24T04:10:17.376Z"
+    "timestamp": "2026-01-24T04:48:15.741Z"
   },
   {
-    "packageName": "@claude-flow/plugin-perf-optimizer",
+    "packageName": "@esri/solution-feature-layer",
     "version": "latest",
-    "timestamp": "2026-01-24T04:10:17.375Z"
+    "timestamp": "2026-01-24T04:48:15.740Z"
   },
   {
-    "packageName": "@claude-flow/plugin-test-intelligence",
+    "packageName": "@esri/solution-group",
     "version": "latest",
-    "timestamp": "2026-01-24T04:10:17.374Z"
+    "timestamp": "2026-01-24T04:48:15.739Z"
   },
   {
-    "packageName": "@claude-flow/plugin-code-intelligence",
+    "packageName": "@esri/solution-common",
     "version": "latest",
-    "timestamp": "2026-01-24T04:10:06.492Z"
+    "timestamp": "2026-01-24T04:48:15.738Z"
   },
   {
-    "packageName": "@claude-flow/plugin-legal-contracts",
+    "packageName": "awesome-slash",
     "version": "latest",
-    "timestamp": "2026-01-24T04:10:06.491Z"
+    "timestamp": "2026-01-24T04:47:53.783Z"
   },
   {
-    "packageName": "@claude-flow/plugin-financial-risk",
+    "packageName": "@eusoumarlon/wa-version",
     "version": "latest",
-    "timestamp": "2026-01-24T04:09:55.539Z"
+    "timestamp": "2026-01-24T04:47:53.588Z"
   },
   {
-    "packageName": "wbfy",
+    "packageName": "@robhan-cdk-lib/aws_aps",
     "version": "latest",
-    "timestamp": "2026-01-24T04:09:55.538Z"
-  },
-  {
-    "packageName": "@qualcomm-ui/mdx-vite",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:09:55.537Z"
-  },
-  {
-    "packageName": "@claude-flow/plugin-healthcare-clinical",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:09:55.536Z"
-  },
-  {
-    "packageName": "sag-vxe-pc",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:09:55.536Z"
-  },
-  {
-    "packageName": "@atlassian-test-prod/synth-check",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:09:44.559Z"
-  },
-  {
-    "packageName": "@claude-flow/plugin-hyperbolic-reasoning",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:09:33.641Z"
+    "timestamp": "2026-01-24T04:47:40.971Z"
   },
   {
     "packageName": "@ai-sdk/xai",
     "version": "latest",
-    "timestamp": "2026-01-24T04:09:33.641Z"
+    "timestamp": "2026-01-24T04:47:19.378Z"
   },
   {
-    "packageName": "@ntf/math",
+    "packageName": "ocpipe",
     "version": "latest",
-    "timestamp": "2026-01-24T04:09:22.695Z"
+    "timestamp": "2026-01-24T04:47:19.377Z"
   },
   {
-    "packageName": "@claude-flow/plugin-quantum-optimizer",
+    "packageName": "@azure/arm-healthcareapis",
     "version": "latest",
-    "timestamp": "2026-01-24T04:09:22.695Z"
+    "timestamp": "2026-01-24T04:47:19.376Z"
   },
   {
-    "packageName": "capacitor-plugin-silent-notifications",
+    "packageName": "@robhan-cdk-lib/aws_grafana",
     "version": "latest",
-    "timestamp": "2026-01-24T04:09:11.766Z"
+    "timestamp": "2026-01-24T04:46:45.170Z"
   },
   {
-    "packageName": "@claude-flow/plugin-cognitive-kernel",
+    "packageName": "n8n-nodes-koreainvestment",
     "version": "latest",
-    "timestamp": "2026-01-24T04:09:11.765Z"
+    "timestamp": "2026-01-24T04:46:34.295Z"
   },
   {
-    "packageName": "@f0rbit/ui",
+    "packageName": "@robhan-cdk-lib/utils",
     "version": "latest",
-    "timestamp": "2026-01-24T04:09:00.877Z"
-  },
-  {
-    "packageName": "@claude-flow/plugin-neural-coordination",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:09:00.876Z"
-  },
-  {
-    "packageName": "@uityu/uityu-shared",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:09:00.876Z"
-  },
-  {
-    "packageName": "@atlassian-test-prod/synth-check",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:09:00.875Z"
-  },
-  {
-    "packageName": "@claude-flow/plugin-perf-optimizer",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:09:00.874Z"
-  },
-  {
-    "packageName": "@ondoher/enigma",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:08:49.939Z"
-  },
-  {
-    "packageName": "create-rari-app",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:08:49.938Z"
-  },
-  {
-    "packageName": "graphql-fns",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:08:49.938Z"
-  },
-  {
-    "packageName": "@claude-flow/plugin-test-intelligence",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:08:49.937Z"
-  },
-  {
-    "packageName": "@schoolai/shipyard-mcp",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:08:39.024Z"
-  },
-  {
-    "packageName": "@claude-flow/plugin-code-intelligence",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:08:39.024Z"
-  },
-  {
-    "packageName": "rari",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:08:39.023Z"
-  },
-  {
-    "packageName": "@claude-flow/plugin-legal-contracts",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:08:28.105Z"
-  },
-  {
-    "packageName": "wassocketesm",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:08:28.104Z"
-  },
-  {
-    "packageName": "@claude-flow/plugin-financial-risk",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:08:28.103Z"
-  },
-  {
-    "packageName": "kazagumo-bun",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:08:17.117Z"
-  },
-  {
-    "packageName": "@claude-flow/plugin-healthcare-clinical",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:08:17.117Z"
-  },
-  {
-    "packageName": "@jiordikengne/velar",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:08:17.116Z"
-  },
-  {
-    "packageName": "connectiq-mcp-server",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:08:06.179Z"
+    "timestamp": "2026-01-24T04:46:23.433Z"
   },
   {
     "packageName": "@dproano_npm/website-topbar",
     "version": "latest",
-    "timestamp": "2026-01-24T04:07:55.275Z"
+    "timestamp": "2026-01-24T04:46:23.432Z"
   },
   {
-    "packageName": "@dader34/stylekit-ui",
+    "packageName": "@bodhiapp/ts-client",
     "version": "latest",
-    "timestamp": "2026-01-24T04:07:55.274Z"
+    "timestamp": "2026-01-24T04:46:12.529Z"
   },
   {
-    "packageName": "@bubble-labs/capacitor-plugin-siri-shorts",
+    "packageName": "@sidesuit/pkg-tools",
     "version": "latest",
-    "timestamp": "2026-01-24T04:07:55.273Z"
+    "timestamp": "2026-01-24T04:46:12.528Z"
   },
   {
-    "packageName": "@arcgis/core",
+    "packageName": "@openpkg-ts/ui",
     "version": "latest",
-    "timestamp": "2026-01-24T04:07:33.551Z"
+    "timestamp": "2026-01-24T04:45:50.611Z"
   },
   {
-    "packageName": "@arcgis/core",
+    "packageName": "@openpkg-ts/cli",
     "version": "latest",
-    "timestamp": "2026-01-24T04:07:21.123Z"
+    "timestamp": "2026-01-24T04:45:50.611Z"
   },
   {
-    "packageName": "comp-hub",
+    "packageName": "@openpkg-ts/react",
     "version": "latest",
-    "timestamp": "2026-01-24T04:07:21.122Z"
+    "timestamp": "2026-01-24T04:45:50.610Z"
   },
   {
-    "packageName": "wassocket",
+    "packageName": "@openpkg-ts/sdk",
     "version": "latest",
-    "timestamp": "2026-01-24T04:07:10.268Z"
+    "timestamp": "2026-01-24T04:45:50.609Z"
   },
   {
-    "packageName": "agilebuilder-ui",
+    "packageName": "@openpkg-ts/adapters",
     "version": "latest",
-    "timestamp": "2026-01-24T04:07:10.267Z"
+    "timestamp": "2026-01-24T04:45:50.608Z"
   },
   {
-    "packageName": "@bubble-labs/capacitor-widgetsbridge-plugin",
+    "packageName": "asn1tools-js",
     "version": "latest",
-    "timestamp": "2026-01-24T04:06:59.384Z"
+    "timestamp": "2026-01-24T04:45:16.606Z"
   },
   {
-    "packageName": "@atlassian-test-staging/synth-check",
+    "packageName": "@ttt-productions/ui-core",
     "version": "latest",
-    "timestamp": "2026-01-24T04:06:26.902Z"
+    "timestamp": "2026-01-24T04:45:05.688Z"
   },
   {
-    "packageName": "proteum",
+    "packageName": "@mcpc-tech/plugin-markdown-loader",
     "version": "latest",
-    "timestamp": "2026-01-24T04:06:15.962Z"
+    "timestamp": "2026-01-24T04:45:05.687Z"
   },
   {
-    "packageName": "@openapi-contrib/json-schema-to-openapi-schema",
+    "packageName": "@mhamz.01/easyflow-texteditor",
     "version": "latest",
-    "timestamp": "2026-01-24T04:06:15.961Z"
+    "timestamp": "2026-01-24T04:44:54.872Z"
   },
   {
-    "packageName": "n8n-nodes-pdf-split-merge",
+    "packageName": "@mcpc-tech/core",
     "version": "latest",
-    "timestamp": "2026-01-24T04:05:54.245Z"
+    "timestamp": "2026-01-24T04:44:54.872Z"
   },
   {
-    "packageName": "@atlassian-test-staging/synth-check",
+    "packageName": "loki-loop",
     "version": "latest",
-    "timestamp": "2026-01-24T04:05:54.244Z"
+    "timestamp": "2026-01-24T04:44:54.871Z"
   },
   {
-    "packageName": "agent-rdp",
+    "packageName": "@mcpc-tech/cli",
     "version": "latest",
-    "timestamp": "2026-01-24T04:05:43.330Z"
+    "timestamp": "2026-01-24T04:44:54.870Z"
   },
   {
-    "packageName": "@agent-rdp/win32-arm64",
+    "packageName": "ccjk",
     "version": "latest",
-    "timestamp": "2026-01-24T04:05:43.330Z"
-  },
-  {
-    "packageName": "@lovrabet/cli",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:05:43.329Z"
-  },
-  {
-    "packageName": "@tencent-ai/agent-server",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:05:43.328Z"
-  },
-  {
-    "packageName": "@agent-rdp/win32-x64",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:05:32.417Z"
-  },
-  {
-    "packageName": "@atlassian-test-staging/synth-check",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:05:32.416Z"
-  },
-  {
-    "packageName": "@agent-rdp/linux-arm64",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:05:21.527Z"
-  },
-  {
-    "packageName": "@agent-rdp/linux-x64",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:05:21.526Z"
-  },
-  {
-    "packageName": "@kottvideo/common",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:05:09.095Z"
-  },
-  {
-    "packageName": "@agent-rdp/darwin-x64",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:05:09.094Z"
-  },
-  {
-    "packageName": "@anytio/pspm",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:05:09.093Z"
-  },
-  {
-    "packageName": "@atlassian-test-staging/synth-check",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:04:58.181Z"
-  },
-  {
-    "packageName": "@agent-rdp/darwin-arm64",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:04:58.181Z"
-  },
-  {
-    "packageName": "@anderspitman/fetch-handler",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:04:58.180Z"
-  },
-  {
-    "packageName": "@tencent-ai/cloud-agent-sdk",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:04:58.180Z"
-  },
-  {
-    "packageName": "gemini-mcp-rust",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:04:47.227Z"
-  },
-  {
-    "packageName": "vibefigma",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:04:47.227Z"
-  },
-  {
-    "packageName": "@mcp-b/chrome-devtools-mcp",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:04:47.225Z"
-  },
-  {
-    "packageName": "react-lzy-img",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:04:25.478Z"
-  },
-  {
-    "packageName": "@vertikalx/vtx-backend-client",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:04:25.478Z"
-  },
-  {
-    "packageName": "@atlassian-test-staging/synth-check",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:04:14.563Z"
-  },
-  {
-    "packageName": "agilebuilder-ui",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:04:03.613Z"
-  },
-  {
-    "packageName": "thetacog-mcp",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:03:41.847Z"
-  },
-  {
-    "packageName": "meeting-scheduler-npm-package",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:03:41.846Z"
-  },
-  {
-    "packageName": "n8n-nodes-base-wework",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:03:41.846Z"
-  },
-  {
-    "packageName": "@adguard/dnr-rulesets",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:03:41.845Z"
-  },
-  {
-    "packageName": "browser-basedpyright",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:03:41.845Z"
-  },
-  {
-    "packageName": "tg-claude",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:03:09.359Z"
-  },
-  {
-    "packageName": "basedpyright",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:02:58.420Z"
-  },
-  {
-    "packageName": "@decaf-ts/decorator-validation",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:02:58.419Z"
-  },
-  {
-    "packageName": "networkwm-js",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:02:13.576Z"
-  },
-  {
-    "packageName": "@ondoher/enigma",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:02:02.637Z"
-  },
-  {
-    "packageName": "@azure/arm-fluidrelay",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:02:02.637Z"
-  },
-  {
-    "packageName": "@swarmify/agents-cli",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:01:51.717Z"
-  },
-  {
-    "packageName": "@azure/arm-appinsights",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:01:40.759Z"
-  },
-  {
-    "packageName": "@greynewell/mcpbr-claude-plugin",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:01:40.758Z"
-  },
-  {
-    "packageName": "@greynewell/mcpbr",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:01:40.757Z"
-  },
-  {
-    "packageName": "comp-hub",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:01:29.813Z"
-  },
-  {
-    "packageName": "@pulumi/harness",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:01:29.812Z"
-  },
-  {
-    "packageName": "clarity-visualize",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:01:18.898Z"
-  },
-  {
-    "packageName": "@skapxd/tree",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:01:18.897Z"
-  },
-  {
-    "packageName": "@azure/arm-recoveryservices-siterecovery",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:01:18.896Z"
-  },
-  {
-    "packageName": "unholy-design-tokens",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:00:56.670Z"
-  },
-  {
-    "packageName": "@vrugd/ui",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:00:45.435Z"
-  },
-  {
-    "packageName": "vibe-and-thrive",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:00:45.434Z"
-  },
-  {
-    "packageName": "graphql-fns",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:00:11.396Z"
-  },
-  {
-    "packageName": "@buley/dash",
-    "version": "latest",
-    "timestamp": "2026-01-24T04:00:11.395Z"
-  },
-  {
-    "packageName": "aiexecode",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:59:58.943Z"
-  },
-  {
-    "packageName": "cc-goto-work",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:59:48.039Z"
-  },
-  {
-    "packageName": "@pulumi/spotinst",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:59:48.038Z"
-  },
-  {
-    "packageName": "@eslint-react/eslint-plugin",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:59:37.102Z"
-  },
-  {
-    "packageName": "eslint-plugin-react-x",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:59:26.264Z"
-  },
-  {
-    "packageName": "eslint-plugin-react-web-api",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:59:26.263Z"
-  },
-  {
-    "packageName": "eslint-plugin-react-naming-convention",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:59:15.345Z"
-  },
-  {
-    "packageName": "eslint-plugin-react-hooks-extra",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:59:04.384Z"
-  },
-  {
-    "packageName": "@nativescript/vite",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:59:04.280Z"
-  },
-  {
-    "packageName": "eslint-plugin-react-dom",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:59:04.279Z"
-  },
-  {
-    "packageName": "@mynitorai/sdk",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:59:04.279Z"
-  },
-  {
-    "packageName": "@nativescript/webpack",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:59:04.278Z"
-  },
-  {
-    "packageName": "eslint-plugin-react-debug",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:58:53.334Z"
-  },
-  {
-    "packageName": "@nativescript/core",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:58:53.332Z"
-  },
-  {
-    "packageName": "@eslint-react/core",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:58:53.331Z"
-  },
-  {
-    "packageName": "@eslint-react/var",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:58:42.420Z"
-  },
-  {
-    "packageName": "@eslint-react/ast",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:58:31.462Z"
-  },
-  {
-    "packageName": "@johngarcia9110/invariant",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:58:31.461Z"
-  },
-  {
-    "packageName": "@eslint-react/shared",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:58:31.460Z"
-  },
-  {
-    "packageName": "typescript-ds-lib",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:58:31.460Z"
-  },
-  {
-    "packageName": "@eslint-react/eff",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:58:20.520Z"
-  },
-  {
-    "packageName": "clarity-decode",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:58:20.520Z"
-  },
-  {
-    "packageName": "reflexive",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:58:20.519Z"
-  },
-  {
-    "packageName": "gomtm-cli",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:58:20.519Z"
-  },
-  {
-    "packageName": "cipher-shield",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:57:57.215Z"
-  },
-  {
-    "packageName": "lex-gql",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:57:12.307Z"
-  },
-  {
-    "packageName": "gemini-mcp-rust",
-    "version": "latest",
-    "timestamp": "2026-01-24T03:57:12.306Z"
+    "timestamp": "2026-01-24T04:44:33.376Z"
   },
   {
     "packageName": "@loafmarkets/shared-types",
     "version": "latest",
-    "timestamp": "2026-01-24T03:57:00.354Z"
+    "timestamp": "2026-01-24T04:43:57.913Z"
   },
   {
-    "packageName": "quasar-ui-danx",
+    "packageName": "@triedotdev/mcp",
     "version": "latest",
-    "timestamp": "2026-01-24T03:56:49.372Z"
+    "timestamp": "2026-01-24T04:43:14.739Z"
   },
   {
-    "packageName": "ebt-vue3",
+    "packageName": "@hyoretsu/configs",
     "version": "latest",
-    "timestamp": "2026-01-24T03:56:49.372Z"
+    "timestamp": "2026-01-24T04:43:03.793Z"
   },
   {
-    "packageName": "@launch77/cli",
+    "packageName": "@chevre/domain",
     "version": "latest",
-    "timestamp": "2026-01-24T03:56:49.371Z"
+    "timestamp": "2026-01-24T04:43:03.792Z"
+  },
+  {
+    "packageName": "opencode-agent-tmux",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:42:52.890Z"
+  },
+  {
+    "packageName": "@willjackson/claude-code-bridge",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:42:42.074Z"
+  },
+  {
+    "packageName": "@boolesai/tspec",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:42:42.073Z"
+  },
+  {
+    "packageName": "vite-plugin-ai-annotator",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:42:20.562Z"
+  },
+  {
+    "packageName": "@cliangdev/flux-plugin",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:42:08.146Z"
+  },
+  {
+    "packageName": "stentor",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:42:08.146Z"
+  },
+  {
+    "packageName": "stentor-service-studio",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:42:08.145Z"
+  },
+  {
+    "packageName": "stentor-runtime",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:42:08.144Z"
+  },
+  {
+    "packageName": "stentor-service-ovai",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:42:08.144Z"
+  },
+  {
+    "packageName": "stentor-service-event",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:42:08.142Z"
+  },
+  {
+    "packageName": "china-mobile-international-custom-components",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:41:11.531Z"
+  },
+  {
+    "packageName": "homebridge-unifi-access",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:41:11.530Z"
+  },
+  {
+    "packageName": "@zenku/mcp",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:41:02.271Z"
+  },
+  {
+    "packageName": "@jegdev/sema-ui",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:41:02.270Z"
+  },
+  {
+    "packageName": "reanimated-pause-state",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:40:28.576Z"
+  },
+  {
+    "packageName": "create-nx-plugin",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:40:16.219Z"
+  },
+  {
+    "packageName": "vue-tsgo",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:40:05.462Z"
+  },
+  {
+    "packageName": "create-nx-workspace",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:40:05.354Z"
+  },
+  {
+    "packageName": "@moneko/stylelint",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:40:05.353Z"
+  },
+  {
+    "packageName": "@nx/react-native",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:40:05.353Z"
+  },
+  {
+    "packageName": "@nx/expo",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:40:05.352Z"
+  },
+  {
+    "packageName": "@nx/angular",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:40:05.351Z"
+  },
+  {
+    "packageName": "@nx/remix",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:54.481Z"
+  },
+  {
+    "packageName": "@nx/next",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:54.480Z"
+  },
+  {
+    "packageName": "@nx/detox",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:54.479Z"
+  },
+  {
+    "packageName": "@nx/react",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:54.479Z"
+  },
+  {
+    "packageName": "@nx/rspack",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:54.478Z"
+  },
+  {
+    "packageName": "@nx/nuxt",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:42.087Z"
+  },
+  {
+    "packageName": "loudness-worklet",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:42.086Z"
+  },
+  {
+    "packageName": "@nx/storybook",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:42.086Z"
+  },
+  {
+    "packageName": "@nx/express",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:42.085Z"
+  },
+  {
+    "packageName": "@nx/nest",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:42.084Z"
+  },
+  {
+    "packageName": "@nx/vue",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:42.084Z"
+  },
+  {
+    "packageName": "@nx/playwright",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:42.083Z"
+  },
+  {
+    "packageName": "@nx/node",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:42.082Z"
+  },
+  {
+    "packageName": "@nx/plugin",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:42.082Z"
+  },
+  {
+    "packageName": "@nx/cypress",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:42.081Z"
+  },
+  {
+    "packageName": "ai-cli-mcp",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:42.080Z"
+  },
+  {
+    "packageName": "@mhamz.01/easyflow-texteditor",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:31.261Z"
+  },
+  {
+    "packageName": "@nx/module-federation",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:31.261Z"
+  },
+  {
+    "packageName": "@nx/vite",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:31.260Z"
+  },
+  {
+    "packageName": "@nx/eslint",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:31.260Z"
+  },
+  {
+    "packageName": "@nx/maven",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:31.259Z"
+  },
+  {
+    "packageName": "@nx/web",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:31.258Z"
+  },
+  {
+    "packageName": "@nx/rsbuild",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:31.257Z"
+  },
+  {
+    "packageName": "@nx/webpack",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:31.257Z"
+  },
+  {
+    "packageName": "@nx/eslint-plugin",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:31.256Z"
+  },
+  {
+    "packageName": "@nx/esbuild",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:31.255Z"
+  },
+  {
+    "packageName": "@atlassian-test-prod/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:31.255Z"
+  },
+  {
+    "packageName": "@nx/jest",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:31.254Z"
+  },
+  {
+    "packageName": "@nx/rollup",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:31.253Z"
+  },
+  {
+    "packageName": "@nx/vitest",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:31.252Z"
+  },
+  {
+    "packageName": "@nx/js",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:18.728Z"
+  },
+  {
+    "packageName": "@zenithbuild/cli",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:09.415Z"
+  },
+  {
+    "packageName": "@nx/gradle",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:09.415Z"
+  },
+  {
+    "packageName": "@nx/workspace",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:09.414Z"
+  },
+  {
+    "packageName": "@nx/docker",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:09.413Z"
+  },
+  {
+    "packageName": "jpsx",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:39:09.412Z"
+  },
+  {
+    "packageName": "@nx/devkit",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:57.075Z"
+  },
+  {
+    "packageName": "@atlassian-test-prod/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:57.075Z"
+  },
+  {
+    "packageName": "nx",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:57.074Z"
+  },
+  {
+    "packageName": "@nx/angular-rspack",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:46.180Z"
+  },
+  {
+    "packageName": "@nx/nx-darwin-x64",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:46.180Z"
+  },
+  {
+    "packageName": "@zenithbuild/router",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:46.179Z"
+  },
+  {
+    "packageName": "@nx/nx-darwin-arm64",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:46.178Z"
+  },
+  {
+    "packageName": "@nx/dotnet",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:46.178Z"
+  },
+  {
+    "packageName": "@nx/angular-rspack-compiler",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:46.177Z"
+  },
+  {
+    "packageName": "@nx/nx-linux-arm64-musl",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:35.289Z"
+  },
+  {
+    "packageName": "@nx/nx-linux-arm-gnueabihf",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:35.288Z"
+  },
+  {
+    "packageName": "@nx/nx-linux-arm64-gnu",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:35.287Z"
+  },
+  {
+    "packageName": "@nx/nx-freebsd-x64",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:35.286Z"
+  },
+  {
+    "packageName": "@nx/nx-linux-x64-musl",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:35.286Z"
+  },
+  {
+    "packageName": "@nx/nx-win32-x64-msvc",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:35.285Z"
+  },
+  {
+    "packageName": "@nx/nx-linux-x64-gnu",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:35.285Z"
+  },
+  {
+    "packageName": "@nx/nx-win32-arm64-msvc",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:35.284Z"
+  },
+  {
+    "packageName": "@zenithbuild/router",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:24.405Z"
+  },
+  {
+    "packageName": "@use-compose/ui",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:24.404Z"
+  },
+  {
+    "packageName": "the-grid-cc",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:24.403Z"
+  },
+  {
+    "packageName": "@atlassian-test-prod/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:38:02.738Z"
+  },
+  {
+    "packageName": "@42ailab/42plugin",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:37:51.830Z"
+  },
+  {
+    "packageName": "rank4222wun",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:37:51.830Z"
+  },
+  {
+    "packageName": "@42ailab/42plugin-win32-x64",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:37:51.829Z"
+  },
+  {
+    "packageName": "kazagumo-bun",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:37:51.828Z"
+  },
+  {
+    "packageName": "@42ailab/42plugin-linux-x64",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:37:30.237Z"
+  },
+  {
+    "packageName": "@trash-kit/ui",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:37:19.352Z"
+  },
+  {
+    "packageName": "@atlassian-test-prod/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:37:19.352Z"
+  },
+  {
+    "packageName": "@zenithbuild/core",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:37:19.351Z"
+  },
+  {
+    "packageName": "@42ailab/42plugin-linux-arm64",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:37:08.425Z"
+  },
+  {
+    "packageName": "color-message-aibox-vue",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:37:08.424Z"
+  },
+  {
+    "packageName": "@chaibuilder/sdk",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:57.515Z"
+  },
+  {
+    "packageName": "@42ailab/42plugin-darwin-x64",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:46.621Z"
+  },
+  {
+    "packageName": "@hyoretsu/configs",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:46.620Z"
+  },
+  {
+    "packageName": "@mhamz.01/easyflow-texteditor",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:46.619Z"
+  },
+  {
+    "packageName": "opencode-rlm-windows-x64",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:46.619Z"
+  },
+  {
+    "packageName": "opencode-rlm-linux-x64",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:46.618Z"
+  },
+  {
+    "packageName": "opencode-rlm-linux-x64-baseline",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:46.617Z"
+  },
+  {
+    "packageName": "opencode-rlm-linux-x64-musl",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:37.263Z"
+  },
+  {
+    "packageName": "opencode-rlm-windows-x64-baseline",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:37.263Z"
+  },
+  {
+    "packageName": "@42ailab/42plugin-darwin-arm64",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:37.262Z"
+  },
+  {
+    "packageName": "opencode-rlm-linux-arm64",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:37.261Z"
+  },
+  {
+    "packageName": "gofish-graphics",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:37.261Z"
+  },
+  {
+    "packageName": "@atlassian-test-staging/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:37.260Z"
+  },
+  {
+    "packageName": "opencode-rlm-linux-x64-baseline-musl",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:24.949Z"
+  },
+  {
+    "packageName": "afilimax",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:24.948Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-react",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:24.948Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-crypto",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:24.947Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-swc",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:12.253Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-tsup",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:12.252Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-unenv",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:12.252Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-capnp",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:12.251Z"
+  },
+  {
+    "packageName": "glassine-paper",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:12.251Z"
+  },
+  {
+    "packageName": "@churaverse-ci-test/test-plugin-server",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:12.250Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-satori",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:12.249Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-rollup",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:01.407Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-oxlint",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:01.406Z"
+  },
+  {
+    "packageName": "@churaverse-ci-test/test-plugin-client",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:01.405Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-eslint",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:01.405Z"
+  },
+  {
+    "packageName": "@atlassian-test-staging/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:01.404Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-webpack",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:01.404Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-unbuild",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:36:01.403Z"
+  },
+  {
+    "packageName": "opencode-rlm-darwin-x64-baseline",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:50.385Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-graphql",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:50.384Z"
+  },
+  {
+    "packageName": "opencode-rlm-darwin-x64",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:50.384Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-tamagui",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:50.383Z"
+  },
+  {
+    "packageName": "arky-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:50.383Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-i18next",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:50.382Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-unimport",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:50.382Z"
+  },
+  {
+    "packageName": "opencode-rlm-darwin-arm64",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:50.381Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-asyncapi",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:50.380Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-oxc-transform",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:39.546Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-image-compression",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:39.545Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-content-collections",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:39.545Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-style-dictionary",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:39.544Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-stylelint",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:28.701Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-rolldown",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:28.700Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-esbuild",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:28.700Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-typedoc",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:28.699Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-untyped",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:28.698Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-openapi",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:28.697Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-marked",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:17.736Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-pulumi",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:17.735Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-rspack",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:17.735Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-tsdown",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:06.679Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-biome",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:06.679Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-nodejs",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:06.678Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-date",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:06.678Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-nitro",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:06.677Z"
+  },
+  {
+    "packageName": "@ranger1/dx",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:06.677Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-jest",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:06.676Z"
+  },
+  {
+    "packageName": "@azure/arm-mysql-flexible",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:35:06.675Z"
+  },
+  {
+    "packageName": "tele_number_utils",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:55.629Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-env",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:55.628Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-vite",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:55.628Z"
+  },
+  {
+    "packageName": "@azure/arm-mysql",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:55.627Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-id",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:55.627Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-prisma",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:55.626Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-deepkit",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:55.625Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-automd",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:44.745Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-alloy",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:44.744Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-hey-api",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:44.744Z"
+  },
+  {
+    "packageName": "devtools-protocol",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:44.743Z"
+  },
+  {
+    "packageName": "@atlassian-test-staging/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:44.742Z"
+  },
+  {
+    "packageName": "@powerlines/deepkit",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:33.836Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-babel",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:33.836Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-tsc",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:33.835Z"
+  },
+  {
+    "packageName": "meeting-scheduler-npm-package",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:33.834Z"
+  },
+  {
+    "packageName": "@ema.co/mcp-toolkit",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:33.834Z"
+  },
+  {
+    "packageName": "@mhamz.01/easyflow-texteditor",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:33.833Z"
+  },
+  {
+    "packageName": "@powerlines/nx",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:33.833Z"
+  },
+  {
+    "packageName": "@powerlines/plugin-plugin",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:33.832Z"
+  },
+  {
+    "packageName": "gomtm-cli",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:13.387Z"
+  },
+  {
+    "packageName": "powerlines",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:13.386Z"
+  },
+  {
+    "packageName": "@powerlines/tsconfig",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:13.386Z"
+  },
+  {
+    "packageName": "@atlassian-test-staging/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:13.385Z"
+  },
+  {
+    "packageName": "@chevre/factory",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:34:01.065Z"
+  },
+  {
+    "packageName": "@dan-schel/js-utils",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:33:39.561Z"
+  },
+  {
+    "packageName": "@kengic/core.core",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:33:27.180Z"
+  },
+  {
+    "packageName": "faceoff",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:33:27.179Z"
+  },
+  {
+    "packageName": "@atlassian-test-staging/synth-check",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:33:16.348Z"
+  },
+  {
+    "packageName": "@createsomething/seeing",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:33:05.425Z"
+  },
+  {
+    "packageName": "@willjackson/claude-code-bridge",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:33:05.425Z"
+  },
+  {
+    "packageName": "pinokiod",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:32:43.149Z"
+  },
+  {
+    "packageName": "@vm0/cli",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:32:32.299Z"
+  },
+  {
+    "packageName": "@vm0/runner",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:32:32.298Z"
+  },
+  {
+    "packageName": "skild",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:32:10.792Z"
+  },
+  {
+    "packageName": "rank4222wun",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:31:59.962Z"
+  },
+  {
+    "packageName": "@gitsense/gsc-utils",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:31:49.079Z"
+  },
+  {
+    "packageName": "llama-cpp-capacitor",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:31:06.001Z"
+  },
+  {
+    "packageName": "homebridge-config-ui-x",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:30:55.154Z"
+  },
+  {
+    "packageName": "@wireio/stake",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:30:33.483Z"
+  },
+  {
+    "packageName": "viberun",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:30:33.483Z"
+  },
+  {
+    "packageName": "@cliangdev/flux-plugin",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:30:33.482Z"
+  },
+  {
+    "packageName": "arky-sdk",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:30:22.560Z"
+  },
+  {
+    "packageName": "@azure/arm-rediscache",
+    "version": "latest",
+    "timestamp": "2026-01-24T04:30:22.559Z"
   }
 ]
