@@ -66,6 +66,7 @@ jobs:
             --exclude ".git/" \
             --exclude "node_modules/" \
             --exclude ".github/" \
+            --exclude "metadata/" \
             -e "ssh -p ${SSH_PORT}" \
             ./ "${HETZNER_USER}@${HETZNER_HOST}:${HETZNER_DEPLOY_PATH}/"
 
