@@ -6,10 +6,10 @@ The tool uses npm's replicate database (`replicate.npmjs.com`) to track changes,
 
 ## Hall of Fame
 
-Malicious packages are screened and reported by myself. This project has led to the following results as of January 20th, 2026:
+Malicious packages are screened and reported by myself. This project has led to the following results between January 18th and January 20th, 2026:
 
-- **20 packages** have been reported
-- **19 packages** has been removed
+- **24 packages** have been reported
+- **24 packages** has been removed
 
 Including at least 6 instances of live malware:
 
