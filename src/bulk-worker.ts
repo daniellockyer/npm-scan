@@ -7,6 +7,7 @@
 
 import "dotenv/config";
 import { Worker } from "bullmq";
+import { promises as fs } from "fs";
 import { fetchPackument, type Packument } from "./lib/fetch-packument.ts";
 import {
   DEFAULT_OUTPUT_DIR,
@@ -14,6 +15,7 @@ import {
   getErrorMessage,
   ensureOutputDir,
   writeMetadataToFile,
+  getMetadataFilePath,
 } from "./lib/utils.ts";
 
 interface PackageJobData {
@@ -28,6 +30,18 @@ async function processPackage(job: { data: PackageJobData }): Promise<void> {
   const outputDir = process.env.OUTPUT_DIR || DEFAULT_OUTPUT_DIR;
 
   await ensureOutputDir(outputDir);
+
+  // Check if file already exists
+  const filePath = getMetadataFilePath(packageName, outputDir);
+  try {
+    await fs.access(filePath);
+    process.stdout.write(
+      `[${nowIso()}] ⏭ Skipping ${packageName} (file already exists)\n`,
+    );
+    return;
+  } catch {
+    // File doesn't exist, proceed with processing
+  }
 
   process.stdout.write(`[${nowIso()}] Processing: ${packageName}\n`);
 
