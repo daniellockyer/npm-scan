@@ -53,5 +53,5 @@ export async function writeMetadataToFile(
   const folderPath = dirname(filePath);
 
   await ensureOutputDir(folderPath);
-  await fs.writeFile(filePath, JSON.stringify(metadata, null, 2), "utf-8");
+  await fs.writeFile(filePath, JSON.stringify(metadata), "utf-8");
 }
