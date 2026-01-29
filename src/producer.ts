@@ -105,7 +105,8 @@ async function loadCheckpoint(): Promise<string | number | null> {
     if (
       !(
         error instanceof Error &&
-        (error.code === "ENOENT" || error.name === "SyntaxError")
+        ((error as NodeJS.ErrnoException).code === "ENOENT" ||
+          error.name === "SyntaxError")
       )
     ) {
       process.stderr.write(
