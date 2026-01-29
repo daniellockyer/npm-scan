@@ -22,7 +22,7 @@
     "node": ">=24"
   },
   "dependencies": {
-    "all-the-package-names": "^2.0.2340",
+    "all-the-package-names": "^2.0.2341",
     "bullmq": "^5.66.5",
     "dotenv": "^17.2.3",
     "ioredis": "^5.9.2",
