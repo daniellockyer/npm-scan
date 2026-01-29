@@ -51,6 +51,7 @@ module.exports = {
         TELEGRAM_CHAT_ID: process.env.TELEGRAM_CHAT_ID || "",
         DISCORD_WEBHOOK_URL: process.env.DISCORD_WEBHOOK_URL || "",
         GITHUB_TOKEN: process.env.GITHUB_TOKEN || "",
+        OUTPUT_DIR: process.env.OUTPUT_DIR || "./metadata",
       },
     },
     {
