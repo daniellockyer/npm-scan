@@ -77,7 +77,7 @@ const worker = new Worker<PackageJobData>(
   },
   {
     connection,
-    concurrency: 10,
+    concurrency: 25,
     /*limiter: {
       max: 50, // 10 jobs per second
       duration: 1000,
